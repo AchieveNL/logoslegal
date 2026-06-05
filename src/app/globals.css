@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-blue: #087AEC;
+  --brand-blue-dark: #0560BB;
+  --brand-blue-light: #F0F5FF;
+  --brand-dark: #292D32;
+  --brand-gray: #E0E0E1;
+  --brand-white: #FFFFFF;
+}
+
+body {
+  color: var(--brand-dark);
+  background: var(--brand-white);
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
