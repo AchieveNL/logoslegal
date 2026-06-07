@@ -18,7 +18,12 @@ export default function TestimonialCard({
         ? "bg-white shadow-[0_10px_40px_-12px_rgba(2,18,43,0.12)] ring-1 ring-brand-dark/5"
         : "bg-brand-blue-light";
   const markColor = variant === "dark" ? "text-brand-blue" : "text-brand-blue-dark";
-  const textColor = variant === "dark" ? "text-white/85" : "text-brand-dark/70";
+  const textColor =
+    variant === "dark"
+      ? "text-white/85"
+      : variant === "plain"
+        ? "text-[#514D4D]"
+        : "text-brand-dark/70";
   const authorColor = variant === "dark" ? "text-white" : "text-brand-blue";
   const roleColor = variant === "dark" ? "text-white/60" : "text-brand-dark/60";
 
@@ -40,7 +45,7 @@ export default function TestimonialCard({
       </svg>
 
       <blockquote
-        className={`font-poppins font-medium text-[16px] md:text-[19px] leading-[1.5] mb-8 ${textColor}`}
+        className={`font-poppins font-medium text-[20px] md:text-[28px] leading-[1.4] mb-8 max-w-[704px] ${textColor}`}
       >
         {quote}
       </blockquote>

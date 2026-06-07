@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const menuLinks = [
   { label: "Over ons", href: "/over-ons" },
@@ -54,7 +55,7 @@ export default function Footer() {
             <div
               className="absolute inset-0 opacity-[0.55]"
               style={{
-                backgroundImage: "url('/images/footer-waves.png')",
+                backgroundImage: "url('/images/shared/footer-waves.png')",
                 backgroundSize: "auto 100%",
                 backgroundRepeat: "repeat",
                 backgroundPosition: "right top",
@@ -71,14 +72,16 @@ export default function Footer() {
           </div>
 
           <div className="relative z-10">
-            {/* Logo */}
+            {/* Logo (white version via filter) */}
             <Link href="/" className="inline-block">
-              <span className="font-raleway font-extrabold text-3xl tracking-tight text-white">
-                LOGOS
-              </span>
-              <span className="block text-xs tracking-[0.4em] text-white/80 -mt-1">
-                LEGAL
-              </span>
+              <Image
+                src="/images/shared/logo.svg"
+                alt="LOGOS LEGAL"
+                width={148}
+                height={45}
+                className="h-12 w-auto md:h-14 [filter:brightness(0)_invert(1)]"
+                unoptimized
+              />
             </Link>
 
             <div className="mt-8 border-t border-white/25" />
@@ -87,13 +90,13 @@ export default function Footer() {
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
               {/* Menu */}
               <div>
-                <h3 className="font-poppins font-bold text-lg mb-5">Menu</h3>
+                <h3 className="font-raleway font-bold text-[24px] md:text-[32px] mb-5">Menu</h3>
                 <ul className="flex flex-col gap-4">
                   {menuLinks.map((link) => (
                     <li key={link.label}>
                       <Link
                         href={link.href}
-                        className="font-poppins text-sm text-white/85 hover:text-white transition-colors"
+                        className="font-poppins text-[20px] text-white/85 hover:text-white transition-colors"
                       >
                         {link.label}
                       </Link>
@@ -104,13 +107,13 @@ export default function Footer() {
 
               {/* Juridisch */}
               <div>
-                <h3 className="font-poppins font-bold text-lg mb-5">Juridisch</h3>
+                <h3 className="font-raleway font-bold text-[24px] md:text-[32px] mb-5">Juridisch</h3>
                 <ul className="flex flex-col gap-4">
                   {legalLinks.map((link) => (
                     <li key={link.label}>
                       <Link
                         href={link.href}
-                        className="font-poppins text-sm text-white/85 hover:text-white transition-colors"
+                        className="font-poppins text-[20px] text-white/85 hover:text-white transition-colors"
                       >
                         {link.label}
                       </Link>
@@ -121,8 +124,8 @@ export default function Footer() {
 
               {/* Contact */}
               <div>
-                <h3 className="font-poppins font-bold text-lg mb-5">Contact</h3>
-                <ul className="flex flex-col gap-4 font-poppins text-sm text-white/85">
+                <h3 className="font-raleway font-bold text-[24px] md:text-[32px] mb-5">Contact</h3>
+                <ul className="flex flex-col gap-4 font-poppins text-[20px] text-white/85">
                   <li className="flex items-start gap-3">
                     <ContactIcon>
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
@@ -185,25 +188,15 @@ export default function Footer() {
 
               {/* Location */}
               <div>
-                <h3 className="font-poppins font-bold text-lg mb-5">Location</h3>
-                <div className="relative w-[200px] h-[200px]">
-                  {/* Stylized NL map (placeholder silhouette) */}
-                  <svg viewBox="0 0 200 220" className="w-full h-full text-white/90" fill="currentColor" aria-label="Kaart van Nederland">
-                    <path d="M96 8c6 4 7 12 13 16 5 3 12 2 16 7 3 5 0 12 3 17 4 7 14 9 16 17 2 7-4 14-3 21 1 9 11 16 9 25-2 8-13 9-19 15-5 5-6 14-13 17-8 4-17-2-25 0-7 2-12 9-19 8-8-1-12-10-16-16-5-8-9-17-8-26 1-8 8-14 9-22 1-9-5-18-2-26 3-9 14-12 18-20 3-7 1-16 6-22 4-5 11-5 15-9 0-2-1-4 0-5z" />
-                  </svg>
-                  {/* City pins */}
-                  <span className="absolute top-[42%] left-[46%] -translate-x-1/2 flex items-center gap-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-white ring-2 ring-emerald-500" />
-                    <span className="bg-emerald-500 text-white text-[10px] font-poppins font-medium px-2 py-0.5 rounded">
-                      Amsterdam
-                    </span>
-                  </span>
-                  <span className="absolute top-[58%] left-[40%] -translate-x-1/2 flex items-center gap-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-white ring-2 ring-emerald-500" />
-                    <span className="bg-emerald-500 text-white text-[10px] font-poppins font-medium px-2 py-0.5 rounded">
-                      Barendrecht
-                    </span>
-                  </span>
+                <h3 className="font-raleway font-bold text-[24px] md:text-[32px] mb-5">Location</h3>
+                <div className="relative w-[234px] max-w-full aspect-[234/275]">
+                  <Image
+                    src="/images/shared/nl-map.svg"
+                    alt="Kaart van Nederland met Amsterdam en Barendrecht"
+                    fill
+                    className="object-contain"
+                    unoptimized
+                  />
                 </div>
               </div>
             </div>
@@ -217,13 +210,13 @@ export default function Footer() {
               </p>
 
               <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 order-3 lg:order-2">
-                <Link href="/disclaimer" className="font-poppins text-sm text-white/85 hover:text-white transition-colors">
+                <Link href="/disclaimer" className="font-poppins text-[20px] text-white/85 hover:text-white transition-colors">
                   Disclamer
                 </Link>
-                <Link href="/privacy" className="font-poppins text-sm text-white/85 hover:text-white transition-colors">
+                <Link href="/privacy" className="font-poppins text-[20px] text-white/85 hover:text-white transition-colors">
                   Privacy Statement
                 </Link>
-                <span className="font-poppins text-sm text-white/85">2026 © Logos Legal</span>
+                <span className="font-poppins text-[20px] text-white/85">2026 © Logos Legal</span>
               </div>
 
               <div className="flex items-center gap-3 order-2 lg:order-3">

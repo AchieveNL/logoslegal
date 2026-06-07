@@ -27,13 +27,13 @@ export default function ChallengeSection({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: text */}
           <div className="flex flex-col gap-6">
-            <h2 className="font-raleway font-bold text-[28px] md:text-[36px] leading-[1.2] text-brand-dark">
+            <h2 className="font-raleway font-bold text-[34px] md:text-[56px] leading-none text-[#002B58] max-w-[685px]">
               {heading}
             </h2>
             {paragraphs.map((p, i) => (
               <p
                 key={i}
-                className="font-poppins text-base text-brand-dark/70 leading-relaxed"
+                className="font-poppins font-medium text-lg md:text-[24px] leading-tight text-[#292D32] max-w-[594px]"
               >
                 {p}
               </p>
@@ -46,8 +46,8 @@ export default function ChallengeSection({
           </div>
 
           {/* Right: two overlapping images */}
-          <div className="relative h-[460px] md:h-[540px]">
-            <div className="absolute top-0 right-0 w-[78%] h-[300px] md:h-[360px] rounded-2xl overflow-hidden bg-brand-blue/10">
+          <div className="relative h-[480px] md:h-[680px]">
+            <div className="absolute top-0 right-0 w-[78%] max-w-[630px] aspect-[630/460] rounded-[32px] overflow-hidden bg-brand-blue/10">
               <Image
                 src={imagePrimary}
                 alt={imageAlt}
@@ -56,13 +56,13 @@ export default function ChallengeSection({
                 sizes="(max-width: 1024px) 80vw, 40vw"
               />
             </div>
-            <div className="absolute bottom-0 left-0 w-[70%] h-[280px] md:h-[320px] rounded-2xl overflow-hidden bg-brand-blue/10 ring-8 ring-white shadow-xl">
+            <div className="absolute bottom-0 left-0 w-[78%] max-w-[630px] aspect-[630/460] rounded-[32px] overflow-hidden bg-brand-blue/10 ring-8 ring-white shadow-xl">
               <Image
                 src={imageSecondary}
                 alt={imageAlt}
                 fill
                 className="object-cover"
-                sizes="(max-width: 1024px) 70vw, 35vw"
+                sizes="(max-width: 1024px) 80vw, 40vw"
               />
             </div>
           </div>

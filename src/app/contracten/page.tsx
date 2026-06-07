@@ -73,10 +73,10 @@ export default function ContractenPage() {
         summary="Wij maken complexe juridische vraagstukken eenvoudig en direct toepasbaar."
         ctaLabel="Praat met Linda"
         ctaHref="/contact"
-        imageSrc="/images/justice-statue.png"
+        imageSrc="/images/contracten/hero.png"
         imageAlt="LOGOS LEGAL contracten en aansprakelijkheid advies"
         contactName="Linda"
-        contactImageSrc="/images/linda-cutout.png"
+        contactImageSrc="/images/shared/linda-cutout.png"
       />
 
       <BenefitsSection
@@ -88,7 +88,7 @@ export default function ContractenPage() {
         benefits={benefits}
         ctaLabel="Contact opnemen"
         ctaHref="/contact"
-        imageSrc="/images/signature.png"
+        imageSrc="/images/contracten/benefits.png"
         imageAlt="Ondertekenen van een contract"
         quote={{
           text: "Working with LOGOS LEGAL was a game changer for our patent dispute.",
@@ -116,8 +116,8 @@ export default function ContractenPage() {
         ]}
         ctaLabel="Contact opnemen"
         ctaHref="/contact"
-        imagePrimary="/images/challenge-1.png"
-        imageSecondary="/images/challenge-2.png"
+        imagePrimary="/images/contracten/challenge-1.png"
+        imageSecondary="/images/contracten/challenge-2.png"
         imageAlt="Contracten en aansprakelijkheid begeleiding"
       />
 
@@ -136,7 +136,7 @@ export default function ContractenPage() {
         contactGreeting="Hallo, ik ben Linda. Waarmee kan ik u vandaag helpen?"
         contactPhone="+31 85 20 30 155"
         contactWhatsapp="+31 6 25 199 747"
-        contactImageSrc="/images/linda-cutout.png"
+        contactImageSrc="/images/shared/linda-cutout.png"
         testimonial={{
           quote:
             "Samenwerken met Logos Legal was een keerpunt in ons octrooigeschil. Hun expertise in het intellectueel eigendomsrecht was gedurende het hele proces duidelijk zichtbaar, en zij behaalden een overwinning die niet alleen onze innovatie beschermde, maar ook onze marktpositie versterkte.",

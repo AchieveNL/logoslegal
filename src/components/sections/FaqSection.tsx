@@ -136,7 +136,7 @@ function FaqItem({ item, isOpen, onToggle }: FaqItemProps) {
         onClick={onToggle}
         className="w-full flex items-start justify-between gap-6 text-left"
       >
-        <h3 className="font-raleway font-bold text-lg md:text-xl text-brand-dark">
+        <h3 className="font-raleway font-bold text-xl md:text-[24px] text-[#002B58]">
           {item.question}
         </h3>
         <svg
@@ -158,7 +158,7 @@ function FaqItem({ item, isOpen, onToggle }: FaqItemProps) {
         </svg>
       </button>
       {isOpen && (
-        <p className="mt-4 font-poppins text-base text-brand-dark/70 leading-relaxed pr-10">
+        <p className="mt-4 font-poppins font-medium text-base md:text-[24px] text-[#292D32] leading-snug pr-10">
           {item.answer}
         </p>
       )}
@@ -181,10 +181,10 @@ export default function FaqSection({ defaultCategory = "algemeen" }: FaqSectionP
     <section className="w-full bg-white py-16 md:py-24">
       <div className="max-w-container mx-auto px-6 md:px-24">
         <div className="text-center mb-10">
-          <h2 className="font-raleway font-bold text-[26px] md:text-[36px] leading-[1.25] text-brand-dark">
+          <h2 className="font-raleway font-bold text-[32px] md:text-[56px] leading-none text-[#002B58]">
             Veelgestelde <span className="text-brand-blue">Vragen</span>
           </h2>
-          <p className="mt-3 font-poppins text-base text-brand-dark/60">
+          <p className="mt-4 font-poppins font-medium text-lg md:text-[24px] text-[#292D32]">
             De meest gestelde vragen over Logos Legal.
           </p>
         </div>
@@ -198,10 +198,10 @@ export default function FaqSection({ defaultCategory = "algemeen" }: FaqSectionP
                 setActiveId(cat.id);
                 setOpenIndex(0);
               }}
-              className={`font-poppins font-medium text-base px-5 py-2.5 rounded-xl transition-colors ${
+              className={`font-poppins font-medium text-base h-16 px-5 rounded-2xl inline-flex items-center transition-colors ${
                 cat.id === activeId
-                  ? "bg-brand-blue-dark text-white"
-                  : "text-brand-dark hover:text-brand-blue"
+                  ? "bg-gradient-to-r from-[#087AEC] to-[#56A5F4] text-white shadow-lg shadow-brand-blue/20"
+                  : "text-[#002B58] hover:text-brand-blue"
               }`}
             >
               {cat.label}
@@ -210,7 +210,7 @@ export default function FaqSection({ defaultCategory = "algemeen" }: FaqSectionP
         </div>
 
         {/* Accordion */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-[1446px] mx-auto">
           {active.items.map((item, i) => (
             <FaqItem
               key={item.question}

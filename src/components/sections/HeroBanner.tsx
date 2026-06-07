@@ -6,22 +6,15 @@ interface HeroBannerProps {
 export default function HeroBanner({ title, subtitle }: HeroBannerProps) {
   return (
     <section className="relative w-full bg-brand-blue overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(255,255,255,0.05) 30px, rgba(255,255,255,0.05) 60px)",
-          }}
-        />
-      </div>
-      {/* Gradient overlay */}
+      {/* Wave texture (same as the CTA banner) */}
       <div
-        className="absolute inset-0"
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-50"
         style={{
-          backgroundImage:
-            "linear-gradient(80deg, rgb(8, 122, 236) 0%, rgba(8, 122, 236, 0) 100%)",
+          backgroundImage: "url('/images/shared/footer-waves.png')",
+          backgroundSize: "auto 100%",
+          backgroundRepeat: "repeat",
+          backgroundPosition: "center",
         }}
       />
 

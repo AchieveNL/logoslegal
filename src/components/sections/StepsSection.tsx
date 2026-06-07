@@ -1,9 +1,9 @@
-import type { ReactNode } from "react";
+import Image from "next/image";
 
 interface Step {
   title: string;
   description: string;
-  icon: ReactNode;
+  icon: string;
 }
 
 const steps: Step[] = [
@@ -11,86 +11,54 @@ const steps: Step[] = [
     title: "Door middel van analyse",
     description:
       "We beginnen met een uitgebreide beoordeling van uw juridische situatie, waarbij we alle relevante informatie verzamelen en uw doelen en zorgen in kaart brengen.",
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.8" />
-        <path
-          d="M8.5 12.5l2.2 2.2L15.5 10"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
+    icon: "/images/steps/analyse.svg",
   },
   {
     title: "Strategische planning",
     description:
       "Wij ontwikkelen een op maat gemaakte juridische strategie die aansluit bij uw doelstellingen, waarbij wij alle mogelijke aanpakken en hun gevolgen zorgvuldig afwegen.",
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
-        <path
-          d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M9.5 12.5l1.8 1.8 3.5-3.8"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
+    icon: "/images/steps/planning.svg",
   },
   {
     title: "Krachtige vertegenwoordiging",
     description:
       "Wij behartigen uw belangen met overtuiging, zowel in onderhandelingen, gerechtelijke procedures als administratieve procedures.",
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
-        <circle cx="8" cy="9" r="2.4" stroke="currentColor" strokeWidth="1.8" />
-        <circle cx="16" cy="9" r="2.4" stroke="currentColor" strokeWidth="1.8" />
-        <path
-          d="M3.5 18c0-2.5 2-4 4.5-4s4.5 1.5 4.5 4M12.5 18c0-2.5 2-4 4.5-4s4 1.5 4 4"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    icon: "/images/steps/vertegenwoordiging.svg",
   },
 ];
 
 export default function StepsSection() {
   return (
     <section className="w-full bg-brand-blue-light py-16 md:py-24">
-      <div className="max-w-container mx-auto px-6 md:px-24">
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-raleway font-bold text-[26px] md:text-[36px] leading-[1.25] text-brand-dark">
+      <div className="max-w-container mx-auto px-6">
+        <div className="text-center max-w-[1080px] mx-auto">
+          <h2 className="font-raleway font-bold text-[32px] md:text-[56px] leading-none text-[#002B58]">
             <span className="text-brand-blue">3 eenvoudige stappen</span> om het
             probleem van uw klant <span className="text-brand-blue">op te lossen</span>
           </h2>
-          <p className="mt-4 font-poppins text-base text-brand-dark/60">
+          <p className="mt-4 font-raleway text-lg md:text-[24px] text-black">
             Deze principes sturen onze werkwijze en bepalen hoe wij onze cliënten
             bedienen.
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          {steps.map((step) => (
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+          {steps.map((step, i) => (
             <div
               key={step.title}
-              className="bg-white rounded-2xl p-8 flex flex-col items-center text-center shadow-sm"
+              className="w-full max-w-[496px] min-h-[380px] mx-auto bg-white rounded-[28px] px-4 py-12 flex flex-col items-center justify-center text-center shadow-[0_20px_50px_-24px_rgba(2,18,43,0.18)]"
             >
-              <div className="text-brand-blue mb-6">{step.icon}</div>
-              <h3 className="font-raleway font-bold text-xl text-brand-blue-dark mb-3">
+              <div className="mb-8">
+                <Image src={step.icon} alt="" width={56} height={56} unoptimized />
+              </div>
+              <h3
+                className={`font-raleway font-bold text-[26px] md:text-[32px] leading-tight text-[#323377] mb-3 ${
+                  i === 0 ? "md:whitespace-nowrap" : ""
+                }`}
+              >
                 {step.title}
               </h3>
-              <p className="font-poppins text-sm text-brand-dark/60 leading-relaxed">
+              <p className="font-poppins font-medium text-base leading-relaxed text-[#514D4D] w-full">
                 {step.description}
               </p>
             </div>

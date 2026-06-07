@@ -22,7 +22,7 @@ export default function CheckItem({ text }: CheckItemProps) {
           strokeLinejoin="round"
         />
       </svg>
-      <p className="font-poppins text-lg leading-relaxed text-brand-dark">
+      <p className="font-poppins text-[16px] leading-relaxed text-black">
         {text}
       </p>
     </div>

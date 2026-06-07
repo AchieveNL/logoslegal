@@ -31,7 +31,7 @@ export default function Button({
   type = "button",
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center gap-2.5 px-12 h-[80px] rounded-button font-poppins font-bold text-2xl transition-colors duration-200";
+    "inline-flex items-center gap-2.5 px-12 h-[80px] rounded-button font-poppins font-bold text-2xl leading-none whitespace-nowrap transition-colors duration-200";
 
   const content = (
     <>

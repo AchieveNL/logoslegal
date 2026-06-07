@@ -62,9 +62,9 @@ export default function ContactForm() {
   };
 
   const fieldClass =
-    "w-full h-14 border border-brand-dark/40 rounded-lg px-5 font-poppins text-base text-brand-dark focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 focus:outline-none transition-[border-color,box-shadow]";
+    "w-full h-[72px] border border-[#292D32] rounded-lg px-5 font-poppins text-base text-brand-dark focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 focus:outline-none transition-[border-color,box-shadow]";
   const labelClass =
-    "absolute -top-2.5 left-4 bg-white px-2 font-poppins text-sm font-bold text-brand-dark z-10";
+    "absolute -top-2.5 left-4 bg-white px-2 font-poppins text-sm font-bold text-[#002B58] z-10";
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-7" noValidate>
@@ -124,7 +124,7 @@ export default function ContactForm() {
           onClick={() => setDropdownOpen((o) => !o)}
           aria-haspopup="listbox"
           aria-expanded={dropdownOpen}
-          className="w-full h-14 border border-brand-dark/40 rounded-lg px-5 font-poppins text-base text-left flex items-center justify-between focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 focus:outline-none transition-[border-color,box-shadow]"
+          className="w-full h-[72px] border border-[#292D32] rounded-lg px-5 font-poppins text-base text-left flex items-center justify-between focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 focus:outline-none transition-[border-color,box-shadow]"
         >
           <span className={selectedCase ? "text-brand-dark" : "text-brand-dark/60"}>
             {selectedCase || "Soort zaak"}
@@ -153,7 +153,7 @@ export default function ContactForm() {
           <ul
             role="listbox"
             aria-label="Soort zaak"
-            className="absolute top-full left-0 w-full mt-1 bg-white border border-brand-dark/40 rounded-lg shadow-lg z-20 py-2 overflow-hidden"
+            className="absolute top-full left-0 w-full mt-1 bg-white border border-[#292D32] rounded-lg shadow-lg z-20 py-2 overflow-hidden"
           >
             {caseTypes.map((type) => {
               const selected = selectedCase === type;
@@ -189,15 +189,14 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           placeholder="Schrijf een bericht"
-          rows={4}
-          className="w-full border border-brand-dark/40 rounded-lg px-5 py-4 font-poppins text-base text-brand-dark placeholder:text-brand-dark/40 focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 focus:outline-none transition-[border-color,box-shadow] resize-none"
+          className="w-full h-[186px] border border-[#292D32] rounded-lg px-5 py-4 font-poppins text-base text-brand-dark placeholder:text-brand-dark/40 focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 focus:outline-none transition-[border-color,box-shadow] resize-none"
         />
       </div>
 
       {/* Submit */}
       <button
         type="submit"
-        className="group w-full h-14 bg-gradient-to-r from-[#0A2540] to-brand-blue-dark text-white font-poppins font-bold text-lg rounded-lg flex items-center justify-center gap-2.5 transition-[transform,box-shadow] hover:shadow-lg hover:shadow-brand-blue-dark/20 hover:-translate-y-0.5 focus-visible:ring-4 focus-visible:ring-brand-blue/30 focus-visible:outline-none active:translate-y-0"
+        className="group w-full h-[72px] bg-gradient-to-r from-[#0A2540] to-brand-blue-dark text-white font-poppins font-bold text-lg rounded-lg flex items-center justify-center gap-2.5 transition-[transform,box-shadow] hover:shadow-lg hover:shadow-brand-blue-dark/20 hover:-translate-y-0.5 focus-visible:ring-4 focus-visible:ring-brand-blue/30 focus-visible:outline-none active:translate-y-0"
       >
         Verzenden
         <svg

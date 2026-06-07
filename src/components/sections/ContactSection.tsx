@@ -32,10 +32,10 @@ export default function ContactSection({
       <div className="max-w-container mx-auto px-6 md:px-24">
         {/* Section Heading */}
         <div className="text-center mb-12">
-          <h2 className="font-raleway font-bold text-[28px] md:text-[40px] leading-[1.2] text-[#0A2540]">
+          <h2 className="font-raleway font-bold text-[32px] md:text-[56px] leading-none text-[#002B58]">
             {heading}
           </h2>
-          <p className="mt-3 font-poppins text-base md:text-lg text-brand-dark/60">
+          <p className="mt-3 font-poppins font-medium text-lg md:text-[24px] text-black">
             {subheading}
           </p>
         </div>

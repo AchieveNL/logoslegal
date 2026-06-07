@@ -74,10 +74,10 @@ export default function ArbeidsrechtPage() {
         summary="Wij vertalen complex arbeidsrecht naar duidelijke, direct toepasbare oplossingen."
         ctaLabel="Praat met Linda"
         ctaHref="/contact"
-        imageSrc="/images/practice-area-hero.png"
+        imageSrc="/images/arbeidsrecht/hero.png"
         imageAlt="LOGOS LEGAL arbeidsrecht advies"
         contactName="Linda"
-        contactImageSrc="/images/linda-cutout.png"
+        contactImageSrc="/images/shared/linda-cutout.png"
       />
 
       <BenefitsSection
@@ -90,7 +90,7 @@ export default function ArbeidsrechtPage() {
         benefits={benefits}
         ctaLabel="Contact opnemen"
         ctaHref="/contact"
-        imageSrc="/images/benefits-image.png"
+        imageSrc="/images/arbeidsrecht/benefits.png"
         imageAlt="Juridische begeleiding op de werkplek"
         quote={{
           text: "Samenwerken met LOGOS LEGAL was een game-changer voor ons octrooigeschil.",
@@ -118,8 +118,8 @@ export default function ArbeidsrechtPage() {
         ]}
         ctaLabel="Contact opnemen"
         ctaHref="/contact"
-        imagePrimary="/images/challenge-1.png"
-        imageSecondary="/images/challenge-2.png"
+        imagePrimary="/images/arbeidsrecht/challenge-1.png"
+        imageSecondary="/images/arbeidsrecht/challenge-2.png"
         imageAlt="Arbeidsrechtelijke begeleiding"
       />
 
@@ -138,7 +138,7 @@ export default function ArbeidsrechtPage() {
         contactGreeting="Hallo, ik ben Linda. Waarmee kan ik u vandaag helpen?"
         contactPhone="+31 85 20 30 155"
         contactWhatsapp="+31 6 25 199 747"
-        contactImageSrc="/images/linda-cutout.png"
+        contactImageSrc="/images/shared/linda-cutout.png"
         testimonial={{
           quote:
             "Samenwerken met Logos Legal was een keerpunt in ons octrooigeschil. Hun expertise in het intellectueel eigendomsrecht was gedurende het hele proces duidelijk zichtbaar, en zij behaalden een overwinning die niet alleen onze innovatie beschermde, maar ook onze marktpositie versterkte.",

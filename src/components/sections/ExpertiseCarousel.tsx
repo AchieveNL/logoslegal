@@ -17,35 +17,35 @@ const cards: ExpertiseCard[] = [
     description:
       "Ons kantoor adviseert ondernemers en particulieren bij arbeidsovereenkomsten, ontslag en arbeidsconflicten.",
     href: "/arbeidsrecht",
-    image: "/images/expertise-arbeidsrecht.png",
+    image: "/images/expertise/arbeidsrecht.jpg",
   },
   {
     title: "Contractenrecht en aansprakelijkheidsrecht",
     description:
       "Ons kantoor adviseert ondernemers en particulieren bij het opstellen, interpreteren en onderhandelen van contracten, zoals handelsovereenkomsten.",
     href: "/contracten",
-    image: "/images/expertise-contracten.png",
+    image: "/images/expertise/contracten.png",
   },
   {
     title: "Onderwijsrecht",
     description:
       "Ons kantoor adviseert ondernemers en particulieren bij het opstellen, interpreteren en onderhandelen van contracten, zoals handelsovereenkomsten.",
     href: "/onderwijsrecht",
-    image: "/images/expertise-onderwijsrecht.png",
+    image: "/images/expertise/onderwijsrecht.jpg",
   },
   {
     title: "Financieel strafrecht",
     description:
       "Gespecialiseerde verdediging en advies bij financieel-strafrechtelijke onderzoeken en procedures.",
     href: "/financieel-strafrecht",
-    image: "/images/expertise-financieel-strafrecht.png",
+    image: "/images/expertise/financieel-strafrecht.jpg",
   },
   {
     title: "Mensenrechten",
     description:
       "Ons kantoor adviseert particulieren bij het beschermen van fundamentele rechten en het voeren van procedures.",
     href: "/mensenrechten",
-    image: "/images/expertise-mensenrechten.png",
+    image: "/images/expertise/mensenrechten.jpg",
   },
 ];
 
@@ -63,11 +63,11 @@ export default function ExpertiseCarousel() {
     <section className="w-full bg-white py-16 md:py-24">
       <div className="max-w-container mx-auto px-6 md:px-24">
         <div className="flex items-end justify-between gap-6 mb-10">
-          <div className="max-w-xl">
-            <h2 className="font-raleway font-bold text-[26px] md:text-[36px] leading-[1.2] text-brand-dark">
+          <div>
+            <h2 className="font-raleway font-bold text-[32px] md:text-[56px] leading-none text-[#002B58] md:whitespace-nowrap">
               Bekijk meer van onze <span className="text-brand-blue">expertise</span>
             </h2>
-            <p className="mt-3 font-poppins text-base text-brand-dark/60">
+            <p className="mt-4 max-w-[800px] font-poppins font-medium text-lg md:text-[24px] text-[#292D32]">
               Praktische, oplossingsgerichte juridische dienstverlening om uw
               onderneming, team en rechten te beschermen.
             </p>
@@ -112,7 +112,9 @@ export default function ExpertiseCarousel() {
                 className="object-cover"
                 sizes="380px"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/30 to-transparent" />
+              {/* Blue tint at 30% + bottom darkening for text legibility */}
+              <div className="absolute inset-0 bg-brand-blue/30" />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-brand-dark/10 to-transparent" />
               <div className="absolute inset-0 flex flex-col justify-end p-7 text-white">
                 <h3 className="font-raleway font-bold text-2xl leading-tight mb-3">
                   {card.title}

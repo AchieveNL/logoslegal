@@ -28,31 +28,34 @@ export default function Navbar() {
       <div className="max-w-container mx-auto flex items-center justify-between px-6 md:px-24 h-[132px]">
         {/* Logo */}
         <Link href="/" className="shrink-0">
-          <div className="font-raleway font-bold text-3xl text-brand-dark tracking-tight">
-            <span className="text-brand-dark">LOG</span>
-            <span className="text-brand-blue">O</span>
-            <span className="text-brand-dark">S</span>
-            <span className="block text-xs tracking-[0.3em] text-brand-dark/60 -mt-1">
-              LEGAL
-            </span>
-          </div>
+          <Image
+            src="/images/shared/logo.svg"
+            alt="LOGOS LEGAL"
+            width={148}
+            height={45}
+            className="h-12 w-auto md:h-14"
+            priority
+            unoptimized
+          />
         </Link>
 
         {/* Language Switcher */}
         <div className="hidden md:flex items-center gap-6 ml-8 border border-brand-gray rounded-lg px-2 py-2">
           <Image
-            src="/images/flag-nl.svg"
+            src="/images/shared/flag-nl.svg"
             alt="Nederlands"
             width={40}
             height={30}
             className="rounded-sm cursor-pointer"
+            unoptimized
           />
           <Image
-            src="/images/flag-gb.svg"
+            src="/images/shared/flag-gb.svg"
             alt="English"
             width={40}
             height={30}
             className="rounded-sm cursor-pointer opacity-60 hover:opacity-100 transition-opacity"
+            unoptimized
           />
         </div>
 
@@ -63,7 +66,7 @@ export default function Navbar() {
               {link.isExpertise ? (
                 <button
                   onClick={() => setExpertiseOpen(!expertiseOpen)}
-                  className={`flex items-center gap-1 font-poppins font-medium text-2xl transition-colors ${
+                  className={`flex items-center gap-1 font-poppins font-medium text-[24px] transition-colors ${
                     expertiseOpen
                       ? "text-brand-blue"
                       : "text-brand-dark hover:text-brand-blue"
@@ -91,7 +94,7 @@ export default function Navbar() {
               ) : (
                 <Link
                   href={link.href}
-                  className="font-poppins font-medium text-2xl text-brand-dark hover:text-brand-blue transition-colors"
+                  className="font-poppins font-medium text-[24px] text-brand-dark hover:text-brand-blue transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -119,7 +122,7 @@ export default function Navbar() {
         {/* Contact CTA */}
         <Link
           href="/contact"
-          className="hidden lg:inline-flex items-center gap-2.5 bg-brand-blue-light text-brand-blue font-poppins font-bold text-2xl px-12 h-[80px] rounded-button hover:bg-blue-100 transition-colors"
+          className="hidden lg:inline-flex items-center gap-2.5 bg-brand-blue-light text-brand-blue font-poppins font-bold text-[24px] px-12 h-[80px] rounded-button hover:bg-blue-100 transition-colors"
         >
           Contact
           <svg
