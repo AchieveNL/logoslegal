@@ -47,7 +47,7 @@ function SocialIcon({
 
 export default function Footer() {
   return (
-    <footer className="bg-white px-4 sm:px-6 lg:px-12 pb-10 pt-4">
+    <footer className="bg-white px-4 sm:px-6 lg:px-12 pb-10 pt-28">
       <div className="max-w-container mx-auto">
         <div className="relative overflow-hidden rounded-[32px] bg-brand-blue text-white px-8 md:px-14 py-12 md:py-14">
           {/* Wave texture (extracted from the Figma footer export), faded like the design */}

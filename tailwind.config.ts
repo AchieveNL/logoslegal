@@ -22,6 +22,7 @@ const config: Config = {
       fontFamily: {
         raleway: ["var(--font-raleway)", "sans-serif"],
         poppins: ["var(--font-poppins)", "sans-serif"],
+        roboto: ["var(--font-roboto)", "sans-serif"],
       },
       maxWidth: {
         container: "1536px",
