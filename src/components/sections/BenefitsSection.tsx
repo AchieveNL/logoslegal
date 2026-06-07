@@ -35,7 +35,7 @@ export default function BenefitsSection({
       {/* Light band behind the image-top + testimonial */}
       <div className="absolute top-0 left-0 w-full h-[300px] md:h-[570px] bg-brand-blue-light" />
       <div className="relative z-10 max-w-container mx-auto px-6 md:px-24 py-16 md:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-16 items-start">
           {/* Left: Image only — Figma: 700×720, radius 32 */}
           <div className="relative w-full lg:max-w-[700px] lg:mt-28 aspect-[700/720] rounded-[32px] overflow-hidden bg-brand-blue/10 ring-1 ring-brand-blue/30">
             <Image

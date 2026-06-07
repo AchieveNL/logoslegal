@@ -93,9 +93,29 @@ const categories: Category[] = [
     label: "Onderwijsrecht",
     items: [
       {
-        question: "Bij welke onderwijsrechtelijke kwesties kan Logos Legal helpen?",
+        question: "Wat omvat het onderwijsrecht?",
         answer:
-          "Wij adviseren onderwijsinstellingen en onderwijsprofessionals over toelating, schorsing, medezeggenschap, arbeidsrechtelijke kwesties en geschillen met leerlingen of ouders.",
+          "Het onderwijsrecht omvat meerdere rechtsgebieden, waaronder arbeidsrecht, governance, medezeggenschap en aansprakelijkheid binnen onderwijsinstellingen. Het ziet zowel op de interne organisatie als op externe juridische verplichtingen.",
+      },
+      {
+        question: "Who can seek advice on education law?",
+        answer:
+          "Schoolbesturen, raden van toezicht, medezeggenschapsraden, docenten, studenten en ouders kunnen advies inwinnen. Wij staan zowel instellingen als individuen bij in juridische vraagstukken binnen het onderwijs.",
+      },
+      {
+        question: "Kan Logos Legal ondersteunen bij fusies of herstructureringen van scholen?",
+        answer:
+          "Ja, wij bieden juridische begeleiding bij fusies, herstructureringen en wijzigingen in de governancestructuur. Wij zorgen ervoor dat alle juridische, organisatorische en regelgevende aspecten zorgvuldig worden meegenomen.",
+      },
+      {
+        question: "Wat zijn de wettelijke vereisten voor medezeggenschap in het onderwijs?",
+        answer:
+          "Onderwijsinstellingen zijn verplicht om medezeggenschapsraden te betrekken bij belangrijke besluiten die personeel, studenten en beleid raken. Wij adviseren over naleving en bieden ondersteuning bij geschillen.",
+      },
+      {
+        question: "Bieden jullie trainingen aan voor onderwijsinstellingen?",
+        answer:
+          "Ja, wij verzorgen in-company trainingen en workshops voor schoolbesturen, raden van toezicht en medezeggenschapsraden, gericht op praktische juridische kennis en actuele ontwikkelingen.",
       },
     ],
   },
@@ -104,9 +124,29 @@ const categories: Category[] = [
     label: "(Financial) Criminal Law",
     items: [
       {
-        question: "When should I contact a lawyer in a criminal investigation?",
+        question: "Wat valt onder (financieel) strafrecht?",
         answer:
-          "As early as possible. Engaging counsel at the start of an investigation protects your rights and helps shape the outcome. We provide strategic defence in financial and general criminal matters.",
+          "Het (financieel) strafrecht omvat strafbare feiten zoals fraude, witwassen, corruptie en andere economische delicten. Het is van toepassing op zowel particulieren als ondernemingen.",
+      },
+      {
+        question: "Wanneer heb ik een strafrechtadvocaat nodig?",
+        answer:
+          "Zodra u wordt verdacht van een strafbaar feit of wordt benaderd door opsporingsinstanties, is het raadzaam direct juridisch advies in te winnen. Vroegtijdige bijstand kan een grote invloed hebben op de uitkomst van uw zaak.",
+      },
+      {
+        question: "Wat moet ik doen als ik word opgeroepen voor verhoor?",
+        answer:
+          "Het is belangrijk om vooraf juridisch advies in te winnen en u goed voor te bereiden. U heeft het recht om te zwijgen en om bijstand van een advocaat te krijgen tijdens het verhoor.",
+      },
+      {
+        question: "Kan Logos Legal mij bijstaan in internationale strafzaken?",
+        answer:
+          "Ja, wij hebben ervaring met internationale strafzaken, waaronder uitlevering, rechtshulpverzoeken en procedures bij internationale rechtbanken.",
+      },
+      {
+        question: "Wat zijn de mogelijke gevolgen van een veroordeling?",
+        answer:
+          "De gevolgen kunnen variëren van boetes en taakstraffen tot gevangenisstraf en reputatieschade. Wij zetten ons in om de impact te beperken en streven naar het best mogelijke resultaat.",
       },
     ],
   },
@@ -115,9 +155,29 @@ const categories: Category[] = [
     label: "Human Rights",
     items: [
       {
-        question: "What kind of human rights cases does Logos Legal handle?",
+        question: "Wat omvat het mensenrechtenrecht?",
         answer:
-          "We assist individuals and organisations with cases involving fundamental rights, discrimination, and procedures before national and international bodies.",
+          "Het mensenrechtenrecht beschermt fundamentele rechten en vrijheden, zoals vrijheid van meningsuiting, het verbod op discriminatie en het recht op een eerlijk proces. Het is van toepassing op zowel individuen als organisaties.",
+      },
+      {
+        question: "Wie kan ondersteuning krijgen bij mensenrechtenkwesties?",
+        answer:
+          "Individuen, NGO's en organisaties die te maken hebben met schendingen van fundamentele rechten kunnen ondersteuning krijgen. Wij richten ons met name op zaken met een grote maatschappelijke of persoonlijke impact.",
+      },
+      {
+        question: "Behandelt Logos Legal pro bono zaken?",
+        answer:
+          "Ja, onze advocaten besteden een deel van hun tijd aan pro bono- of toevoegingszaken, met name wanneer toegang tot juridische bijstand beperkt is door financiële omstandigheden.",
+      },
+      {
+        question: "Kunt u ondersteunen bij internationale mensenrechtenzaken?",
+        answer:
+          "Ja, wij bieden ondersteuning bij internationale kwesties, waaronder zaken met betrekking tot mensenrechtenschendingen, internationale misdrijven en procedures bij internationale rechtbanken.",
+      },
+      {
+        question: "Hoe wordt bepaald of een zaak wordt aangenomen?",
+        answer:
+          "Vanwege beperkte capaciteit worden zaken beoordeeld op basis van factoren zoals urgentie, impact en beschikbare middelen. Wij maken per aanvraag een zorgvuldige afweging.",
       },
     ],
   },

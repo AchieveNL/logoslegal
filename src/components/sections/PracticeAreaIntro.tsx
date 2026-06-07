@@ -14,6 +14,8 @@ interface PracticeAreaIntroProps {
   imageAlt: string;
   contactName?: string;
   contactImageSrc?: string;
+  /** Desktop hero-image height class, e.g. "lg:h-[886px]". Defaults to 880px. */
+  heroHeightClass?: string;
 }
 
 export default function PracticeAreaIntro({
@@ -27,6 +29,7 @@ export default function PracticeAreaIntro({
   imageAlt,
   contactName,
   contactImageSrc,
+  heroHeightClass = "lg:h-[880px]",
 }: PracticeAreaIntroProps) {
   return (
     <section className="relative z-20 w-full bg-white">
@@ -85,7 +88,7 @@ export default function PracticeAreaIntro({
           </div>
 
           {/* Right Image — Figma: 700×934, radius 32; bottom dips into the next (grey) band */}
-          <div className="relative z-10 w-full lg:ml-auto lg:max-w-[700px] aspect-[700/934] lg:-mb-48 rounded-[32px] overflow-hidden bg-brand-gray/40 shadow-[0_24px_60px_-20px_rgba(8,122,236,0.35)] ring-1 ring-brand-blue/30">
+          <div className={`relative z-10 w-full lg:ml-auto lg:max-w-[700px] h-[440px] ${heroHeightClass} lg:-mb-40 rounded-[32px] overflow-hidden bg-brand-gray/40 shadow-[0_24px_60px_-20px_rgba(8,122,236,0.35)] ring-1 ring-brand-blue/30`}>
             <Image
               src={imageSrc}
               alt={imageAlt}

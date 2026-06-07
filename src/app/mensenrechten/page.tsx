@@ -14,67 +14,67 @@ import FaqSection from "@/components/sections/FaqSection";
 import ExpertiseCarousel from "@/components/sections/ExpertiseCarousel";
 
 export const metadata: Metadata = {
-  title: "Contracten en aansprakelijkheid | LOGOS LEGAL",
+  title: "Mensenrechten | LOGOS LEGAL",
   description:
-    "Juridische zekerheid door helder advies en strategische begeleiding. Bescherm uw belangen met afdwingbare overeenkomsten.",
+    "Het beschermen van fundamentele rechten door toegewijde belangenbehartiging en juridische expertise. Ondersteuning voor kwetsbare personen en ngo's.",
 };
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
   { label: "Over ons", href: "/over-ons" },
-  { label: "Contracten en aansprakelijkheid" },
+  { label: "Mensenrechten" },
 ];
 
 const checkItems = [
-  "Het opstellen, beoordelen en onderhandelen van op maat gemaakte contracten",
-  "Adviseren over aansprakelijkheid, schade en risicobeheer",
-  "U vertegenwoordigen bij geschillen en juridische procedures",
+  "Juridische bijstand bij mensenrechtenschendingen en discriminatie",
+  "Belangenbehartiging in civiele, bestuursrechtelijke en strafrechtelijke zaken",
+  "Pro bono- en pro-deo-ondersteuning voor kwetsbare personen en ngo's",
 ];
 
 const benefits = [
   {
-    title: "Voorkom kostbare geschillen",
+    title: "Bescherm uw rechten",
     description:
-      "Goed opgestelde contracten en duidelijke afspraken helpen u misverstanden, financiële verliezen en juridische procedures te voorkomen.",
+      "Juridische ondersteuning helpt individuen zich te verdedigen tegen discriminatie, schendingen van rechten of machtsmisbruik.",
   },
   {
-    title: "Beheer risico's effectief",
+    title: "Navigeer door complexe systemen",
     description:
-      "Wij signaleren mogelijke aansprakelijkheden vroegtijdig, zodat u proactief kunt handelen en uw zakelijke of persoonlijke belangen kunt beschermen.",
+      "Expertise in civiel-, bestuurs- en strafrecht zorgt voor een effectieve behandeling van gevoelige zaken.",
   },
   {
-    title: "Zorg voor afdwingbare overeenkomsten",
+    title: "Toegang tot recht voor iedereen",
     description:
-      "Onze juridische expertise zorgt ervoor dat uw contracten voldoen aan de wet- en regelgeving, praktisch uitvoerbaar zijn en afdwingbaar blijven bij geschillen.",
+      "Pro bono en gerichte ondersteuning bieden kwetsbare personen en ngo's de begeleiding die zij nodig hebben om hun rechten te doen gelden.",
   },
 ];
 
-export default function ContractenPage() {
+export default function MensenrechtenPage() {
   return (
     <>
       <Navbar />
 
       <HeroBanner
-        title="Contracten en aansprakelijkheid"
-        subtitle="Juridische zekerheid door helder advies en strategische begeleiding."
+        title="Mensenrechten"
+        subtitle="Het beschermen van fundamentele rechten door toegewijde belangenbehartiging en juridische expertise."
       />
       <Breadcrumb items={breadcrumbItems} />
 
       <PracticeAreaIntro
         heading={
           <>
-            <span className="text-brand-blue">Gemoedsrust</span> door duidelijke
-            afspraken en slimme{" "}
-            <span className="text-brand-blue">juridische strategieën</span>
+            <span className="text-brand-blue">Rechtvaardigheid</span> voor
+            iedereen, <span className="text-brand-blue">bescherming</span> wanneer
+            het ertoe doet
           </>
         }
-        subheading="Leg uw afspraken vast met duidelijkheid en vertrouwen."
+        subheading="Toegewijde juridische ondersteuning voor fundamentele rechten en kwetsbare personen."
         checkItems={checkItems}
-        summary="Wij maken complexe juridische vraagstukken eenvoudig en direct toepasbaar."
+        summary="Wij bieden praktische en toegewijde juridische oplossingen voor wie dat het meest nodig heeft."
         ctaLabel="Praat met Linda"
         ctaHref="/contact"
-        imageSrc="/images/contracten/hero.png"
-        imageAlt="LOGOS LEGAL contracten en aansprakelijkheid advies"
+        imageSrc="/images/mensenrechten/hero.png"
+        imageAlt="LOGOS LEGAL mensenrechten advies"
         contactName="Linda"
         contactImageSrc="/images/shared/linda-cutout.png"
       />
@@ -82,14 +82,17 @@ export default function ContractenPage() {
       <BenefitsSection
         heading={
           <>
-            Bescherm uw <span className="text-brand-blue">belangen</span>
+            <span className="text-brand-blue">Bescherm</span> fundamentele{" "}
+            <br className="hidden lg:block" />
+            rechten en <span className="text-brand-blue">ondersteun</span>{" "}
+            kwetsbare groepen
           </>
         }
         benefits={benefits}
         ctaLabel="Contact opnemen"
         ctaHref="/contact"
-        imageSrc="/images/contracten/benefits.png"
-        imageAlt="Ondertekenen van een contract"
+        imageSrc="/images/mensenrechten/benefits.png"
+        imageAlt="Mensenrechtelijke begeleiding"
         quote={{
           text: "Samenwerken met LOGOS LEGAL was een game-changer voor ons octrooigeschil.",
           author: "Laura Chen",
@@ -107,18 +110,18 @@ export default function ContractenPage() {
       <ChallengeSection
         heading={
           <>
-            Risico omzetten in <span className="text-brand-blue">zekerheid</span>
+            Juridische uitdagingen omzetten in{" "}
+            <span className="text-brand-blue">rechtvaardigheid</span>
           </>
         }
         paragraphs={[
-          "Bij Logos Legal stellen wij niet alleen contracten op of beoordelen wij deze, wij zorgen ervoor dat zij daadwerkelijk aansluiten op uw behoeften en uw rechten beschermen. Van handelsovereenkomsten tot algemene voorwaarden: wij anticiperen op mogelijke geschillen, adviseren over aansprakelijkheidskwesties en bieden praktische begeleiding voor elke situatie.",
-          "Onze unieke aanpak combineert grondige juridische analyse met pragmatische, oplossingsgerichte strategieën. Dit betekent dat u inzicht krijgt in risico's, concrete stappen ontvangt om conflicten te voorkomen en kunt rekenen op sterke bijstand wanneer geschillen ontstaan, zodat uw onderneming of persoonlijke belangen altijd goed beschermd blijven.",
+          "Bij Logos Legal bieden wij proactieve en toegewijde juridische begeleiding aan personen en organisaties die te maken hebben met mensenrechtelijke vraagstukken. Wij analyseren elke situatie, anticiperen op obstakels en bieden heldere strategieën om rechten te beschermen en rechtvaardigheid te bereiken. Van discriminatie en civiele geschillen tot complexe internationale kwesties: wij combineren expertise, praktische oplossingen en betrokkenheid om kwetsbare cliënten in elke fase te ondersteunen.",
         ]}
         ctaLabel="Contact opnemen"
         ctaHref="/contact"
-        imagePrimary="/images/contracten/challenge-1.png"
-        imageSecondary="/images/contracten/challenge-2.png"
-        imageAlt="Contracten en aansprakelijkheid begeleiding"
+        imagePrimary="/images/mensenrechten/challenge-1.png"
+        imageSecondary="/images/mensenrechten/challenge-2.png"
+        imageAlt="Mensenrechten begeleiding"
       />
 
       <StepsSection />
@@ -145,7 +148,7 @@ export default function ContractenPage() {
         }}
       />
 
-      <FaqSection defaultCategory="contracten" />
+      <FaqSection defaultCategory="human-rights" />
 
       <ExpertiseCarousel />
 

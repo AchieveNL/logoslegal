@@ -14,67 +14,68 @@ import FaqSection from "@/components/sections/FaqSection";
 import ExpertiseCarousel from "@/components/sections/ExpertiseCarousel";
 
 export const metadata: Metadata = {
-  title: "Contracten en aansprakelijkheid | LOGOS LEGAL",
+  title: "Onderwijsrecht | LOGOS LEGAL",
   description:
-    "Juridische zekerheid door helder advies en strategische begeleiding. Bescherm uw belangen met afdwingbare overeenkomsten.",
+    "Zelfverzekerde besluitvorming door multidisciplinaire juridische begeleiding. Strategische ondersteuning voor scholen, besturen en onderwijsprofessionals.",
 };
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
   { label: "Over ons", href: "/over-ons" },
-  { label: "Contracten en aansprakelijkheid" },
+  { label: "Onderwijsrecht" },
 ];
 
 const checkItems = [
-  "Het opstellen, beoordelen en onderhandelen van op maat gemaakte contracten",
-  "Adviseren over aansprakelijkheid, schade en risicobeheer",
-  "U vertegenwoordigen bij geschillen en juridische procedures",
+  "Adviseren over fusies, reorganisaties en wijzigingen in governance",
+  "Begeleiden van arbeidsrechtelijke en beleidsmatige vraagstukken binnen scholen",
+  "Trainingen voor besturen, raden van toezicht en personeel",
 ];
 
 const benefits = [
   {
-    title: "Voorkom kostbare geschillen",
+    title: "Voorkom juridische en bestuurlijke risico's",
     description:
-      "Goed opgestelde contracten en duidelijke afspraken helpen u misverstanden, financiële verliezen en juridische procedures te voorkomen.",
+      "Proactief advies helpt scholen conflicten, boetes van toezichthouders en organisatorische inefficiënties te voorkomen.",
   },
   {
-    title: "Beheer risico's effectief",
+    title: "Stroomlijn complexe processen",
     description:
-      "Wij signaleren mogelijke aansprakelijkheden vroegtijdig, zodat u proactief kunt handelen en uw zakelijke of persoonlijke belangen kunt beschermen.",
+      "Begeleiding bij fusies, reorganisaties en financiering zorgt voor soepele overgangen en besluitvorming die voldoet aan wet- en regelgeving.",
   },
   {
-    title: "Zorg voor afdwingbare overeenkomsten",
+    title: "Ondersteun onderwijsprofessionals en belanghebbenden",
     description:
-      "Onze juridische expertise zorgt ervoor dat uw contracten voldoen aan de wet- en regelgeving, praktisch uitvoerbaar zijn en afdwingbaar blijven bij geschillen.",
+      "Duidelijk beleid en gestructureerde procedures bevorderen vertrouwen, transparantie en sterke werkrelaties.",
   },
 ];
 
-export default function ContractenPage() {
+export default function OnderwijsrechtPage() {
   return (
     <>
       <Navbar />
 
       <HeroBanner
-        title="Contracten en aansprakelijkheid"
-        subtitle="Juridische zekerheid door helder advies en strategische begeleiding."
+        title="Onderwijsrecht"
+        subtitle="Zelfverzekerde besluitvorming door multidisciplinaire juridische begeleiding."
       />
       <Breadcrumb items={breadcrumbItems} />
 
       <PracticeAreaIntro
         heading={
           <>
-            <span className="text-brand-blue">Gemoedsrust</span> door duidelijke
-            afspraken en slimme{" "}
-            <span className="text-brand-blue">juridische strategieën</span>
+            <span className="text-brand-blue">
+              Strategische juridische begeleiding
+            </span>{" "}
+            voor scholen, besturen en onderwijsprofessionals
           </>
         }
-        subheading="Leg uw afspraken vast met duidelijkheid en vertrouwen."
+        subheading="Met vertrouwen navigeren binnen het onderwijs."
         checkItems={checkItems}
-        summary="Wij maken complexe juridische vraagstukken eenvoudig en direct toepasbaar."
+        summary="Wij vertalen complex onderwijsrecht naar praktische en direct toepasbare adviezen."
         ctaLabel="Praat met Linda"
         ctaHref="/contact"
-        imageSrc="/images/contracten/hero.png"
-        imageAlt="LOGOS LEGAL contracten en aansprakelijkheid advies"
+        imageSrc="/images/onderwijsrecht/hero.png"
+        imageAlt="LOGOS LEGAL onderwijsrecht advies"
         contactName="Linda"
         contactImageSrc="/images/shared/linda-cutout.png"
       />
@@ -82,14 +83,15 @@ export default function ContractenPage() {
       <BenefitsSection
         heading={
           <>
-            Bescherm uw <span className="text-brand-blue">belangen</span>
+            Zorg voor <span className="text-brand-blue">naleving</span> en{" "}
+            <span className="text-brand-blue">sterk bestuur</span>
           </>
         }
         benefits={benefits}
         ctaLabel="Contact opnemen"
         ctaHref="/contact"
-        imageSrc="/images/contracten/benefits.png"
-        imageAlt="Ondertekenen van een contract"
+        imageSrc="/images/onderwijsrecht/benefits.png"
+        imageAlt="Onderwijsrechtelijke begeleiding"
         quote={{
           text: "Samenwerken met LOGOS LEGAL was een game-changer voor ons octrooigeschil.",
           author: "Laura Chen",
@@ -107,18 +109,18 @@ export default function ContractenPage() {
       <ChallengeSection
         heading={
           <>
-            Risico omzetten in <span className="text-brand-blue">zekerheid</span>
+            Complexe onderwijsuitdagingen omzetten in{" "}
+            <span className="text-brand-blue">helderheid</span>
           </>
         }
         paragraphs={[
-          "Bij Logos Legal stellen wij niet alleen contracten op of beoordelen wij deze, wij zorgen ervoor dat zij daadwerkelijk aansluiten op uw behoeften en uw rechten beschermen. Van handelsovereenkomsten tot algemene voorwaarden: wij anticiperen op mogelijke geschillen, adviseren over aansprakelijkheidskwesties en bieden praktische begeleiding voor elke situatie.",
-          "Onze unieke aanpak combineert grondige juridische analyse met pragmatische, oplossingsgerichte strategieën. Dit betekent dat u inzicht krijgt in risico's, concrete stappen ontvangt om conflicten te voorkomen en kunt rekenen op sterke bijstand wanneer geschillen ontstaan, zodat uw onderneming of persoonlijke belangen altijd goed beschermd blijven.",
+          "Bij Logos Legal bieden wij meer dan standaard juridisch advies. Wij analyseren de structuur van uw organisatie, signaleren uitdagingen en bieden concrete begeleiding op het gebied van governance, beleid, arbeidsvraagstukken en financiering. Door multidisciplinaire expertise te combineren met praktische strategieën, helpen wij scholen, besturen en onderwijsprofessionals om weloverwogen en conforme beslissingen te nemen, terwijl risico's en verstoringen tot een minimum worden beperkt.",
         ]}
         ctaLabel="Contact opnemen"
         ctaHref="/contact"
-        imagePrimary="/images/contracten/challenge-1.png"
-        imageSecondary="/images/contracten/challenge-2.png"
-        imageAlt="Contracten en aansprakelijkheid begeleiding"
+        imagePrimary="/images/onderwijsrecht/challenge-1.png"
+        imageSecondary="/images/onderwijsrecht/challenge-2.png"
+        imageAlt="Onderwijsrechtelijke begeleiding"
       />
 
       <StepsSection />
@@ -145,7 +147,7 @@ export default function ContractenPage() {
         }}
       />
 
-      <FaqSection defaultCategory="contracten" />
+      <FaqSection defaultCategory="onderwijsrecht" />
 
       <ExpertiseCarousel />
 

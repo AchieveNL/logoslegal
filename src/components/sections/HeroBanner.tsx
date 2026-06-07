@@ -22,7 +22,7 @@ export default function HeroBanner({ title, subtitle }: HeroBannerProps) {
         <h1 className="font-raleway font-bold text-4xl md:text-[56px] text-white leading-tight">
           {title}
         </h1>
-        <p className="mt-4 font-poppins font-medium text-lg md:text-2xl text-white/90 max-w-3xl mx-auto">
+        <p className="mt-4 font-poppins font-medium text-lg md:text-2xl text-white/90 max-w-4xl mx-auto">
           {subtitle}
         </p>
       </div>
