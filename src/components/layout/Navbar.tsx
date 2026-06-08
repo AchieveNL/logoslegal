@@ -64,33 +64,42 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <div key={link.label} className="relative">
               {link.isExpertise ? (
-                <button
-                  onClick={() => setExpertiseOpen(!expertiseOpen)}
-                  className={`flex items-center gap-1 font-poppins font-medium text-[24px] transition-colors ${
-                    expertiseOpen
-                      ? "text-brand-blue"
-                      : "text-brand-dark hover:text-brand-blue"
+                <div
+                  className={`flex items-center gap-1 ${
+                    expertiseOpen ? "text-brand-blue" : "text-brand-dark"
                   }`}
                 >
-                  {link.label}
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className={`transition-transform ${
-                      expertiseOpen ? "rotate-180" : ""
-                    }`}
+                  <Link
+                    href={link.href}
+                    className="font-poppins font-medium text-[24px] hover:text-brand-blue transition-colors"
                   >
-                    <path
-                      d="M6 9L12 15L18 9"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
+                    {link.label}
+                  </Link>
+                  <button
+                    onClick={() => setExpertiseOpen(!expertiseOpen)}
+                    aria-label="Toon expertisemenu"
+                    aria-expanded={expertiseOpen}
+                    className="hover:text-brand-blue transition-colors"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className={`transition-transform ${
+                        expertiseOpen ? "rotate-180" : ""
+                      }`}
+                    >
+                      <path
+                        d="M6 9L12 15L18 9"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
               ) : (
                 <Link
                   href={link.href}
@@ -180,9 +189,13 @@ export default function Navbar() {
             {navLinks.map((link) =>
               link.isExpertise ? (
                 <div key={link.label} className="flex flex-col gap-3">
-                  <span className="font-poppins font-medium text-xl text-brand-blue">
+                  <Link
+                    href={link.href}
+                    className="font-poppins font-medium text-xl text-brand-blue"
+                    onClick={() => setMobileOpen(false)}
+                  >
                     {link.label}
-                  </span>
+                  </Link>
                   <div className="flex flex-col gap-2 pl-4">
                     {expertiseLinks.map((item) => (
                       <Link
