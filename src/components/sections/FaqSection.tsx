@@ -19,9 +19,29 @@ const categories: Category[] = [
     label: "Algemeen",
     items: [
       {
-        question: "Hoe kan ik een afspraak maken met Logos Legal?",
+        question: "Wie kan advies inwinnen bij Logos Legal?",
         answer:
-          "U kunt telefonisch contact opnemen of het contactformulier op deze pagina invullen. Wij nemen zo snel mogelijk contact met u op om een afspraak in te plannen.",
+          "Particulieren, bedrijven en organisaties kunnen advies inwinnen bij Logos Legal. Wij staan zowel cliënten bij met persoonlijke juridische vraagstukken als ondernemingen en instellingen met complexe en strategische zaken.",
+      },
+      {
+        question: "Hoe kan ik contact opnemen met Logos Legal?",
+        answer:
+          "U kunt contact met ons opnemen via telefoon, e-mail of het contactformulier op onze website. Ons team reageert zo spoedig mogelijk om uw situatie en de vervolgstappen te bespreken.",
+      },
+      {
+        question: "Wat kan ik verwachten tijdens een eerste consult",
+        answer:
+          "Tijdens het eerste consult analyseren wij uw situatie, brengen wij de belangrijkste juridische aandachtspunten in kaart en bespreken wij mogelijke strategieën. U krijgt inzicht in uw positie, risico's en de beschikbare opties.",
+      },
+      {
+        question: "Hoe zijn de juridische kosten opgebouwd?",
+        answer:
+          "Onze tarieven zijn afhankelijk van de aard en complexiteit van de zaak. Wij bieden vooraf duidelijkheid en bespreken de toepasselijke tariefstructuur, zoals een vast tarief of een uurtarief.",
+      },
+      {
+        question: "Kan Logos Legal ondersteunen bij internationale zaken?",
+        answer:
+          "Ja, Logos Legal heeft ervaring met internationale zaken, waaronder grensoverschrijdende geschillen, uitlevering en procedures bij internationale rechtbanken.",
       },
     ],
   },

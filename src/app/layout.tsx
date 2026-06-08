@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Raleway, Poppins, Roboto } from "next/font/google";
+import { Raleway, Poppins, Roboto, Caveat, Inter } from "next/font/google";
 import "./globals.css";
 
 const raleway = Raleway({
@@ -12,6 +12,18 @@ const roboto = Roboto({
   subsets: ["latin"],
   variable: "--font-roboto",
   weight: ["400", "500", "700"],
+});
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  variable: "--font-caveat",
+  weight: ["400", "500", "600", "700"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
 });
 
 const poppins = Poppins({
@@ -34,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="nl">
       <body
-        className={`${raleway.variable} ${poppins.variable} ${roboto.variable} font-poppins antialiased`}
+        className={`${raleway.variable} ${poppins.variable} ${roboto.variable} ${caveat.variable} ${inter.variable} font-poppins antialiased`}
       >
         {children}
       </body>

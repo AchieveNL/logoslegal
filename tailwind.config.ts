@@ -23,6 +23,8 @@ const config: Config = {
         raleway: ["var(--font-raleway)", "sans-serif"],
         poppins: ["var(--font-poppins)", "sans-serif"],
         roboto: ["var(--font-roboto)", "sans-serif"],
+        caveat: ["var(--font-caveat)", "cursive"],
+        inter: ["var(--font-inter)", "sans-serif"],
       },
       maxWidth: {
         container: "1536px",
