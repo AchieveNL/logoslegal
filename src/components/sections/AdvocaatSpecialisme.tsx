@@ -34,7 +34,7 @@ export default function AdvocaatSpecialisme({
           {items.map((item) => (
             <div
               key={item.title}
-              className="flex flex-col items-center justify-center text-center bg-brand-blue-light rounded-[32px] w-full max-w-[372px] mx-auto h-[400px] px-6"
+              className="hover-lift flex flex-col items-center justify-center text-center bg-brand-blue-light rounded-[32px] w-full max-w-[372px] mx-auto h-[400px] px-6"
             >
               <span className="w-[72px] h-[72px] rounded-full bg-white flex items-center justify-center">
                 <Image

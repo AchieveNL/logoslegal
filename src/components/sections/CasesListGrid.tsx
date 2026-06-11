@@ -74,7 +74,7 @@ export default function CasesListGrid() {
           {cases.map((c, i) => (
             <article
               key={`${c.title}-${i}`}
-              className="flex flex-col bg-brand-blue-light rounded-[24px] overflow-hidden lg:h-[1020px]"
+              className="hover-lift flex flex-col bg-brand-blue-light rounded-[24px] overflow-hidden lg:h-[1020px]"
             >
               <div className="relative w-full h-[260px] md:h-[360px] lg:h-[500px] shrink-0 bg-brand-blue/10">
                 <Image

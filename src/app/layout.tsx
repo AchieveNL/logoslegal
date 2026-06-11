@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Raleway, Poppins, Roboto, Caveat, Inter } from "next/font/google";
 import "./globals.css";
+import MotionProvider from "@/components/util/MotionProvider";
+import SmoothScroll from "@/components/util/SmoothScroll";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -49,6 +51,8 @@ export default function RootLayout({
         className={`${raleway.variable} ${poppins.variable} ${roboto.variable} ${caveat.variable} ${inter.variable} font-poppins antialiased`}
       >
         {children}
+        <SmoothScroll />
+        <MotionProvider />
       </body>
     </html>
   );

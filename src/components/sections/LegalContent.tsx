@@ -17,7 +17,7 @@ export default function LegalContent({ blocks }: LegalContentProps) {
       <div className="max-w-[960px] mx-auto px-6 md:px-12">
         <div className="flex flex-col gap-10">
           {blocks.map((block, i) => (
-            <div key={i} className="flex flex-col gap-4">
+            <div key={i} data-reveal className="flex flex-col gap-4">
               {block.heading && (
                 <h2 className="font-raleway font-bold text-[26px] md:text-[32px] leading-tight tracking-normal text-[#002B58]">
                   {block.heading}

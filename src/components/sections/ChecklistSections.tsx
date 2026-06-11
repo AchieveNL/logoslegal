@@ -28,7 +28,7 @@ export default function ChecklistSections({
     <section className="w-full">
       {sections.map((section, i) => (
         <div key={i} className={i % 2 === 1 ? "bg-brand-blue-light" : "bg-white"}>
-          <div className="max-w-[1408px] mx-auto px-6 md:px-12 py-14 md:py-20">
+          <div data-reveal className="max-w-[1408px] mx-auto px-6 md:px-12 py-14 md:py-20">
             <h2 className="font-poppins font-bold text-[32px] md:text-[48px] leading-tight tracking-normal text-[#002B58]">
               {section.heading}
             </h2>
@@ -73,7 +73,7 @@ export default function ChecklistSections({
 
       {closing && (
         <div className="bg-white">
-          <div className="max-w-[1408px] mx-auto px-6 md:px-12 py-12 md:py-20">
+          <div data-reveal className="max-w-[1408px] mx-auto px-6 md:px-12 py-12 md:py-20">
             <p className="max-w-[1200px] font-poppins font-medium text-[28px] md:text-[56px] leading-snug tracking-normal text-[#002B58]">
               {closing}
             </p>

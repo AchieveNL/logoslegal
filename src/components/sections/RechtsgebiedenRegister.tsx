@@ -31,7 +31,7 @@ export default function RechtsgebiedenRegister({
         const imageRight = i % 2 === 0;
         return (
           <div key={`${entry.lastName}-${i}`} className={blueBand ? "bg-brand-blue-light" : "bg-white"}>
-            <div className="max-w-[1728px] mx-auto px-6 md:px-24 py-12 md:py-16">
+            <div data-reveal className="max-w-[1728px] mx-auto px-6 md:px-24 py-12 md:py-16">
               <div
                 className={`flex flex-col lg:flex-row gap-10 lg:gap-16 lg:justify-between ${
                   imageRight ? "items-start" : "items-start lg:items-center"
@@ -86,7 +86,7 @@ export default function RechtsgebiedenRegister({
 
       {/* Closing note */}
       <div className="bg-white">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-12 py-12 md:py-20">
+        <div data-reveal className="max-w-[1280px] mx-auto px-6 md:px-12 py-12 md:py-20">
           <p className="max-w-[1200px] font-poppins font-medium text-[28px] md:text-[56px] leading-snug tracking-normal text-[#002B58]">
             {closing}
           </p>
