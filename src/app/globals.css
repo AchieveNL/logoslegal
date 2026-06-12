@@ -17,6 +17,17 @@ body {
   overflow-x: hidden;
 }
 
+/* The desktop layout is built 1:1 with Figma's large 1728px frame, which reads
+   as oversized on normal screens. Proportionally scale the whole desktop UI
+   down by 25% (text, spacing, images, gaps — uniformly), preserving every tuned
+   line-wrap and overlap. Mobile/tablet keep their (already smaller) responsive
+   sizes so text never gets too tiny. */
+@media (min-width: 1024px) {
+  body {
+    zoom: 0.75;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
