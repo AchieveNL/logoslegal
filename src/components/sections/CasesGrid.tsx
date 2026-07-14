@@ -42,7 +42,7 @@ export default function CasesGrid({ allCasesHref = "/cases" }: { allCasesHref?: 
                 </p>
                 <Link
                   href={allCasesHref}
-                  className="mt-auto inline-flex items-center justify-center gap-2 self-start h-12 px-7 rounded-xl bg-gradient-to-r from-[#0A2540] to-brand-blue-dark text-white font-poppins font-bold hover:opacity-95 transition-opacity"
+                  className="btn-gradient mt-auto gap-2 self-start h-12 px-7 rounded-xl"
                 >
                   Learn More
                   <ArrowUpRight />
@@ -97,7 +97,7 @@ export default function CasesGrid({ allCasesHref = "/cases" }: { allCasesHref?: 
         <div className="flex justify-center mt-12">
           <Link
             href={allCasesHref}
-            className="inline-flex items-center justify-center gap-2.5 h-[80px] px-12 rounded-2xl bg-gradient-to-r from-[#0A2540] to-brand-blue-dark text-white font-poppins font-bold text-[24px] leading-none tracking-normal hover:opacity-95 transition-opacity"
+            className="btn-gradient gap-2.5 h-[80px] px-12 rounded-2xl text-[24px] leading-none tracking-normal"
           >
             Bekijk alle cases
             <ArrowUpRight />

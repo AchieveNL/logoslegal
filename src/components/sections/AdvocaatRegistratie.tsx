@@ -54,7 +54,7 @@ export default function AdvocaatRegistratie({
             </div>
             <Link
               href={ctaHref}
-              className="mt-8 inline-flex items-center justify-center gap-2.5 self-start px-10 h-[72px] rounded-2xl bg-brand-blue text-white font-poppins font-bold text-[24px] leading-none tracking-normal hover:bg-brand-blue-dark transition-colors"
+              className="btn-fx mt-8 inline-flex items-center justify-center gap-2.5 self-start px-10 h-[72px] rounded-2xl bg-brand-blue text-white font-poppins font-bold text-[24px] leading-none tracking-normal hover:bg-brand-blue-dark"
             >
               {ctaLabel}
               <ArrowUpRight />

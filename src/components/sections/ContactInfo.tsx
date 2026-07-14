@@ -20,27 +20,17 @@ export default function ContactInfo({
 
   return (
     <div className="relative bg-white rounded-2xl p-8 md:p-12 overflow-hidden min-h-[460px] md:min-h-[606px] shadow-[0_10px_40px_-12px_rgba(2,18,43,0.12)] ring-1 ring-brand-dark/5">
-      {/* subtle wave decoration — many slim lines, faded toward the left */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-        <div
-          className="absolute inset-0 opacity-[0.10]"
-          style={{
-            backgroundImage: "url('/images/shared/footer-waves.png')",
-            backgroundSize: "auto 100%",
-            backgroundRepeat: "repeat",
-            backgroundPosition: "center",
-            filter: "invert(1)",
-          }}
-        />
-        {/* fade the waves out toward the bottom-left, like the footer */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 45%, #FFFFFF 85%)",
-          }}
-        />
-      </div>
+      {/* wave decoration (SVG asset, opacity baked in) */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage: "url('/images/contact/contactWave.svg')",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center bottom",
+        }}
+      />
 
       {/* Text — Figma: 518px wide, 40px gap between heading and phone block */}
       <div className="relative z-10 w-full max-w-[60%] md:max-w-[518px] flex flex-col gap-10">
@@ -58,7 +48,7 @@ export default function ContactInfo({
           </p>
           <a
             href={`tel:${phone.replace(/\s/g, "")}`}
-            className="mt-3 inline-flex items-center gap-4 bg-gradient-to-r from-[#0A2540] to-brand-blue-dark text-white rounded-xl px-8 h-16 font-poppins font-bold text-lg md:text-xl hover:opacity-95 transition-opacity self-start"
+            className="btn-gradient mt-3 gap-4 rounded-xl px-8 h-16 text-lg md:text-xl self-start"
           >
           <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
             <path
@@ -80,7 +70,7 @@ export default function ContactInfo({
         alt={name}
         width={392}
         height={496}
-        className="hidden sm:block absolute right-[-200px] bottom-0 z-10 w-auto h-[94%] object-contain object-right-bottom pointer-events-none select-none"
+        className="hidden sm:block absolute right-[-195px] bottom-0 z-10 w-auto h-[82%] object-contain object-right-bottom pointer-events-none select-none"
       />
     </div>
   );

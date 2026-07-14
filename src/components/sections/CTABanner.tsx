@@ -20,10 +20,11 @@ export default function CTABanner({
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-50"
         style={{
-          backgroundImage: "url('/images/shared/footer-waves.png')",
+          backgroundImage: "url('/images/waves/cta-wave.svg')",
           backgroundSize: "auto 100%",
-          backgroundRepeat: "repeat",
+          backgroundRepeat: "repeat-x",
           backgroundPosition: "center",
+          filter: "brightness(0) invert(1)",
         }}
       />
       <div className="relative z-10 max-w-container mx-auto px-6 md:px-24 text-center">

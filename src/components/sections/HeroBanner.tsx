@@ -11,10 +11,11 @@ export default function HeroBanner({ title, subtitle }: HeroBannerProps) {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-50"
         style={{
-          backgroundImage: "url('/images/shared/footer-waves.png')",
+          backgroundImage: "url('/images/waves/hero-wave.svg')",
           backgroundSize: "auto 100%",
-          backgroundRepeat: "repeat",
+          backgroundRepeat: "repeat-x",
           backgroundPosition: "center",
+          filter: "brightness(0) invert(1)",
         }}
       />
 

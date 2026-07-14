@@ -18,7 +18,7 @@ export default function CasesIntro({ paragraph, phone, phoneLabel }: CasesIntroP
         </p>
         <a
           href={`tel:${phone.replace(/\s/g, "")}`}
-          className="mt-10 inline-flex items-center justify-center gap-2.5 w-[320px] max-w-full h-[80px] rounded-2xl bg-brand-blue text-white font-poppins font-bold text-[24px] leading-none tracking-normal hover:bg-brand-blue-dark transition-colors"
+          className="btn-fx mt-10 inline-flex items-center justify-center gap-2.5 w-[320px] max-w-full h-[80px] rounded-2xl bg-brand-blue text-white font-poppins font-bold text-[24px] leading-none tracking-normal hover:bg-brand-blue-dark"
         >
           <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
             <path

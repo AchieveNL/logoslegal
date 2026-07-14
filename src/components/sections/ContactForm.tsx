@@ -67,7 +67,7 @@ export default function ContactForm() {
     "absolute -top-2.5 left-4 bg-white px-2 font-poppins text-sm font-bold text-[#002B58] z-10";
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-7" noValidate>
+    <form onSubmit={handleSubmit} className="flex h-full flex-col gap-7" noValidate>
       {/* Name */}
       <div className="relative">
         <label htmlFor={`${uid}-name`} className={labelClass}>
@@ -178,8 +178,8 @@ export default function ContactForm() {
         )}
       </div>
 
-      {/* Message */}
-      <div className="relative">
+      {/* Message — flex-1 so it absorbs any leftover card height */}
+      <div className="relative flex-1 flex min-h-[186px]">
         <label htmlFor={`${uid}-message`} className={labelClass}>
           Omschrijving
         </label>
@@ -189,14 +189,14 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           placeholder="Schrijf een bericht"
-          className="w-full h-[186px] border border-[#292D32] rounded-lg px-5 py-4 font-poppins text-base text-brand-dark placeholder:text-brand-dark/40 focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 focus:outline-none transition-[border-color,box-shadow] resize-none"
+          className="w-full min-h-[186px] border border-[#292D32] rounded-lg px-5 py-4 font-poppins text-base text-brand-dark placeholder:text-brand-dark/40 focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 focus:outline-none transition-[border-color,box-shadow] resize-none"
         />
       </div>
 
       {/* Submit */}
       <button
         type="submit"
-        className="group w-full h-[72px] bg-gradient-to-r from-[#0A2540] to-brand-blue-dark text-white font-poppins font-bold text-lg rounded-lg flex items-center justify-center gap-2.5 transition-[transform,box-shadow] hover:shadow-lg hover:shadow-brand-blue-dark/20 hover:-translate-y-0.5 focus-visible:ring-4 focus-visible:ring-brand-blue/30 focus-visible:outline-none active:translate-y-0"
+        className="btn-gradient group w-full h-[72px] text-lg rounded-lg gap-2.5"
       >
         Verzenden
         <svg

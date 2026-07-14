@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 
 interface QA {
   question: string;
@@ -216,7 +216,11 @@ function FaqItem({ item, isOpen, onToggle }: FaqItemProps) {
         onClick={onToggle}
         className="w-full flex items-start justify-between gap-6 text-left"
       >
-        <h3 className="font-raleway font-bold text-xl md:text-[24px] text-[#002B58]">
+        <h3
+          className={`font-raleway font-bold text-xl md:text-[24px] transition-colors duration-300 ${
+            isOpen ? "text-brand-blue" : "text-[#002B58]"
+          }`}
+        >
           {item.question}
         </h3>
         <svg
@@ -237,11 +241,21 @@ function FaqItem({ item, isOpen, onToggle }: FaqItemProps) {
           />
         </svg>
       </button>
-      {isOpen && (
-        <p className="mt-4 font-poppins font-medium text-base md:text-[24px] text-[#292D32] leading-snug pr-10">
-          {item.answer}
-        </p>
-      )}
+      <div
+        className={`grid transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <p
+            className={`mt-4 font-poppins font-medium text-base md:text-[24px] text-[#292D32] leading-snug pr-10 transition-opacity duration-300 ${
+              isOpen ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {item.answer}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
@@ -252,7 +266,32 @@ interface FaqSectionProps {
 
 export default function FaqSection({ defaultCategory = "algemeen" }: FaqSectionProps) {
   const [activeId, setActiveId] = useState(defaultCategory);
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const tabRefs = useRef<Record<string, HTMLButtonElement | null>>({});
+  const [pill, setPill] = useState<{
+    left: number;
+    top: number;
+    width: number;
+    height: number;
+  } | null>(null);
+
+  // Slide the active pill to the current tab (remeasure on resize/wrap).
+  useLayoutEffect(() => {
+    const measure = () => {
+      const el = tabRefs.current[activeId];
+      if (el) {
+        setPill({
+          left: el.offsetLeft,
+          top: el.offsetTop,
+          width: el.offsetWidth,
+          height: el.offsetHeight,
+        });
+      }
+    };
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, [activeId]);
 
   const active =
     categories.find((c) => c.id === activeId) ?? categories[0];
@@ -269,19 +308,34 @@ export default function FaqSection({ defaultCategory = "algemeen" }: FaqSectionP
           </p>
         </div>
 
-        {/* Category tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mb-12">
+        {/* Category tabs — gradient pill slides between tabs */}
+        <div className="relative flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mb-12">
+          {pill && (
+            <span
+              aria-hidden="true"
+              className="absolute z-0 rounded-2xl bg-gradient-to-r from-[#087AEC] to-[#56A5F4] shadow-lg shadow-brand-blue/20 transition-all duration-500 ease-[cubic-bezier(0.34,1.2,0.4,1)]"
+              style={{
+                left: pill.left,
+                top: pill.top,
+                width: pill.width,
+                height: pill.height,
+              }}
+            />
+          )}
           {categories.map((cat) => (
             <button
               key={cat.id}
+              ref={(el) => {
+                tabRefs.current[cat.id] = el;
+              }}
               onClick={() => {
                 setActiveId(cat.id);
-                setOpenIndex(0);
+                setOpenIndex(null);
               }}
-              className={`font-poppins font-medium text-base h-16 px-5 rounded-2xl inline-flex items-center transition-colors ${
+              className={`relative z-10 font-poppins font-medium text-base h-16 px-5 rounded-2xl inline-flex items-center transition-colors duration-300 ${
                 cat.id === activeId
-                  ? "bg-gradient-to-r from-[#087AEC] to-[#56A5F4] text-white shadow-lg shadow-brand-blue/20"
-                  : "text-[#002B58] hover:text-brand-blue"
+                  ? "text-white"
+                  : "text-[#002B58] hover:text-brand-blue hover:bg-brand-blue-light"
               }`}
             >
               {cat.label}
@@ -289,8 +343,8 @@ export default function FaqSection({ defaultCategory = "algemeen" }: FaqSectionP
           ))}
         </div>
 
-        {/* Accordion */}
-        <div className="max-w-[1446px] mx-auto">
+        {/* Accordion — re-keyed per category so switching fades the list in */}
+        <div key={active.id} className="max-w-[1446px] mx-auto page-enter">
           {active.items.map((item, i) => (
             <FaqItem
               key={item.question}

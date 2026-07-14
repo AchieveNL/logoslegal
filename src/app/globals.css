@@ -28,6 +28,39 @@ body {
   }
 }
 
+@layer components {
+  /* Shared CTA interaction (all buttons): scale lift + shadow + shine sweep,
+     shadcn-style focus ring and disabled state. Size/radius/colors stay
+     per-instance. .btn-gradient adds the navy-blue gradient visual on top. */
+  .btn-gradient,
+  .btn-fx {
+    @apply relative overflow-hidden cursor-pointer outline-none
+      transition-all duration-300 shadow-lg
+      hover:shadow-xl hover:scale-105 active:scale-95
+      focus-visible:ring-[3px] focus-visible:ring-brand-blue/50
+      disabled:pointer-events-none disabled:opacity-50
+      [&_svg]:pointer-events-none [&_svg]:shrink-0;
+  }
+  /* Shine sweep on hover */
+  .btn-gradient::after,
+  .btn-fx::after {
+    content: "";
+    @apply pointer-events-none absolute inset-0 -translate-x-full
+      bg-gradient-to-r from-transparent via-white/20 to-transparent
+      transition-transform duration-700 ease-out;
+  }
+  .btn-gradient:hover::after,
+  .btn-fx:hover::after {
+    @apply translate-x-full;
+  }
+
+  .btn-gradient {
+    @apply inline-flex items-center justify-center whitespace-nowrap
+      bg-gradient-to-r from-[#0A2540] to-brand-blue-dark text-white
+      font-poppins font-bold;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

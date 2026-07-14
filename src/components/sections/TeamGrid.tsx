@@ -45,12 +45,12 @@ export default function TeamGrid() {
         <div
           className="absolute inset-0 bg-brand-blue opacity-60"
           style={{
-            WebkitMaskImage: "url('/images/shared/footer-waves.png')",
-            maskImage: "url('/images/shared/footer-waves.png')",
-            WebkitMaskSize: "auto 100%",
-            maskSize: "auto 100%",
-            WebkitMaskRepeat: "repeat",
-            maskRepeat: "repeat",
+            WebkitMaskImage: "url('/images/waves/team-wave.svg')",
+            maskImage: "url('/images/waves/team-wave.svg')",
+            WebkitMaskSize: "cover",
+            maskSize: "cover",
+            WebkitMaskRepeat: "no-repeat",
+            maskRepeat: "no-repeat",
             WebkitMaskPosition: "right top",
             maskPosition: "right top",
           }}

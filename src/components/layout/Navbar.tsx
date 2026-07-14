@@ -24,7 +24,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="bg-white w-full relative z-50">
+    <header className="bg-white w-full sticky top-0 z-50 shadow-[0_2px_16px_rgba(0,0,0,0.06)]">
       <div className="max-w-container mx-auto flex items-center justify-between px-6 md:px-24 h-[132px]">
         {/* Logo */}
         <Link href="/" className="shrink-0">
@@ -131,7 +131,7 @@ export default function Navbar() {
         {/* Contact CTA */}
         <Link
           href="/contact"
-          className="hidden lg:inline-flex items-center gap-2.5 bg-brand-blue-light text-brand-blue font-poppins font-bold text-[24px] px-12 h-[80px] rounded-button hover:bg-blue-100 transition-colors"
+          className="btn-fx hidden lg:inline-flex items-center gap-2.5 bg-brand-blue-light text-brand-blue font-poppins font-bold text-[24px] px-12 h-[80px] rounded-button hover:bg-blue-100"
         >
           Contact
           <svg
@@ -222,7 +222,7 @@ export default function Navbar() {
             )}
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-brand-blue text-white font-poppins font-bold text-lg px-8 h-14 rounded-button"
+              className="btn-fx inline-flex items-center justify-center gap-2 bg-brand-blue text-white font-poppins font-bold text-lg px-8 h-14 rounded-button"
               onClick={() => setMobileOpen(false)}
             >
               Contact

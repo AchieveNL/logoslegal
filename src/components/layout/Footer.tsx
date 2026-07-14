@@ -55,10 +55,11 @@ export default function Footer() {
             <div
               className="absolute inset-0 opacity-[0.55]"
               style={{
-                backgroundImage: "url('/images/shared/footer-waves.png')",
+                backgroundImage: "url('/images/waves/footer-wave.svg')",
                 backgroundSize: "auto 100%",
-                backgroundRepeat: "repeat",
+                backgroundRepeat: "repeat-x",
                 backgroundPosition: "right top",
+                filter: "brightness(0) invert(1)",
               }}
             />
             {/* Fade: transparent at top-right, solid blue toward bottom-left */}
@@ -133,11 +134,16 @@ export default function Footer() {
                         <circle cx="12" cy="10" r="2.4" stroke="currentColor" strokeWidth="1.6" />
                       </svg>
                     </ContactIcon>
-                    <span>
+                    <a
+                      href="https://maps.google.com/?q=Emmy+Andriessestraat+278,+1087+ML+Amsterdam"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white transition-colors"
+                    >
                       Emmy Andriessestraat 278
                       <br />
                       1087 ML, Amsterdam
-                    </span>
+                    </a>
                   </li>
                   <li className="flex items-start gap-3">
                     <ContactIcon>
@@ -146,11 +152,16 @@ export default function Footer() {
                         <circle cx="12" cy="10" r="2.4" stroke="currentColor" strokeWidth="1.6" />
                       </svg>
                     </ContactIcon>
-                    <span>
+                    <a
+                      href="https://maps.google.com/?q=Oslo+3,+2993+LD+Barendrecht"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white transition-colors"
+                    >
                       Oslo 3, 2993 LD
                       <br />
                       Barendrecht
-                    </span>
+                    </a>
                   </li>
                   <li className="flex items-center gap-3">
                     <ContactIcon>
@@ -206,12 +217,21 @@ export default function Footer() {
             {/* Bottom bar */}
             <div className="mt-6 flex flex-col lg:flex-row items-center justify-between gap-6">
               <p className="font-poppins font-bold text-xs text-white/90 order-1">
-                Developed by Achieve.nl © 2026
+                Developed by{" "}
+                <a
+                  href="https://achieve.nl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-2 hover:text-white transition-colors"
+                >
+                  Achieve.nl
+                </a>{" "}
+                © 2026
               </p>
 
               <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 order-3 lg:order-2">
                 <Link href="/disclaimer" className="font-poppins text-[20px] text-white/85 hover:text-white transition-colors">
-                  Disclamer
+                  Disclaimer
                 </Link>
                 <Link href="/privacy" className="font-poppins text-[20px] text-white/85 hover:text-white transition-colors">
                   Privacy Statement

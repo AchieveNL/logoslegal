@@ -31,7 +31,7 @@ export default function HomeCTA({ contactHref = "/contact" }: { contactHref?: st
             </h2>
             <Link
               href={contactHref}
-              className="shrink-0 inline-flex items-center justify-center gap-2 h-16 px-9 rounded-xl bg-gradient-to-r from-[#0A2540] to-brand-blue-dark text-white font-poppins font-bold text-lg hover:opacity-95 transition-opacity"
+              className="btn-gradient shrink-0 gap-2 h-16 px-9 rounded-xl text-lg"
             >
               Direct contact opnemen
               <ArrowUpRight />

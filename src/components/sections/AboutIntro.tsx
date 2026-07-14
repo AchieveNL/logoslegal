@@ -62,7 +62,7 @@ export default function AboutIntro({
               </p>
               <a
                 href={`tel:${phone.replace(/\s/g, "")}`}
-                className="mt-8 inline-flex items-center justify-center gap-3 self-start w-[320px] max-w-full h-16 bg-gradient-to-r from-[#0A2540] to-brand-blue-dark text-white rounded-xl font-poppins font-bold text-lg hover:opacity-95 transition-opacity"
+                className="btn-gradient mt-8 gap-3 self-start w-[320px] max-w-full h-16 rounded-xl text-lg"
               >
                 <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
                   <path

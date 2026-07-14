@@ -124,7 +124,7 @@ export default function ExpertiseCarousel() {
                 </p>
                 <Link
                   href={card.href}
-                  className="inline-flex items-center justify-center gap-2 bg-brand-blue text-white font-poppins font-bold text-base px-6 h-12 rounded-button hover:bg-brand-blue-dark transition-colors"
+                  className="btn-fx inline-flex items-center justify-center gap-2 bg-brand-blue text-white font-poppins font-bold text-base px-6 h-12 rounded-button hover:bg-brand-blue-dark"
                 >
                   Lees meer
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="rotate-45">

@@ -118,7 +118,7 @@ export default function ExpertiseGrid({ contactHref = "/contact" }: { contactHre
               {item.title === "Mensenrechten" ? (
                 <Link
                   href={item.href}
-                  className="mt-auto self-center inline-flex items-center justify-center gap-2.5 w-[320px] max-w-full h-[80px] rounded-2xl border-2 border-[#002B58] text-[#002B58] font-poppins font-bold text-[24px] leading-none tracking-normal hover:bg-[#002B58] hover:text-white transition-colors"
+                  className="btn-fx mt-auto self-center inline-flex items-center justify-center gap-2.5 w-[320px] max-w-full h-[80px] rounded-2xl border-[3px] border-[#002B58] text-[#002B58] font-poppins font-bold text-[24px] leading-none tracking-normal shadow-none hover:shadow-none hover:bg-[#002B58] hover:text-white"
                 >
                   Lees meer
                   <ArrowUpRight />
@@ -155,7 +155,7 @@ export default function ExpertiseGrid({ contactHref = "/contact" }: { contactHre
             </p>
             <Link
               href={contactHref}
-              className="inline-flex items-center justify-center gap-2 h-14 px-8 rounded-xl bg-gradient-to-r from-[#0A2540] to-brand-blue-dark text-white font-poppins font-bold hover:opacity-95 transition-opacity"
+              className="btn-gradient gap-2 h-14 px-8 rounded-xl"
             >
               Neem contact op
               <ArrowUpRight />

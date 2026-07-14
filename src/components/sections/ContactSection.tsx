@@ -41,7 +41,7 @@ export default function ContactSection({
         </div>
 
         {/* Two Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12">
           {/* Left: Form */}
           <div className="bg-white rounded-2xl p-8 md:p-10 shadow-[0_10px_40px_-12px_rgba(2,18,43,0.12)] ring-1 ring-brand-dark/5">
             <ContactForm />

@@ -43,7 +43,7 @@ export default function HomeHero({ phone, imageSrc, imageAlt }: HomeHeroProps) {
             </p>
             <a
               href={`tel:${phone.replace(/\s/g, "")}`}
-              className="mt-9 inline-flex items-center justify-center gap-3 h-16 px-10 rounded-2xl bg-gradient-to-r from-[#0A2540] to-brand-blue-dark text-white font-poppins font-bold text-lg hover:opacity-95 transition-opacity"
+              className="btn-gradient mt-9 gap-3 h-16 px-10 rounded-2xl text-lg"
             >
               <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
                 <path

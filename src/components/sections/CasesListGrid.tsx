@@ -97,7 +97,7 @@ export default function CasesListGrid() {
                 </p>
                 <Link
                   href={c.href}
-                  className="mt-7 inline-flex items-center justify-center gap-2.5 self-start w-[260px] max-w-full h-[80px] rounded-2xl bg-brand-blue text-white font-poppins font-bold text-[24px] leading-none tracking-normal hover:bg-brand-blue-dark transition-colors"
+                  className="btn-fx mt-7 inline-flex items-center justify-center gap-2.5 self-start w-[260px] max-w-full h-[80px] rounded-2xl bg-brand-blue text-white font-poppins font-bold text-[24px] leading-none tracking-normal hover:bg-brand-blue-dark"
                 >
                   Lees meer
                   <ArrowUpRight />
