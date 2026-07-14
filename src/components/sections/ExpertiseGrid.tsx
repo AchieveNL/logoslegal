@@ -112,13 +112,13 @@ export default function ExpertiseGrid({ contactHref = "/contact" }: { contactHre
               <h3 className="font-poppins font-bold text-[28px] md:text-[32px] leading-tight tracking-normal text-center text-[#002B58] mb-5">
                 {item.title}
               </h3>
-              <p className="font-poppins font-semibold text-[20px] leading-relaxed tracking-normal text-center text-[#514D4D] mb-7">
+              <p className="font-poppins font-semibold text-[20px] leading-normal tracking-normal text-center text-[#514D4D] mb-7">
                 {item.description}
               </p>
               {item.title === "Mensenrechten" ? (
                 <Link
                   href={item.href}
-                  className="btn-fx mt-auto self-center inline-flex items-center justify-center gap-2.5 w-[320px] max-w-full h-[80px] rounded-2xl border-[3px] border-[#002B58] text-[#002B58] font-poppins font-bold text-[24px] leading-none tracking-normal shadow-none hover:shadow-none hover:bg-[#002B58] hover:text-white"
+                  className="btn-fx mt-auto shrink-0 self-center inline-flex items-center justify-center gap-2.5 w-[320px] max-w-full h-[80px] rounded-2xl border-[3px] border-[#002B58] text-[#002B58] font-poppins font-bold text-[24px] leading-none tracking-normal shadow-none hover:shadow-none hover:bg-[#002B58] hover:text-white"
                 >
                   Lees meer
                   <ArrowUpRight />
