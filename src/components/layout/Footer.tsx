@@ -240,12 +240,13 @@ export default function Footer() {
               </div>
 
               <div className="flex items-center gap-3 order-2 lg:order-3">
-                <SocialIcon href="https://linkedin.com" label="LinkedIn">
+                <SocialIcon href="https://www.linkedin.com/company/logos-legal/" label="LinkedIn">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95s-2.08 1.4-2.08 2.85V21H9z" />
                   </svg>
                 </SocialIcon>
-                <SocialIcon href="https://linkedin.com" label="LinkedIn">
+                {/* Placeholder — tweede social volgt nog */}
+                <SocialIcon href="#" label="Social media (binnenkort)">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95s-2.08 1.4-2.08 2.85V21H9z" />
                   </svg>
