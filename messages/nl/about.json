@@ -1,0 +1,248 @@
+{
+  "about": {
+    "meta": {
+      "title": "Over ons | LOGOS LEGAL",
+      "description": "Een team van toegewijde juridische professionals, gericht op excellentie en het succes van cliënten."
+    },
+    "hero": {
+      "title": "Over Logos Legal",
+      "subtitle": "Een team van toegewijde juridische professionals, gericht op excellentie en het succes van cliënten."
+    },
+    "intro": {
+      "heading": "Toegewijd, strategisch en innovatief",
+      "paragraph": "Onderscheidend, out-of-the-box, nieuwsgierig en maatschappelijk betrokken, maar bovenal met jarenlange ervaring en expertise. Onze advocaten zijn gespecialiseerd in strafrecht, arbeidsrecht, onderwijsrecht, contract- en aansprakelijkheidsrecht, medezeggenschapsrecht en mensenrechten.",
+      "imageAlt": "Het team van LOGOS LEGAL in gesprek",
+      "stats": [
+        { "value": "500+", "label": "Zaken gewonnen" },
+        { "value": "18+", "label": "Jaren ervaring" },
+        { "value": "1000+", "label": "Tevreden klanten" }
+      ]
+    },
+    "why": {
+      "headingPre": "Wat maakt werken met Logos Legal zo",
+      "headingHighlight": "bijzonder?",
+      "paragraphs": [
+        "Onze ondernemingsrechtpraktijk biedt uitgebreide juridische dienstverlening aan bedrijven van elke omvang, van startups tot multinationale ondernemingen. Onze ondernemingsrechtpraktijk biedt uitgebreide juridische dienstverlening aan bedrijven van elke omvang, van startups tot multinationale ondernemingen. Onze ondernemingsrechtpraktijk biedt uitgebreide juridische dienstverlening aan bedrijven van elke omvang, van startups tot multinationale ondernemingen."
+      ],
+      "imageAlt": "Advocaat van LOGOS LEGAL in gesprek met een cliënt"
+    },
+    "cta": {
+      "heading": "Klaar om samen te werken met ons deskundige juridische team?",
+      "subtitle": "Plan vandaag nog een consult in en ontdek hoe wij u kunnen helpen met uw juridische vraagstukken."
+    }
+  },
+  "coreValues": {
+    "headingPre": "Onze",
+    "headingHighlight": "kernwaarden",
+    "subtitle": "Deze principes vormen de basis van onze werkwijze en bepalen hoe wij onze cliënten bedienen.",
+    "values": [
+      {
+        "title": "Integriteit",
+        "description": "Wij hanteren de hoogste ethische normen in al onze interacties en juridische werkzaamheden, en waarborgen daarbij transparantie en eerlijkheid."
+      },
+      {
+        "title": "Excellentie",
+        "description": "Wij streven naar uitmuntendheid in elk aspect van onze praktijk, van juridisch onderzoek tot het bepleiten van zaken in de rechtszaal."
+      },
+      {
+        "title": "Cliëntgericht",
+        "description": "Wij stellen de behoeften van onze cliënten voorop en bieden persoonlijke aandacht en op maat gemaakte juridische strategieën."
+      },
+      {
+        "title": "Daadkrachtig",
+        "description": "Wij hechten waarde aan tijdige communicatie en snelle actie om de juridische kwesties van onze cliënten efficiënt aan te pakken."
+      }
+    ]
+  },
+  "teamGrid": {
+    "headingPre": "Ons",
+    "headingHighlight": "team",
+    "subtitle": "Toegewijd, strategisch en innovatief",
+    "roles": {
+      "babiAzar": "Advocaat",
+      "arzuYandere": "Advocaat",
+      "pejmanSalim": "Advocaat",
+      "anilRamdas": "Advocaat"
+    }
+  },
+  "advocates": {
+    "shared": {
+      "cta": {
+        "heading": "Klaar om samen te werken met ons deskundige juridische team?",
+        "subtitle": "Plan vandaag nog een consult in en ontdek hoe wij u kunnen ondersteunen bij uw juridische behoeften."
+      },
+      "specialisme": {
+        "headingHighlight": "specialisme",
+        "subtitle": "Brede juridische expertise met focus op effectieve oplossingen",
+        "items": [
+          {
+            "title": "Civiele procedures en contracten",
+            "description": "Het oplossen van contractuele geschillen, aansprakelijkheidskwesties en schadeclaims, vaak in samenwerking met het Burgerlijk Wetboek."
+          },
+          {
+            "title": "Arbeidsrecht",
+            "description": "Het vertegenwoordigen van werkgevers of werknemers in zaken betreffende ontslag, arbeidsovereenkomsten en arbeidsconflicten."
+          },
+          {
+            "title": "Ondernemings- en handelsrecht",
+            "description": "Het behandelen van bedrijfsgeschillen, aandeelhoudersconflicten, fusies en overnames (M&A) en bedrijfsherstructureringen."
+          },
+          {
+            "title": "Huurrecht",
+            "description": "Assisting with rental agreements, evictions, and housing disputes (with a focus on high tenant protection)."
+          }
+        ]
+      }
+    },
+    "pejmanSalim": {
+      "meta": {
+        "title": "Pejman Salim | LOGOS LEGAL",
+        "description": "Pejman Salim — advocaat in internationaal strafrecht. Opleiding, ervaring, expertise en specialismen van Pejman Salim bij LOGOS LEGAL."
+      },
+      "hero": {
+        "subtitle": "Advocaat in Internationaal strafrecht"
+      },
+      "background": {
+        "headingPre": "Opleiding, ervaring",
+        "headingHighlight": "en achtergrond",
+        "intro": "Ben jij een complexe proceszaak? Want Pejman Salim zou zich er volledig in vastbijten — en ik eerlijk gezegd ook.",
+        "imageAlt": "Pejman Salim",
+        "checks": [
+          "Oprichter en bestuurder van diverse mensenrechten- en belangenorganisaties op nationaal en internationaal niveau.",
+          "Sinds 2014 werkzaam als advocaat met brede ervaring binnen het civiel- en strafrecht.",
+          "Gespecialiseerd in financieel strafrecht in combinatie met civiel recht.",
+          "Achtergrond in burgerlijk recht en erfrecht binnen de Amsterdamse advocatuur.",
+          "In 2024 afgeronde postacademische opleiding Onderneming en Aansprakelijkheid aan de Grotius Academie."
+        ]
+      },
+      "story": {
+        "imageAlt": "Pejman Salim aan het werk",
+        "quote": "Wanneer ik in een zaak bijt, laat ik niet meer los",
+        "role": "Advocaat",
+        "expertiseHeadingPre": "Expertise,",
+        "expertiseHeadingHighlight": "aanpak en resultaten",
+        "paragraphs": [
+          "Van civiele zaken tegen de overheid tot aan met een zaak het hele huurrecht op zijn kop zetten. Pejman is van vele markten thuis, maar zijn proceszaken hebben met elkaar gemeen dat ze complex zijn. Zo werkt hij het liefst: diep inhoudelijk en wetenschappelijk ingesteld.",
+          "Wanneer Pejman in een zaak bijt, laat hij niet meer los en doet hij alles wat binnen zijn mogelijkheden ligt om de zaak tot een goed einde te brengen, bij voorkeur op een creatieve wijze. Zijn collega's en cliënten omschrijven hem als scherp, betrokken, oplossingsgericht, zeer deskundig en als een advocaat met enorm veel kennis. Zijn zaken halen regelmatig het nieuws, onder meer zijn baanbrekende werk voor gedupeerden van de toeslagenaffaire."
+        ]
+      },
+      "registratie": {
+        "headingLine1": "Registratie, ontwikkeling",
+        "headingHighlight": "en betrokkenheid",
+        "paragraph": "Pejman heeft in het rechtsgebiedenregister van de Nederlandse orde van advocaten de rechtsgebieden strafrecht, algemene praktijk burgerlijk recht en ondernemingsrecht geregistreerd. Op grond van deze registratie is hij verplicht elk kalenderjaar volgens de normen van de Nederlandse Orde van Advocaten tien opleidingspunten te behalen op ieder geregistreerd hoofdrechtsgebied. Pejman volgt de politieke actualiteit op de voet. Hij werkte als acteur voor film en theater, en is nog altijd graag in het theater te vinden.",
+        "imageAlt": "Pejman Salim in gesprek"
+      }
+    },
+    "arzuYandere": {
+      "meta": {
+        "title": "Arzu Yandere | LOGOS LEGAL",
+        "description": "Arzu Yandere — advocaat onderwijsrecht & arbeidsrecht. Opleiding, expertise, trainingen en specialismen van Arzu Yandere bij LOGOS LEGAL."
+      },
+      "hero": {
+        "subtitle": "Advocaat onderwijsrecht & arbeidsrecht"
+      },
+      "background": {
+        "headingPre": "Opleiding, specialisaties",
+        "headingHighlight": "en ervaring",
+        "intro": "Gespecialiseerd in onderwijsrecht en arbeidsrecht met meer dan 16 jaar ervaring.",
+        "imageAlt": "Arzu Yandere",
+        "checks": [
+          "Ruim negen jaar actief binnen de advocatuur met focus op complexe onderwijs- en arbeidsrechtelijke vraagstukken.",
+          "Advisering en procesvoering voor schoolbesturen, raden van toezicht, werkgevers en werknemers.",
+          "Gespecialiseerd in financieel strafrecht in combinatie met civiel recht.",
+          "In 2024 afgeronde postacademische opleiding Arbeidsrecht aan de Grotius Academie."
+        ]
+      },
+      "story": {
+        "imageAlt": "Arzu Yandere aan het werk",
+        "quote": "Met hart voor de zaak zet ik mijn kennis en ervaring op dit moment op ambitieuze wijze in voor Logos Legal",
+        "role": "Advocaat",
+        "expertiseHeadingPre": "Expertise, trainingen en",
+        "expertiseHeadingHighlight": "maatschappelijke betrokkenheid",
+        "paragraphs": [
+          "Arzu studeerde aan de Erasmus Universiteit te Rotterdam en werd na bijna zeven jaar als jurist bij ISBO te hebben gewerkt in 2016 als advocaat beëdigd. Voordat ze zich aansloot bij Dworkin Law, de voorganger van Logos Legal, werkte ze als advocaat bij verschillende advocatenkantoren in Den Haag en Amsterdam. Dankzij haar jarenlange kennis en ervaring wordt Arzu regelmatig gevraagd om incompany cursussen en trainingen te verzorgen. Deze hebben onder andere betrekking op arbeidsongeschiktheid en verzuimbegeleiding, rechtspositie van werknemers, medezeggenschap en governance. Voor E-WISE ontwikkelde zij de cursussen Dossieropbouw bij disfunctioneren en Onderwijsrecht: informatieverstrekking aan ouders en derden. Arzu is voorzitter van de Vereniging voor Onderwijsrecht en lid van diverse arbeidsrechtelijke verenigingen, waaronder de specialisatievereniging VAAN (Vereniging Arbeidsrechtadvocaten Nederland)."
+        ]
+      },
+      "registratie": {
+        "headingLine1": "Werkwijze, registratie en",
+        "headingHighlight": "persoonlijkheid",
+        "paragraph": "Met hart voor de zaak zet Arzu haar kennis en ervaring op ambitieuze wijze in voor Logos Legal. Zij wordt gewaardeerd door collega's en cliënten vanwege haar betrokkenheid, georganiseerdheid, professionaliteit, haar systematische manier van werken en haar vermogen om snel te schakelen. Arzu heeft in het rechtsgebiedenregister van de Nederlandse orde van advocaten de rechtsgebieden onderwijsrecht en arbeidsrecht geregistreerd. Op grond van deze registratie is zij verplicht elk kalenderjaar volgens de normen van de Nederlandse Orde van Advocaten tien opleidingspunten te behalen op beide geregistreerde hoofdrechtsgebieden. In haar vrije tijd houdt Arzu zich graag bezig met koken en het ontwerpen en maken van kleding.",
+        "imageAlt": "Arzu Yandere in gesprek"
+      }
+    },
+    "babiAzar": {
+      "meta": {
+        "title": "Babi Azar | LOGOS LEGAL",
+        "description": "Babi Azar — advocaat bestuursrecht. Opleiding, expertise en specialismen van Babi Azar bij LOGOS LEGAL."
+      },
+      "hero": {
+        "subtitle": "Advocaat bestuursrecht"
+      },
+      "background": {
+        "headingPre": "Opleiding, specialisaties",
+        "headingHighlight": "en ervaring",
+        "intro": "Gespecialiseerd in bestuursrecht, familierecht, huurrecht en arbeidsrecht.",
+        "imageAlt": "Babi Azar",
+        "checks": [
+          "Focus binnen het bestuursrecht op sociaal zekerheidsrecht, asiel- en vluchtelingenrecht en regulier vreemdelingenrecht.",
+          "Achtergrond in de wiskunde met een sterk analytische en gestructureerde werkwijze.",
+          "In 2009 afgestudeerd in bestuurs- en privaatrecht aan de Radboud Universiteit.",
+          "Ruime ervaring opgedaan bij diverse advocatenkantoren en binnen zijn eigen praktijk, Azar Legal."
+        ]
+      },
+      "story": {
+        "imageAlt": "Babi Azar in gesprek",
+        "quote": "Ik hecht waarde aan heldere communicatie en een zorgvuldige behandeling van iedere zaak",
+        "role": "Advocaat",
+        "expertiseHeadingPre": "Expertise en",
+        "expertiseHeadingHighlight": "juridische aanpak",
+        "paragraphs": [
+          "Babi richt zich voornamelijk op rechtsgebieden waarin de impact op het dagelijks leven van cliënten groot is. Binnen het bestuursrecht staat hij veelal cliënten bij in hun verhouding tot de overheid, vaak in kwetsbare posities. Daarnaast behandelt hij zaken op het gebied van familierecht, huurrecht en arbeidsrecht, waar juridische en persoonlijke belangen nauw samenkomen. Sinds maart 2026 is Babi verbonden aan Logos Legal, waar hij zijn opgebouwde expertise inzet voor uiteenlopende complexe juridische vraagstukken."
+        ]
+      },
+      "registratie": {
+        "headingLine1": "Werkwijze en",
+        "headingHighlight": "persoonlijke benadering",
+        "paragraph": "Zijn werkwijze kenmerkt zich door een combinatie van analytisch vermogen en persoonlijke betrokkenheid. Babi hecht veel waarde aan heldere communicatie en een zorgvuldige behandeling van iedere zaak. Met zijn ervaring en opgebouwde expertise treedt hij doelgericht en doordacht op, met als uitgangspunt het behalen van het best mogelijke resultaat voor zijn cliënten.",
+        "imageAlt": "Babi Azar aan het werk"
+      }
+    },
+    "anilRamdas": {
+      "meta": {
+        "title": "Anil Ramdas | LOGOS LEGAL",
+        "description": "Anil Ramdas — advocaat in internationaal strafrecht. Opleiding, expertise en specialismen van Anil Ramdas bij LOGOS LEGAL."
+      },
+      "hero": {
+        "subtitle": "Advocaat in Internationaal strafrecht"
+      },
+      "background": {
+        "headingPre": "Opleiding, specialisaties",
+        "headingHighlight": "en ervaring",
+        "intro": "Gespecialiseerd in civiel recht en strafrecht met meer dan 20 jaar praktijkervaring.",
+        "imageAlt": "Anil Ramdas",
+        "checks": [
+          "Studie economie en rechten aan de Erasmus Universiteit Rotterdam en de Katholieke Universiteit Tilburg.",
+          "Veertien jaar werkzaam geweest als zelfstandig ondernemer binnen de juridische praktijk.",
+          "Sinds 2019 werkzaam in samenwerking met Pejman Salim binnen Logos Legal.",
+          "Brede ervaring in complexe civiele en strafrechtelijke zaken met een strategische aanpak."
+        ]
+      },
+      "story": {
+        "imageAlt": "Anil Ramdas in gesprek",
+        "quote": "Ik ben graag nauw betrokken bij mijn cliënten",
+        "role": "Advocaat",
+        "expertiseHeadingPre": "Expertise",
+        "expertiseHeadingHighlight": "en werkwijze",
+        "paragraphs": [
+          "Met meer dan twintig jaar ervaring weet Anil van de hoed en de rand op het gebied van civiel en strafrecht. Hij is graag nauw betrokken bij zijn cliënten en wil niet alleen inzicht hebben in de zaak, maar ook in de persoon erachter. Dankzij zijn scherpe analytische vermogen weet hij zaken tactisch en strategisch neer te zetten. Zijn aanpak kenmerkt zich door betrokkenheid, doordachtheid en een sterke focus op het behalen van het best mogelijke resultaat."
+        ]
+      },
+      "registratie": {
+        "headingLine1": "Persoonlijkheid,",
+        "headingHighlight": "registratie en ontwikkeling",
+        "paragraph": "Anil wordt door collega's en cliënten omschreven als integer, deskundig en zorgvuldig. Hij beschikt over veel ervaring en inhoudelijke kennis en staat bekend als een echte teamplayer. Anil Ramdas heeft in het rechtsgebiedenregister van de Nederlandse orde van advocaten de rechtsgebieden strafrecht en civiel recht geregistreerd. Op grond van deze registratie is hij verplicht elk kalenderjaar volgens de normen van de Nederlandse Orde van Advocaten tien opleidingspunten te behalen op beide geregistreerde hoofdrechtsgebieden. In zijn spaarzame vrije tijd leest Anil graag, waarbij zijn interesse vooral uitgaat naar vakinhoudelijke literatuur binnen de advocatuur.",
+        "imageAlt": "Anil Ramdas"
+      }
+    }
+  }
+}

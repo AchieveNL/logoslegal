@@ -1,64 +1,10 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
 interface Review {
   quote: string;
   author: string;
 }
-
-// Top row — scrolls to the right
-const reviewsTop: Review[] = [
-  {
-    quote:
-      "Geweldige advocaat, een echte aanrader, zeer professioneel. Ik raad dit kantoor aan al mijn vrienden aan. Vrienden van mij hadden dit kantoor ook aan mij aanbevolen. Ik ben enorm geholpen door deze advocaten. Bel ze gerust, u zult er geen spijt van krijgen!",
-    author: "Cheryl Hammond",
-  },
-  {
-    quote: "Best lawyer in town!",
-    author: "De Koorndijk",
-  },
-  {
-    quote:
-      "Dhr Pejman Salim staat mij bij en geduld is een schone zaak, Dhr Salim weet te handelen en gaat voor rechtvaardigheid. Dhr Salim kent de wetten en werkt zeer nauwkeurig. Blij dat ik heb ontmoet, ondanks dat Dhr zijn werk goed doet, leeft hij mee en toont empathie. Dhr Salim stelt je op je gemak, Bedankt.",
-    author: "Sabrina Coenraad",
-  },
-  {
-    quote: "Quality, Professionalism, Value",
-    author: "Sander Blauw",
-  },
-  {
-    quote:
-      "Ik ben heel dankbaar voor de hulp van mijn advocaat mr. Salim. Hij heeft echt kennis van zaken, vooral als het gaat om de toeslagenaffaire. Hij nam de tijd om alles goed uit te leggen en stond altijd voor me klaar. Dankzij zijn inzet en deskundigheid voel ik me eindelijk serieus genomen. Een advocaat met een hart voor zijn cliënten – echt een aanrader!",
-    author: "A.M SJRo",
-  },
-];
-
-// Bottom row — scrolls to the left
-const reviewsBottom: Review[] = [
-  {
-    quote:
-      "Mr. Salim is een goede advocaat met verstand van zaken, hanteert een slimme tactiek en heeft goede resultaten voor bijstand in strafrecht en de toeslagenaffaire. Zeer tevreden tot nu toe.",
-    author: "Maria HT",
-  },
-  {
-    quote:
-      "Zeer professioneel. Zeer tevreden. Ik raad ze zeker aan. Ze hebben mij te woord gestaan en goed verdedigd tegenover de overheid. Bel ze maar.",
-    author: "Cheryl Koperberg",
-  },
-  {
-    quote:
-      "Hij heeft mij goed geholpen en nog steeds gelukkig voor mij en mijn gezin.",
-    author: "Justin jennifer Pathuis",
-  },
-  {
-    quote: "Goed advocaten. Zeer tevreden.",
-    author: "Bjorn Sjoerdsma",
-  },
-  {
-    quote:
-      "Zeer aan te raden! Goede kennis over vele zaken, denken echt met je mee en pakken onrecht goed aan. Mr Salim legt alles heel goed en duidelijk uit. Vriendelijk en met t hart op de goede plek. Hier kun je gerust van zijn dat je echt wordt geholpen.",
-    author: "Huseyin Acar",
-  },
-];
 
 function QuoteMark() {
   return (
@@ -112,16 +58,21 @@ function MarqueeRow({
   );
 }
 
-export default function TestimonialsGrid() {
+export default async function TestimonialsGrid() {
+  const t = await getTranslations("testimonials");
+  // Top row — scrolls to the right; bottom row — scrolls to the left
+  const reviewsTop = t.raw("reviewsTop") as Review[];
+  const reviewsBottom = t.raw("reviewsBottom") as Review[];
+
   return (
     <section className="w-full bg-white py-16 md:py-24 overflow-hidden">
       <div className="max-w-container mx-auto px-6 md:px-24">
         <div className="text-center mb-12">
           <h2 className="font-raleway font-bold text-[32px] md:text-[56px] leading-none text-[#002B58] max-w-[1020px] mx-auto">
-            Wat onze <span className="text-brand-blue">cliënten</span> zeggen
+            {t("headingPre")} <span className="text-brand-blue">{t("headingHighlight")}</span> {t("headingPost")}
           </h2>
           <p className="mt-4 font-poppins font-medium text-lg md:text-[24px] text-[#292D32]">
-            Echte ervaringen van cliënten die wij hebben ondersteund
+            {t("subtitle")}
           </p>
         </div>
       </div>

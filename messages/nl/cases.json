@@ -1,0 +1,53 @@
+{
+  "casesPage": {
+    "meta": {
+      "title": "Cases | LOGOS LEGAL",
+      "description": "Onze zaken geven inzicht in hoe wij complexe juridische vraagstukken omzetten in heldere oplossingen: van strategisch advies tot procederen."
+    },
+    "hero": {
+      "title": "Onze cases",
+      "subtitle": "Een team van toegewijde juridische professionals, gericht op excellentie en het succes van cliënten."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "aboutUs": "Over ons",
+      "cases": "Cases"
+    },
+    "intro": {
+      "title1": "Toegewijd,",
+      "title2": "strategisch en",
+      "title3": "innovatief",
+      "paragraph": "Onderscheidend, out-of-the-box, nieuwsgierig en maatschappelijk betrokken, maar bovenal met jarenlange ervaring en expertise."
+    },
+    "cta": {
+      "heading": "Klaar om samen te werken met ons deskundige juridische team?",
+      "subtitle": "Plan vandaag nog een consult in en ontdek hoe wij u kunnen ondersteunen bij uw juridische behoeften."
+    }
+  },
+  "casesList": {
+    "heading": "Onze cases",
+    "paragraph": "Onze zaken geven inzicht in hoe wij complexe juridische vraagstukken omzetten in heldere oplossingen. Van strategisch advies tot procederen: elke zaak weerspiegelt onze toewijding aan resultaat, discretie en maatwerk.",
+    "items": [
+      {
+        "categoryKey": "mensenrechten",
+        "title": "Onmiddellijke vrijlating en toekenning van de meldplichtstatus",
+        "description": "In een kort geding aangespannen door Pejman Salim heeft de voorzieningenrechter geoordeeld over de toepassing van de Wet herziening ten nadele (USB-wet) en de onmiddellijke vrijlating van de veroordeelde, alsmede de toekenning van de meldplichtstatus, gelast."
+      },
+      {
+        "categoryKey": "contracten",
+        "title": "Boete voor overtreding van het rookverbod",
+        "description": "Als cafés of restaurants hun klanten de mogelijkheid willen bieden om buiten te roken in een overdekte ruimte, moeten zij ervoor zorgen dat deze ruimte aan ten minste één zijde volledig open is, ongeacht de grootte van die zijde. Anders lopen zij het risico op een boete wegens het niet handhaven van het rookverbod."
+      },
+      {
+        "categoryKey": "mensenrechten",
+        "title": "Onmiddellijke vrijlating en toekenning van de meldplichtstatus",
+        "description": "In een kort geding aangespannen door Pejman Salim heeft de voorzieningenrechter geoordeeld over de toepassing van de Wet herziening ten nadele (USB-wet) en de onmiddellijke vrijlating van de veroordeelde, alsmede de toekenning van de meldplichtstatus, gelast."
+      },
+      {
+        "categoryKey": "mensenrechten",
+        "title": "Incidentele vordering tot tussenkomst | op grond van artikel 217 van het Wetboek van Burgerlijke Rechtsvordering.",
+        "description": "Een persoon die geen partij is in een aanhangige procedure kan met succes een vordering tot tussenkomst instellen indien hij aan twee voorwaarden voldoet: (i) hij moet een voldoende belang hebben bij tussenkomst in de procedure, gelet op eventuele nadelige gevolgen."
+      }
+    ]
+  }
+}

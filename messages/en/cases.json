@@ -1,0 +1,53 @@
+{
+  "casesPage": {
+    "meta": {
+      "title": "Cases | LOGOS LEGAL",
+      "description": "Our cases show how we turn complex legal issues into clear solutions: from strategic advice to litigation."
+    },
+    "hero": {
+      "title": "Our cases",
+      "subtitle": "A team of dedicated legal professionals, focused on excellence and the success of our clients."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "aboutUs": "About us",
+      "cases": "Cases"
+    },
+    "intro": {
+      "title1": "Dedicated,",
+      "title2": "strategic and",
+      "title3": "innovative",
+      "paragraph": "Distinctive, out-of-the-box, curious and socially engaged, but above all with years of experience and expertise."
+    },
+    "cta": {
+      "heading": "Ready to work with our expert legal team?",
+      "subtitle": "Schedule a consultation today and discover how we can support you with your legal needs."
+    }
+  },
+  "casesList": {
+    "heading": "Our cases",
+    "paragraph": "Our cases show how we turn complex legal issues into clear solutions. From strategic advice to litigation: every case reflects our commitment to results, discretion and a tailored approach.",
+    "items": [
+      {
+        "categoryKey": "mensenrechten",
+        "title": "Immediate release and granting of reporting-obligation status",
+        "description": "In summary proceedings initiated by Pejman Salim, the preliminary relief judge ruled on the application of the Review to the Detriment Act (USB Act) and ordered the immediate release of the convicted person, as well as the granting of reporting-obligation status."
+      },
+      {
+        "categoryKey": "contracten",
+        "title": "Fine for violation of the smoking ban",
+        "description": "If cafés or restaurants wish to offer their customers the option of smoking outdoors in a covered area, they must ensure that this area is fully open on at least one side, regardless of the size of that side. Otherwise, they risk a fine for failing to enforce the smoking ban."
+      },
+      {
+        "categoryKey": "mensenrechten",
+        "title": "Immediate release and granting of reporting-obligation status",
+        "description": "In summary proceedings initiated by Pejman Salim, the preliminary relief judge ruled on the application of the Review to the Detriment Act (USB Act) and ordered the immediate release of the convicted person, as well as the granting of reporting-obligation status."
+      },
+      {
+        "categoryKey": "mensenrechten",
+        "title": "Interlocutory claim for intervention | pursuant to Article 217 of the Dutch Code of Civil Procedure.",
+        "description": "A person who is not a party to pending proceedings may successfully bring a claim for intervention if two conditions are met: (i) they must have a sufficient interest in intervening in the proceedings, in view of any adverse consequences."
+      }
+    ]
+  }
+}

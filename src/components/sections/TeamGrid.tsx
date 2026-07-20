@@ -1,5 +1,6 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
 export interface TeamMember {
   name: string;
@@ -8,34 +9,36 @@ export interface TeamMember {
   href: string;
 }
 
-const team: TeamMember[] = [
-  {
-    name: "Babi Azar",
-    role: "Advocaat",
-    image: "/images/team/babi-azar.png",
-    href: "/over-ons/babi-azar",
-  },
-  {
-    name: "Arzu Yandere",
-    role: "Advocaat",
-    image: "/images/team/arzu-yandere.png",
-    href: "/over-ons/arzu-yandere",
-  },
-  {
-    name: "Pejman Salim",
-    role: "Advocaat",
-    image: "/images/team/pejman-salim.png",
-    href: "/over-ons/pejman-salim",
-  },
-  {
-    name: "Anil Ramdas",
-    role: "Advocaat",
-    image: "/images/team/anil-ramdas.png",
-    href: "/over-ons/anil-ramdas",
-  },
-];
+export default async function TeamGrid() {
+  const t = await getTranslations("teamGrid");
 
-export default function TeamGrid() {
+  const team: TeamMember[] = [
+    {
+      name: "Babi Azar",
+      role: t("roles.babiAzar"),
+      image: "/images/team/babi-azar.png",
+      href: "/over-ons/babi-azar",
+    },
+    {
+      name: "Arzu Yandere",
+      role: t("roles.arzuYandere"),
+      image: "/images/team/arzu-yandere.png",
+      href: "/over-ons/arzu-yandere",
+    },
+    {
+      name: "Pejman Salim",
+      role: t("roles.pejmanSalim"),
+      image: "/images/team/pejman-salim.png",
+      href: "/over-ons/pejman-salim",
+    },
+    {
+      name: "Anil Ramdas",
+      role: t("roles.anilRamdas"),
+      image: "/images/team/anil-ramdas.png",
+      href: "/over-ons/anil-ramdas",
+    },
+  ];
+
   return (
     <section className="relative w-full bg-brand-blue-light py-16 md:py-24 overflow-hidden">
       {/* Blue wave texture (same asset as footer/CTA), masked so the PNG's
@@ -68,10 +71,11 @@ export default function TeamGrid() {
       <div className="relative z-10 max-w-container mx-auto px-6 md:px-12">
         <div className="text-center mb-12">
           <h2 className="font-raleway font-bold text-[32px] md:text-[56px] leading-none tracking-normal text-center text-[#002B58]">
-            Ons <span className="text-brand-blue">team</span>
+            {t("headingPre")}{" "}
+            <span className="text-brand-blue">{t("headingHighlight")}</span>
           </h2>
           <p className="mt-4 font-raleway font-medium text-base md:text-[24px] leading-none tracking-normal text-center text-[#292D32]">
-            Toegewijd, strategisch en innovatief
+            {t("subtitle")}
           </p>
         </div>
 

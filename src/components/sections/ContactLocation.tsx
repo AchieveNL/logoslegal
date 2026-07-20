@@ -1,31 +1,10 @@
+import { getTranslations } from "next-intl/server";
+
 interface InfoCard {
   title: string;
   lines: string[];
   icon: "pin" | "mail" | "phone" | "clock";
 }
-
-const cards: InfoCard[] = [
-  {
-    title: "Vestiging Barendrecht",
-    lines: ["Barendrecht branch, Oslo 3, Barendrecht"],
-    icon: "pin",
-  },
-  {
-    title: "Email",
-    lines: ["Algemeen: info@logoslegal.nl", "Toeslagenaffaire: toeslagen@logoslegal.nl"],
-    icon: "mail",
-  },
-  {
-    title: "Telefoonnummer",
-    lines: ["+31 85 20 30 155"],
-    icon: "phone",
-  },
-  {
-    title: "Kantooruren",
-    lines: ["Monday - vrijdag: 09:00 - 17:00", "Zaterdag - Zondag: Gesloten"],
-    icon: "clock",
-  },
-];
 
 function CardIcon({ icon }: { icon: InfoCard["icon"] }) {
   const common = {
@@ -69,18 +48,45 @@ function CardIcon({ icon }: { icon: InfoCard["icon"] }) {
   }
 }
 
-export default function ContactLocation() {
+export default async function ContactLocation() {
+  const t = await getTranslations("contactLocation");
+
+  const cards: InfoCard[] = [
+    {
+      title: t("cards.office.title"),
+      lines: ["Barendrecht branch, Oslo 3, Barendrecht"],
+      icon: "pin",
+    },
+    {
+      title: t("cards.email.title"),
+      lines: [
+        `${t("cards.email.general")}: info@logoslegal.nl`,
+        `${t("cards.email.allowances")}: toeslagen@logoslegal.nl`,
+      ],
+      icon: "mail",
+    },
+    {
+      title: t("cards.phone.title"),
+      lines: ["+31 85 20 30 155"],
+      icon: "phone",
+    },
+    {
+      title: t("cards.hours.title"),
+      lines: [t("cards.hours.weekdays"), t("cards.hours.weekend")],
+      icon: "clock",
+    },
+  ];
+
   return (
     <section className="w-full bg-brand-blue-light py-16 md:py-24">
       <div className="max-w-[1632px] mx-auto px-6 md:px-12">
         {/* Heading */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-raleway font-bold text-[36px] md:text-[56px] leading-none tracking-normal text-brand-blue">
-            Barendrecht
+            {t("heading")}
           </h2>
           <p className="mt-4 font-raleway font-medium text-base md:text-[24px] leading-relaxed tracking-normal text-black">
-            U kunt ons bereiken via de volgende kanalen of ons kantoor bezoeken
-            tijdens kantooruren.
+            {t("subtitle")}
           </p>
         </div>
 
@@ -114,7 +120,7 @@ export default function ContactLocation() {
         {/* Map */}
         <div className="mt-10 md:mt-12 w-full h-[320px] md:h-[420px] rounded-2xl overflow-hidden">
           <iframe
-            title="Locatie LOGOS LEGAL — Barendrecht"
+            title={t("mapTitle")}
             src="https://www.google.com/maps?q=Oslo+3,+2993+LD+Barendrecht&output=embed"
             className="w-full h-full border-0"
             loading="lazy"

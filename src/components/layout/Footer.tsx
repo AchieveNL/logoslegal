@@ -1,19 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
-
-const menuLinks = [
-  { label: "Over ons", href: "/over-ons" },
-  { label: "Expertise", href: "/expertise" },
-  { label: "Cases", href: "/cases" },
-  { label: "Contact Us", href: "/contact" },
-];
-
-const legalLinks = [
-  { label: "Algemene voorwaarden", href: "/algemene-voorwaarden" },
-  { label: "Klachtenregeling", href: "/klachtenregeling" },
-  { label: "Rechtsgebiedenregister", href: "/rechtsgebiedenregister" },
-  { label: "Derdengelden", href: "/derdengelden" },
-];
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/routing";
 
 function ContactIcon({ children }: { children: React.ReactNode }) {
   return (
@@ -45,7 +32,23 @@ function SocialIcon({
   );
 }
 
-export default function Footer() {
+export default async function Footer() {
+  const t = await getTranslations("footer");
+
+  const menuLinks = [
+    { label: t("aboutUs"), href: "/over-ons" },
+    { label: t("expertise"), href: "/expertise" },
+    { label: t("cases"), href: "/cases" },
+    { label: t("contactUs"), href: "/contact" },
+  ];
+
+  const legalLinks = [
+    { label: t("terms"), href: "/algemene-voorwaarden" },
+    { label: t("complaints"), href: "/klachtenregeling" },
+    { label: t("register"), href: "/rechtsgebiedenregister" },
+    { label: t("thirdPartyFunds"), href: "/derdengelden" },
+  ];
+
   return (
     <footer className="bg-white px-4 sm:px-6 lg:px-12 pb-10 pt-28">
       <div className="max-w-container mx-auto">
@@ -91,7 +94,7 @@ export default function Footer() {
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
               {/* Menu */}
               <div>
-                <h3 className="font-raleway font-bold text-[24px] md:text-[32px] mb-5">Menu</h3>
+                <h3 className="font-raleway font-bold text-[24px] md:text-[32px] mb-5">{t("menuTitle")}</h3>
                 <ul className="flex flex-col gap-4">
                   {menuLinks.map((link) => (
                     <li key={link.label}>
@@ -108,7 +111,7 @@ export default function Footer() {
 
               {/* Juridisch */}
               <div>
-                <h3 className="font-raleway font-bold text-[24px] md:text-[32px] mb-5">Juridisch</h3>
+                <h3 className="font-raleway font-bold text-[24px] md:text-[32px] mb-5">{t("legalTitle")}</h3>
                 <ul className="flex flex-col gap-4">
                   {legalLinks.map((link) => (
                     <li key={link.label}>
@@ -125,7 +128,7 @@ export default function Footer() {
 
               {/* Contact */}
               <div>
-                <h3 className="font-raleway font-bold text-[24px] md:text-[32px] mb-5">Contact</h3>
+                <h3 className="font-raleway font-bold text-[24px] md:text-[32px] mb-5">{t("contactTitle")}</h3>
                 <ul className="flex flex-col gap-4 font-poppins text-[20px] text-white/85">
                   <li className="flex items-start gap-3">
                     <ContactIcon>
@@ -199,11 +202,11 @@ export default function Footer() {
 
               {/* Location */}
               <div>
-                <h3 className="font-raleway font-bold text-[24px] md:text-[32px] mb-5">Location</h3>
+                <h3 className="font-raleway font-bold text-[24px] md:text-[32px] mb-5">{t("locationTitle")}</h3>
                 <div className="relative w-[234px] max-w-full aspect-[234/275]">
                   <Image
                     src="/images/shared/nl-map.svg"
-                    alt="Kaart van Nederland met Amsterdam en Barendrecht"
+                    alt={t("mapAlt")}
                     fill
                     className="object-contain"
                     unoptimized
@@ -217,7 +220,7 @@ export default function Footer() {
             {/* Bottom bar */}
             <div className="mt-6 flex flex-col lg:flex-row items-center justify-between gap-6">
               <p className="font-poppins font-bold text-xs text-white/90 order-1">
-                Developed by{" "}
+                {t("developedBy")}{" "}
                 <a
                   href="https://achieve.nl"
                   target="_blank"
@@ -231,12 +234,12 @@ export default function Footer() {
 
               <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 order-3 lg:order-2">
                 <Link href="/disclaimer" className="font-poppins text-[20px] text-white/85 hover:text-white transition-colors">
-                  Disclaimer
+                  {t("disclaimer")}
                 </Link>
                 <Link href="/privacy" className="font-poppins text-[20px] text-white/85 hover:text-white transition-colors">
-                  Privacy Statement
+                  {t("privacyStatement")}
                 </Link>
-                <span className="font-poppins text-[20px] text-white/85">2026 © Logos Legal</span>
+                <span className="font-poppins text-[20px] text-white/85">{t("copyright")}</span>
               </div>
 
               <div className="flex items-center gap-3 order-2 lg:order-3">
@@ -246,7 +249,7 @@ export default function Footer() {
                   </svg>
                 </SocialIcon>
                 {/* Placeholder — tweede social volgt nog */}
-                <SocialIcon href="#" label="Social media (binnenkort)">
+                <SocialIcon href="#" label={t("socialPlaceholder")}>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95s-2.08 1.4-2.08 2.85V21H9z" />
                   </svg>

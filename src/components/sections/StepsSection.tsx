@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
 interface Step {
   title: string;
@@ -6,39 +7,21 @@ interface Step {
   icon: string;
 }
 
-const steps: Step[] = [
-  {
-    title: "Door middel van analyse",
-    description:
-      "We beginnen met een uitgebreide beoordeling van uw juridische situatie, waarbij we alle relevante informatie verzamelen en uw doelen en zorgen in kaart brengen.",
-    icon: "/images/steps/analyse.svg",
-  },
-  {
-    title: "Strategische planning",
-    description:
-      "Wij ontwikkelen een op maat gemaakte juridische strategie die aansluit bij uw doelstellingen, waarbij wij alle mogelijke aanpakken en hun gevolgen zorgvuldig afwegen.",
-    icon: "/images/steps/planning.svg",
-  },
-  {
-    title: "Krachtige vertegenwoordiging",
-    description:
-      "Wij behartigen uw belangen met overtuiging, zowel in onderhandelingen, gerechtelijke procedures als administratieve procedures.",
-    icon: "/images/steps/vertegenwoordiging.svg",
-  },
-];
+export default async function StepsSection() {
+  const t = await getTranslations("steps");
+  const steps = t.raw("items") as Step[];
 
-export default function StepsSection() {
   return (
     <section className="w-full bg-brand-blue-light py-16 md:py-24">
       <div className="max-w-container mx-auto px-6">
         <div className="text-center max-w-[1080px] mx-auto">
           <h2 className="font-raleway font-bold text-[32px] md:text-[56px] leading-none text-[#002B58]">
-            <span className="text-brand-blue">3 eenvoudige stappen</span> om het
-            probleem van uw klant <span className="text-brand-blue">op te lossen</span>
+            <span className="text-brand-blue">{t("headingHighlight1")}</span>{" "}
+            {t("headingMid")}{" "}
+            <span className="text-brand-blue">{t("headingHighlight2")}</span>
           </h2>
           <p className="mt-4 font-raleway text-lg md:text-[24px] text-black">
-            Deze principes sturen onze werkwijze en bepalen hoe wij onze cliënten
-            bedienen.
+            {t("subtitle")}
           </p>
         </div>
 

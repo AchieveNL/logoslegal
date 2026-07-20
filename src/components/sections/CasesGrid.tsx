@@ -1,5 +1,6 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
 const ArrowUpRight = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="rotate-45">
@@ -8,17 +9,20 @@ const ArrowUpRight = () => (
   </svg>
 );
 
-export default function CasesGrid({ allCasesHref = "/cases" }: { allCasesHref?: string }) {
+export default async function CasesGrid({ allCasesHref = "/cases" }: { allCasesHref?: string }) {
+  const t = await getTranslations("homeCases");
+  const tCta = await getTranslations("cta");
+
   return (
     <section className="w-full bg-brand-blue-light py-16 md:py-24">
       <div className="max-w-container mx-auto px-6 md:px-12">
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="font-raleway font-bold text-[32px] md:text-[56px] leading-none tracking-normal text-[#002B58]">
-            Afgeronde <span className="text-brand-blue">zaken</span>
+            {t("headingPre")} <span className="text-brand-blue">{t("headingHighlight")}</span>
           </h2>
           <p className="mt-3 font-poppins font-medium text-base md:text-[20px] text-brand-dark/70">
-            Een selectie van resultaten en trajecten waarin wij het verschil maakten.
+            {t("subtitle")}
           </p>
         </div>
 
@@ -27,24 +31,20 @@ export default function CasesGrid({ allCasesHref = "/cases" }: { allCasesHref?: 
           <div className="grid grid-cols-1 lg:grid-cols-[1.85fr_1fr_1fr] lg:grid-rows-[340px_525px] gap-4">
             {/* Card A — tall left */}
             <article className="relative lg:row-span-2 rounded-[32px] overflow-hidden min-h-[420px] lg:min-h-0">
-              <Image src="/images/cases/zelfmelder.png" alt="Onmiddellijk vrijlaten en toekenning status zelfmelder" fill className="object-cover object-[center_20%]" sizes="(max-width:1024px) 100vw, 33vw" />
+              <Image src="/images/cases/zelfmelder.png" alt={t("cardA.title")} fill className="object-cover object-[center_20%]" sizes="(max-width:1024px) 100vw, 33vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/20 to-black/25" />
               <div className="absolute inset-0 flex flex-col p-7 text-white">
                 <h3 className="font-poppins font-bold text-[32px] md:text-[40px] leading-tight tracking-normal max-w-[520px]">
-                  Onmiddellijk vrijlaten en toekenning status zelfmelder
+                  {t("cardA.title")}
                 </h3>
                 <p className="mt-24 lg:mt-36 font-poppins font-semibold text-[24px] leading-relaxed tracking-normal text-white/90 max-w-[560px]">
-                  In een kort geding aangespannen door Pejman Salim, heeft de
-                  voorzieningenrechter een oordeel geveld over de toepassing van de
-                  Wet herziening tenuitvoerlegging van strafrechtelijke beslissingen
-                  (Wet USB) en heeft de onmiddellijke vrijlating van de veroordeelde
-                  en toekenning status zelfmelder bevolen.
+                  {t("cardA.description")}
                 </p>
                 <Link
                   href={allCasesHref}
                   className="btn-gradient mt-auto gap-2 self-start h-12 px-7 rounded-xl"
                 >
-                  Learn More
+                  {t("cardA.cta")}
                   <ArrowUpRight />
                 </Link>
               </div>
@@ -52,40 +52,34 @@ export default function CasesGrid({ allCasesHref = "/cases" }: { allCasesHref?: 
 
             {/* Card B */}
             <article className="relative rounded-[32px] overflow-hidden min-h-[220px]">
-              <Image src="/images/cases/aandelen.png" alt="Vordering overdracht aandelen" fill className="object-cover" sizes="(max-width:1024px) 100vw, 33vw" />
+              <Image src="/images/cases/aandelen.png" alt={t("cardB.title")} fill className="object-cover" sizes="(max-width:1024px) 100vw, 33vw" />
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/25 to-transparent" />
               <h3 className="absolute inset-0 flex items-center px-6 font-poppins font-bold text-[32px] md:text-[40px] leading-none tracking-normal text-white">
-                Vordering overdracht aandelen
+                {t("cardB.title")}
               </h3>
             </article>
 
             {/* Card C */}
             <article className="relative rounded-[32px] overflow-hidden min-h-[220px]">
-              <Image src="/images/cases/rookverbod.png" alt="Boete rookverbod" fill className="object-cover" sizes="(max-width:1024px) 100vw, 33vw" />
+              <Image src="/images/cases/rookverbod.png" alt={t("cardC.title")} fill className="object-cover" sizes="(max-width:1024px) 100vw, 33vw" />
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/25 to-transparent" />
               <h3 className="absolute inset-0 flex items-center px-6 font-poppins font-bold text-[32px] md:text-[40px] leading-none tracking-normal text-white">
-                Boete rookverbod
+                {t("cardC.title")}
               </h3>
             </article>
 
             {/* Card D — wide bottom-right */}
             <article className="relative lg:col-span-2 rounded-[32px] overflow-hidden min-h-[260px]">
-              <Image src="/images/cases/tussenkomst.png" alt="Incidentele vordering tot tussenkomst" fill className="object-cover" sizes="(max-width:1024px) 100vw, 66vw" />
+              <Image src="/images/cases/tussenkomst.png" alt={t("cardD.title")} fill className="object-cover" sizes="(max-width:1024px) 100vw, 66vw" />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
               <div className="absolute inset-0 flex flex-col p-7 text-white">
                 <h3 className="font-poppins font-bold text-[30px] md:text-[40px] leading-none tracking-normal">
-                  Incidentele vordering tot tussenkomst | ex artikel 217 Rv
+                  {t("cardD.title")}
                 </h3>
                 <p className="mt-4 font-poppins font-semibold text-[24px] leading-relaxed tracking-normal text-white/90">
-                  Een persoon die geen onderdeel is van een lopende procedure kan met
-                  succes een vordering tot tussenkomst indienen indien hij voldoet aan
-                  twee voorwaarden: (i) hij moet voldoende belang hebben om zich te
-                  mengen in de procedure in verband met eventuele nadelige gevolgen die
-                  hij zal ondervinden als gevolg van de uitspraak in de hoofdzaak, en
-                  (ii) hij moet stellen dat hij een zelfstandige vordering wenst in te
-                  stellen in de hoofdzaak{" "}
+                  {t("cardD.description")}{" "}
                   <Link href={allCasesHref} className="underline underline-offset-2 hover:text-white">
-                    Lees meer...
+                    {t("cardD.readMore")}
                   </Link>
                 </p>
               </div>
@@ -99,7 +93,7 @@ export default function CasesGrid({ allCasesHref = "/cases" }: { allCasesHref?: 
             href={allCasesHref}
             className="btn-gradient gap-2.5 h-[80px] px-12 rounded-2xl text-[24px] leading-none tracking-normal"
           >
-            Bekijk alle cases
+            {tCta("viewAllCases")}
             <ArrowUpRight />
           </Link>
         </div>

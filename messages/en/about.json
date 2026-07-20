@@ -1,0 +1,248 @@
+{
+  "about": {
+    "meta": {
+      "title": "About us | LOGOS LEGAL",
+      "description": "A team of dedicated legal professionals, committed to excellence and the success of our clients."
+    },
+    "hero": {
+      "title": "About Logos Legal",
+      "subtitle": "A team of dedicated legal professionals, committed to excellence and the success of our clients."
+    },
+    "intro": {
+      "heading": "Committed, strategic and innovative",
+      "paragraph": "Distinctive, out-of-the-box, inquisitive and socially engaged, but above all with many years of experience and expertise. Our attorneys specialise in criminal law, employment law, education law, contract and liability law, employee participation law and human rights.",
+      "imageAlt": "The LOGOS LEGAL team in conversation",
+      "stats": [
+        { "value": "500+", "label": "Cases won" },
+        { "value": "18+", "label": "Years of experience" },
+        { "value": "1000+", "label": "Satisfied clients" }
+      ]
+    },
+    "why": {
+      "headingPre": "What makes working with Logos Legal so",
+      "headingHighlight": "special?",
+      "paragraphs": [
+        "Our corporate law practice provides comprehensive legal services to businesses of every size, from start-ups to multinational corporations. Our corporate law practice provides comprehensive legal services to businesses of every size, from start-ups to multinational corporations. Our corporate law practice provides comprehensive legal services to businesses of every size, from start-ups to multinational corporations."
+      ],
+      "imageAlt": "A LOGOS LEGAL attorney in conversation with a client"
+    },
+    "cta": {
+      "heading": "Ready to work with our expert legal team?",
+      "subtitle": "Schedule a consultation today and discover how we can help you with your legal matters."
+    }
+  },
+  "coreValues": {
+    "headingPre": "Our",
+    "headingHighlight": "core values",
+    "subtitle": "These principles form the foundation of our approach and define how we serve our clients.",
+    "values": [
+      {
+        "title": "Integrity",
+        "description": "We uphold the highest ethical standards in all our interactions and legal work, ensuring transparency and honesty at every step."
+      },
+      {
+        "title": "Excellence",
+        "description": "We strive for excellence in every aspect of our practice, from legal research to advocacy in the courtroom."
+      },
+      {
+        "title": "Client-focused",
+        "description": "We put our clients' needs first, offering personal attention and tailor-made legal strategies."
+      },
+      {
+        "title": "Decisive",
+        "description": "We value timely communication and swift action to address our clients' legal matters efficiently."
+      }
+    ]
+  },
+  "teamGrid": {
+    "headingPre": "Our",
+    "headingHighlight": "team",
+    "subtitle": "Committed, strategic and innovative",
+    "roles": {
+      "babiAzar": "Attorney at law",
+      "arzuYandere": "Attorney at law",
+      "pejmanSalim": "Attorney at law",
+      "anilRamdas": "Attorney at law"
+    }
+  },
+  "advocates": {
+    "shared": {
+      "cta": {
+        "heading": "Ready to work with our expert legal team?",
+        "subtitle": "Schedule a consultation today and discover how we can support you with your legal needs."
+      },
+      "specialisme": {
+        "headingHighlight": "specialisation",
+        "subtitle": "Broad legal expertise focused on effective solutions",
+        "items": [
+          {
+            "title": "Civil litigation and contracts",
+            "description": "Resolving contractual disputes, liability issues and damage claims, often in conjunction with the Dutch Civil Code."
+          },
+          {
+            "title": "Employment law",
+            "description": "Representing employers or employees in matters concerning dismissal, employment contracts and labour disputes."
+          },
+          {
+            "title": "Corporate and commercial law",
+            "description": "Handling business disputes, shareholder conflicts, mergers and acquisitions (M&A) and corporate restructurings."
+          },
+          {
+            "title": "Tenancy law",
+            "description": "Assisting with rental agreements, evictions, and housing disputes (with a focus on high tenant protection)."
+          }
+        ]
+      }
+    },
+    "pejmanSalim": {
+      "meta": {
+        "title": "Pejman Salim | LOGOS LEGAL",
+        "description": "Pejman Salim — attorney in international criminal law. Education, experience, expertise and specialisations of Pejman Salim at LOGOS LEGAL."
+      },
+      "hero": {
+        "subtitle": "Attorney in international criminal law"
+      },
+      "background": {
+        "headingPre": "Education, experience",
+        "headingHighlight": "and background",
+        "intro": "Are you a complex litigation case? Because Pejman Salim would sink his teeth right into you — and frankly, so would I.",
+        "imageAlt": "Pejman Salim",
+        "checks": [
+          "Founder and director of various human rights and advocacy organisations at national and international level.",
+          "Practising attorney since 2014 with broad experience in civil and criminal law.",
+          "Specialised in financial criminal law in combination with civil law.",
+          "Background in civil law and inheritance law within the Amsterdam legal profession.",
+          "Completed the postgraduate programme Company and Liability at the Grotius Academy in 2024."
+        ]
+      },
+      "story": {
+        "imageAlt": "Pejman Salim at work",
+        "quote": "Once I sink my teeth into a case, I never let go",
+        "role": "Attorney at law",
+        "expertiseHeadingPre": "Expertise,",
+        "expertiseHeadingHighlight": "approach and results",
+        "paragraphs": [
+          "From civil proceedings against the government to turning the entire field of tenancy law on its head with a single case. Pejman is a man of many talents, but his litigation cases all have one thing in common: they are complex. That is how he prefers to work — with academic rigour and deep substantive focus.",
+          "Once Pejman sinks his teeth into a case, he never lets go and does everything within his power to bring it to a successful conclusion, preferably in a creative way. His colleagues and clients describe him as sharp, committed, solution-oriented, highly skilled and as an attorney with an enormous wealth of knowledge. His cases regularly make the news, including his groundbreaking work for victims of the Dutch childcare benefits scandal."
+        ]
+      },
+      "registratie": {
+        "headingLine1": "Registration, development",
+        "headingHighlight": "and engagement",
+        "paragraph": "Pejman has registered the practice areas of criminal law, general civil law practice and corporate law in the register of legal practice areas of the Netherlands Bar. On the basis of this registration, he is required to earn ten training credits each calendar year in every registered principal practice area, in accordance with the standards of the Netherlands Bar. Pejman closely follows political current affairs. He worked as an actor in film and theatre, and can still often be found at the theatre.",
+        "imageAlt": "Pejman Salim in conversation"
+      }
+    },
+    "arzuYandere": {
+      "meta": {
+        "title": "Arzu Yandere | LOGOS LEGAL",
+        "description": "Arzu Yandere — attorney in education law & employment law. Education, expertise, training courses and specialisations of Arzu Yandere at LOGOS LEGAL."
+      },
+      "hero": {
+        "subtitle": "Attorney in education law & employment law"
+      },
+      "background": {
+        "headingPre": "Education, specialisations",
+        "headingHighlight": "and experience",
+        "intro": "Specialised in education law and employment law with more than 16 years of experience.",
+        "imageAlt": "Arzu Yandere",
+        "checks": [
+          "Active in the legal profession for over nine years, focusing on complex education and employment law matters.",
+          "Advises and litigates for school boards, supervisory boards, employers and employees.",
+          "Specialised in financial criminal law in combination with civil law.",
+          "Completed the postgraduate programme Employment Law at the Grotius Academy in 2024."
+        ]
+      },
+      "story": {
+        "imageAlt": "Arzu Yandere at work",
+        "quote": "With genuine dedication to the cause, I am currently putting my knowledge and experience to ambitious use for Logos Legal",
+        "role": "Attorney at law",
+        "expertiseHeadingPre": "Expertise, training and",
+        "expertiseHeadingHighlight": "social engagement",
+        "paragraphs": [
+          "Arzu studied at Erasmus University Rotterdam and was admitted to the bar in 2016, after working for almost seven years as a legal counsel at ISBO. Before joining Dworkin Law, the predecessor of Logos Legal, she worked as an attorney at various law firms in The Hague and Amsterdam. Thanks to her many years of knowledge and experience, Arzu is regularly asked to provide in-company courses and training sessions. These cover topics including occupational disability and absence management, the legal position of employees, employee participation and governance. For E-WISE she developed the courses File Building in Cases of Underperformance and Education Law: Providing Information to Parents and Third Parties. Arzu is chair of the Dutch Education Law Association and a member of various employment law associations, including the specialist association VAAN (Dutch Employment Law Attorneys Association)."
+        ]
+      },
+      "registratie": {
+        "headingLine1": "Approach, registration and",
+        "headingHighlight": "personality",
+        "paragraph": "With genuine dedication to the cause, Arzu puts her knowledge and experience to ambitious use for Logos Legal. She is valued by colleagues and clients for her commitment, organisation, professionalism, her systematic way of working and her ability to switch gears quickly. Arzu has registered the practice areas of education law and employment law in the register of legal practice areas of the Netherlands Bar. On the basis of this registration, she is required to earn ten training credits each calendar year in both registered principal practice areas, in accordance with the standards of the Netherlands Bar. In her spare time, Arzu enjoys cooking and designing and making clothes.",
+        "imageAlt": "Arzu Yandere in conversation"
+      }
+    },
+    "babiAzar": {
+      "meta": {
+        "title": "Babi Azar | LOGOS LEGAL",
+        "description": "Babi Azar — attorney in administrative law. Education, expertise and specialisations of Babi Azar at LOGOS LEGAL."
+      },
+      "hero": {
+        "subtitle": "Attorney in administrative law"
+      },
+      "background": {
+        "headingPre": "Education, specialisations",
+        "headingHighlight": "and experience",
+        "intro": "Specialised in administrative law, family law, tenancy law and employment law.",
+        "imageAlt": "Babi Azar",
+        "checks": [
+          "Focus within administrative law on social security law, asylum and refugee law and regular immigration law.",
+          "Background in mathematics with a highly analytical and structured way of working.",
+          "Graduated in administrative and private law from Radboud University in 2009.",
+          "Extensive experience gained at various law firms and within his own practice, Azar Legal."
+        ]
+      },
+      "story": {
+        "imageAlt": "Babi Azar in conversation",
+        "quote": "I value clear communication and the careful handling of every case",
+        "role": "Attorney at law",
+        "expertiseHeadingPre": "Expertise and",
+        "expertiseHeadingHighlight": "legal approach",
+        "paragraphs": [
+          "Babi focuses primarily on areas of law where the impact on clients' daily lives is significant. Within administrative law, he mainly assists clients in their dealings with the government, often in vulnerable positions. He also handles cases in the fields of family law, tenancy law and employment law, where legal and personal interests are closely intertwined. Babi has been with Logos Legal since March 2026, where he applies his accumulated expertise to a wide range of complex legal matters."
+        ]
+      },
+      "registratie": {
+        "headingLine1": "Working method and",
+        "headingHighlight": "personal approach",
+        "paragraph": "His working method is characterised by a combination of analytical ability and personal commitment. Babi attaches great importance to clear communication and the careful handling of every case. With his experience and accumulated expertise, he acts purposefully and thoughtfully, always aiming to achieve the best possible result for his clients.",
+        "imageAlt": "Babi Azar at work"
+      }
+    },
+    "anilRamdas": {
+      "meta": {
+        "title": "Anil Ramdas | LOGOS LEGAL",
+        "description": "Anil Ramdas — attorney in international criminal law. Education, expertise and specialisations of Anil Ramdas at LOGOS LEGAL."
+      },
+      "hero": {
+        "subtitle": "Attorney in international criminal law"
+      },
+      "background": {
+        "headingPre": "Education, specialisations",
+        "headingHighlight": "and experience",
+        "intro": "Specialised in civil law and criminal law with more than 20 years of practical experience.",
+        "imageAlt": "Anil Ramdas",
+        "checks": [
+          "Studied economics and law at Erasmus University Rotterdam and Tilburg University.",
+          "Worked for fourteen years as an independent entrepreneur within the legal profession.",
+          "Working in partnership with Pejman Salim within Logos Legal since 2019.",
+          "Broad experience in complex civil and criminal cases with a strategic approach."
+        ]
+      },
+      "story": {
+        "imageAlt": "Anil Ramdas in conversation",
+        "quote": "I like to be closely involved with my clients",
+        "role": "Attorney at law",
+        "expertiseHeadingPre": "Expertise",
+        "expertiseHeadingHighlight": "and working method",
+        "paragraphs": [
+          "With more than twenty years of experience, Anil knows the ins and outs of civil and criminal law. He likes to be closely involved with his clients and wants insight not only into the case, but also into the person behind it. Thanks to his sharp analytical mind, he knows how to position cases tactically and strategically. His approach is characterised by commitment, thoroughness and a strong focus on achieving the best possible result."
+        ]
+      },
+      "registratie": {
+        "headingLine1": "Personality,",
+        "headingHighlight": "registration and development",
+        "paragraph": "Anil is described by colleagues and clients as principled, knowledgeable and meticulous. He has extensive experience and substantive knowledge and is known as a true team player. Anil Ramdas has registered the practice areas of criminal law and civil law in the register of legal practice areas of the Netherlands Bar. On the basis of this registration, he is required to earn ten training credits each calendar year in both registered principal practice areas, in accordance with the standards of the Netherlands Bar. In his scarce free time, Anil enjoys reading, with a particular interest in professional legal literature.",
+        "imageAlt": "Anil Ramdas"
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { getTranslations } from "next-intl/server";
 
 const ArrowUpRight = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="rotate-45">
@@ -7,7 +8,10 @@ const ArrowUpRight = () => (
   </svg>
 );
 
-export default function HomeCTA({ contactHref = "/contact" }: { contactHref?: string }) {
+export default async function HomeCTA({ contactHref = "/contact" }: { contactHref?: string }) {
+  const t = await getTranslations("homeCta");
+  const tCta = await getTranslations("cta");
+
   return (
     <section className="w-full bg-white py-12 md:py-20">
       <div className="max-w-container mx-auto px-6 md:px-12">
@@ -25,15 +29,15 @@ export default function HomeCTA({ contactHref = "/contact" }: { contactHref?: st
           />
           <div className="relative flex flex-col lg:flex-row lg:items-center justify-between gap-8">
             <h2 className="font-raleway font-bold text-[30px] md:text-[44px] leading-tight text-[#002B58] max-w-[640px]">
-              Ontdek hoe wij u kunnen{" "}
-              <span className="text-brand-blue">vertegenwoordigen</span> in uw
-              aankomende rechtzaak!
+              {t("headingPre")}{" "}
+              <span className="text-brand-blue">{t("headingHighlight")}</span>{" "}
+              {t("headingPost")}
             </h2>
             <Link
               href={contactHref}
               className="btn-gradient shrink-0 gap-2 h-16 px-9 rounded-xl text-lg"
             >
-              Direct contact opnemen
+              {tCta("directContact")}
               <ArrowUpRight />
             </Link>
           </div>

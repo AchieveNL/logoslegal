@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
 interface ContactInfoProps {
   name: string;
@@ -7,12 +8,14 @@ interface ContactInfoProps {
   imageSrc: string;
 }
 
-export default function ContactInfo({
+export default async function ContactInfo({
   name,
   greeting,
   phone,
   imageSrc,
 }: ContactInfoProps) {
+  const t = await getTranslations("contactInfo");
+
   // Highlight the contact person's name (e.g. "Linda") in blue within the greeting.
   const [before, after] = greeting.includes(name)
     ? greeting.split(name)
@@ -44,7 +47,7 @@ export default function ContactInfo({
 
         <div className="flex flex-col">
           <p className="font-poppins font-bold text-base text-[#0A2540]">
-            Via telefoon
+            {t("byPhone")}
           </p>
           <a
             href={`tel:${phone.replace(/\s/g, "")}`}

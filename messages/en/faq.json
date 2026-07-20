@@ -1,0 +1,164 @@
+{
+  "faq": {
+    "heading": "Frequently Asked <blue>Questions</blue>",
+    "subtitle": "The most frequently asked questions about Logos Legal.",
+    "categories": [
+      {
+        "id": "algemeen",
+        "label": "General",
+        "items": [
+          {
+            "question": "Who can seek advice from Logos Legal?",
+            "answer": "Private individuals, businesses and organisations can seek advice from Logos Legal. We assist clients with personal legal matters as well as companies and institutions with complex and strategic cases."
+          },
+          {
+            "question": "How can I contact Logos Legal?",
+            "answer": "You can contact us by telephone, e-mail or through the contact form on our website. Our team will respond as soon as possible to discuss your situation and the next steps."
+          },
+          {
+            "question": "What can I expect during an initial consultation",
+            "answer": "During the initial consultation, we analyse your situation, identify the key legal points of attention and discuss possible strategies. You gain insight into your position, risks and the available options."
+          },
+          {
+            "question": "How are the legal costs structured?",
+            "answer": "Our rates depend on the nature and complexity of the case. We provide clarity in advance and discuss the applicable fee structure, such as a fixed fee or an hourly rate."
+          },
+          {
+            "question": "Can Logos Legal assist with international cases?",
+            "answer": "Yes, Logos Legal has experience with international cases, including cross-border disputes, extradition and proceedings before international courts."
+          }
+        ]
+      },
+      {
+        "id": "contracten",
+        "label": "Contracts and liability",
+        "items": [
+          {
+            "question": "What types of contracts can Logos Legal help with?",
+            "answer": "Logos Legal assists with a wide range of contracts, including commercial agreements, purchase and sale agreements and general terms and conditions. We ensure that your contracts are legally sound and aligned with your interests."
+          },
+          {
+            "question": "Can you review or amend an existing contract?",
+            "answer": "Yes, we can review, analyse and, where necessary, amend existing contracts to identify risks, clarify provisions and strengthen your legal position."
+          },
+          {
+            "question": "What should I do if the other party breaches a contract?",
+            "answer": "In the event of a breach of contract, it is important to assess your rights and possible measures, such as enforcing performance, terminating the agreement or claiming damages. We guide you through this process and take legal action where necessary."
+          },
+          {
+            "question": "When am I liable for damage?",
+            "answer": "You may be held liable if you fail to fulfil your contractual obligations or if you commit a wrongful act (onrechtmatige daad) that causes damage. We assess your situation and advise on risks, responsibilities and possible defences."
+          },
+          {
+            "question": "Can Logos Legal represent me in liability disputes?",
+            "answer": "Yes, we assist clients in liability disputes, both in negotiations and in court proceedings, with the aim of achieving a favourable outcome."
+          }
+        ]
+      },
+      {
+        "id": "arbeidsrecht",
+        "label": "Employment law",
+        "items": [
+          {
+            "question": "When must an employment contract be put in writing?",
+            "answer": "An employment contract does not always have to be put in writing, but certain provisions—such as a fixed-term contract, probationary period or non-compete clause—must be recorded in writing to be valid. We ensure that your agreements meet all statutory requirements."
+          },
+          {
+            "question": "What are my rights in the event of dismissal?",
+            "answer": "Your rights depend on the type of contract and the reason for dismissal. In many cases, an employer must follow a formal procedure and permission from the UWV or the court is required. You may also be entitled to a notice period or compensation."
+          },
+          {
+            "question": "How should an employer deal with long-term sickness absence?",
+            "answer": "Employers are obliged to work actively on reintegration and to continue paying (part of) the salary for a certain period. Both employer and employee have obligations in this respect. We advise on compliance and risk management throughout the process."
+          },
+          {
+            "question": "Can employment conditions be changed during the contract?",
+            "answer": "Changes to employment conditions are only permitted under certain circumstances, for example when this has been agreed in advance or when there is a compelling business interest. We assess whether changes are legally justified and how they can be implemented correctly."
+          },
+          {
+            "question": "What can I do in the event of an employment dispute?",
+            "answer": "It is important to address employment disputes in a timely manner to prevent escalation. Solutions may include mediation, negotiation or legal action. We guide you towards an effective and legally sound resolution."
+          }
+        ]
+      },
+      {
+        "id": "onderwijsrecht",
+        "label": "Education law",
+        "items": [
+          {
+            "question": "What does education law cover?",
+            "answer": "Education law covers several areas of law, including employment law, governance, participation (medezeggenschap) and liability within educational institutions. It concerns both the internal organisation and external legal obligations."
+          },
+          {
+            "question": "Who can seek advice on education law?",
+            "answer": "School boards, supervisory boards, participation councils, teachers, students and parents can seek advice. We assist both institutions and individuals with legal matters in the field of education."
+          },
+          {
+            "question": "Can Logos Legal assist with mergers or restructurings of schools?",
+            "answer": "Yes, we provide legal guidance on mergers, restructurings and changes to the governance structure. We ensure that all legal, organisational and regulatory aspects are carefully taken into account."
+          },
+          {
+            "question": "What are the statutory requirements for participation in education?",
+            "answer": "Educational institutions are required to involve participation councils in important decisions affecting staff, students and policy. We advise on compliance and provide support in disputes."
+          },
+          {
+            "question": "Do you offer training for educational institutions?",
+            "answer": "Yes, we provide in-company training sessions and workshops for school boards, supervisory boards and participation councils, focused on practical legal knowledge and current developments."
+          }
+        ]
+      },
+      {
+        "id": "criminal",
+        "label": "(Financial) Criminal Law",
+        "items": [
+          {
+            "question": "What falls under (financial) criminal law?",
+            "answer": "(Financial) criminal law covers criminal offences such as fraud, money laundering, corruption and other economic offences. It applies to both private individuals and companies."
+          },
+          {
+            "question": "When do I need a criminal defence lawyer?",
+            "answer": "As soon as you are suspected of a criminal offence or are approached by investigative authorities, it is advisable to seek legal advice immediately. Early assistance can have a significant impact on the outcome of your case."
+          },
+          {
+            "question": "What should I do if I am summoned for questioning?",
+            "answer": "It is important to seek legal advice beforehand and to prepare thoroughly. You have the right to remain silent and to be assisted by a lawyer during questioning."
+          },
+          {
+            "question": "Can Logos Legal assist me in international criminal cases?",
+            "answer": "Yes, we have experience with international criminal cases, including extradition, mutual legal assistance requests and proceedings before international courts."
+          },
+          {
+            "question": "What are the possible consequences of a conviction?",
+            "answer": "The consequences can range from fines and community service to imprisonment and reputational damage. We are committed to limiting the impact and strive for the best possible outcome."
+          }
+        ]
+      },
+      {
+        "id": "human-rights",
+        "label": "Human Rights",
+        "items": [
+          {
+            "question": "What does human rights law cover?",
+            "answer": "Human rights law protects fundamental rights and freedoms, such as freedom of expression, the prohibition of discrimination and the right to a fair trial. It applies to both individuals and organisations."
+          },
+          {
+            "question": "Who can receive support with human rights issues?",
+            "answer": "Individuals, NGOs and organisations facing violations of fundamental rights can receive support. We focus in particular on cases with a significant societal or personal impact."
+          },
+          {
+            "question": "Does Logos Legal handle pro bono cases?",
+            "answer": "Yes, our lawyers dedicate part of their time to pro bono cases or cases under a toevoeging (subsidised legal aid), particularly where access to legal assistance is limited by financial circumstances."
+          },
+          {
+            "question": "Can you assist with international human rights cases?",
+            "answer": "Yes, we provide support in international matters, including cases involving human rights violations, international crimes and proceedings before international courts."
+          },
+          {
+            "question": "How is it decided whether a case is taken on?",
+            "answer": "Due to limited capacity, cases are assessed on the basis of factors such as urgency, impact and available resources. We carefully weigh each request."
+          }
+        ]
+      }
+    ]
+  }
+}

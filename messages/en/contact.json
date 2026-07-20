@@ -1,0 +1,70 @@
+{
+  "contactPage": {
+    "meta": {
+      "title": "Contact | LOGOS LEGAL",
+      "description": "Get in touch with LOGOS LEGAL. We are ready to assist you with your legal matters — call us or send a message via the contact form."
+    },
+    "hero": {
+      "title": "Get in touch with us",
+      "subtitle": "A team of dedicated legal professionals committed to excellence and the success of our clients."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "contact": "Contact"
+    },
+    "heading": "We would <blue>love</blue> to hear from you",
+    "subheading": "From 09:00 to 17:00, Monday to Friday",
+    "greeting": "Hello, I am Linda. How can I help you today?",
+    "testimonial": {
+      "quote": "Working with Logos Legal was a turning point in our patent dispute. Their expertise in intellectual property law was evident throughout the entire process, and they secured a victory that not only protected our innovation but also strengthened our market position.",
+      "author": "Laura Chen",
+      "role": "Managing Director"
+    },
+    "cta": {
+      "heading": "Ready to work with our expert legal team?",
+      "subtitle": "Schedule a consultation today and discover how we can support you with your legal needs."
+    }
+  },
+  "contactForm": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone number",
+    "caseType": "Type of case",
+    "caseTypes": [
+      "Employment law",
+      "Contracts and liability",
+      "Education law",
+      "Financial criminal law",
+      "Human rights",
+      "Other"
+    ],
+    "message": "Description",
+    "messagePlaceholder": "Write a message"
+  },
+  "contactInfo": {
+    "byPhone": "By phone"
+  },
+  "contactLocation": {
+    "heading": "Barendrecht",
+    "subtitle": "You can reach us through the following channels or visit our office during office hours.",
+    "cards": {
+      "office": {
+        "title": "Barendrecht office"
+      },
+      "email": {
+        "title": "Email",
+        "general": "General",
+        "allowances": "Childcare benefits scandal"
+      },
+      "phone": {
+        "title": "Phone number"
+      },
+      "hours": {
+        "title": "Office hours",
+        "weekdays": "Monday - Friday: 09:00 - 17:00",
+        "weekend": "Saturday - Sunday: Closed"
+      }
+    },
+    "mapTitle": "Location of LOGOS LEGAL — Barendrecht"
+  }
+}

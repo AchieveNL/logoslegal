@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
 interface Stat {
   value: string;
@@ -6,20 +7,17 @@ interface Stat {
   icon: string;
 }
 
-const stats: Stat[] = [
-  { value: "15+", label: "Jaren ervaring", icon: "/images/home/stats/ervaring.svg" },
-  { value: "4.8/5", label: "Google reviews", icon: "/images/home/stats/reviews.svg" },
-  { value: "100%", label: "Advocaat-cliëntprivilege", icon: "/images/home/stats/privilege.svg" },
-  { value: "500+", label: "Succesvol behandelde zaken", icon: "/images/home/stats/zaken.svg" },
-];
-
 interface HomeHeroProps {
   phone: string;
   imageSrc: string;
   imageAlt: string;
 }
 
-export default function HomeHero({ phone, imageSrc, imageAlt }: HomeHeroProps) {
+export default async function HomeHero({ phone, imageSrc, imageAlt }: HomeHeroProps) {
+  const t = await getTranslations("homeHero");
+  const tCta = await getTranslations("cta");
+  const stats = t.raw("stats") as Stat[];
+
   return (
     <section className="w-full bg-white">
       <div className="relative z-10 max-w-container mx-auto px-6 md:px-12 pt-10 md:pt-14">
@@ -27,19 +25,15 @@ export default function HomeHero({ phone, imageSrc, imageAlt }: HomeHeroProps) {
           {/* Left: copy */}
           <div className="max-w-[680px]">
             <h1 className="font-raleway font-bold text-[52px] md:text-[80px] leading-[1.02] tracking-normal">
-              <span className="text-brand-blue">Betrokken,</span>
+              <span className="text-brand-blue">{t("titleLine1")}</span>
               <br />
-              <span className="text-[#002B58]">Strategisch</span>{" "}
-              <span className="text-brand-blue">en</span>
+              <span className="text-[#002B58]">{t("titleLine2Part1")}</span>{" "}
+              <span className="text-brand-blue">{t("titleLine2Part2")}</span>
               <br />
-              <span className="text-brand-blue">Innovatief</span>
+              <span className="text-brand-blue">{t("titleLine3")}</span>
             </h1>
             <p className="mt-7 font-poppins font-medium text-base md:text-[24px] leading-[1.5] tracking-normal text-[#292D32] max-w-[600px]">
-              Onderscheidend, out of the box, nieuwsgierig en maatschappelijk
-              betrokken, met jarenlange ervaring en expertise. Onze juristen zijn
-              gespecialiseerd in strafrecht, arbeidsrecht, onderwijsrecht,
-              contracten en aansprakelijkheidsrecht, medezeggenschap en
-              mensenrechten.
+              {t("intro")}
             </p>
             <a
               href={`tel:${phone.replace(/\s/g, "")}`}
@@ -54,7 +48,7 @@ export default function HomeHero({ phone, imageSrc, imageAlt }: HomeHeroProps) {
                   strokeLinejoin="round"
                 />
               </svg>
-              Bel ons direct
+              {tCta("callUsDirectly")}
             </a>
           </div>
 
@@ -87,9 +81,10 @@ export default function HomeHero({ phone, imageSrc, imageAlt }: HomeHeroProps) {
         <div className="relative max-w-container mx-auto px-6 md:px-12 pt-10 lg:pt-44 pb-10 lg:pb-14">
           <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-16">
             <h2 className="shrink-0 font-inter font-bold text-[26px] md:text-[32px] leading-none tracking-normal text-[#002B58]">
-              Daarom kies je
+              {t("statsTitleLine1")}
               <br />
-              voor <span className="text-brand-blue">Logos Legal</span>
+              {t("statsTitleLine2Pre")}{" "}
+              <span className="text-brand-blue">Logos Legal</span>
             </h2>
             <div className="flex-1 grid grid-cols-2 gap-6 lg:flex lg:items-center lg:justify-between lg:gap-6">
               {stats.map((stat) => (

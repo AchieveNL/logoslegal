@@ -1,0 +1,70 @@
+{
+  "contactPage": {
+    "meta": {
+      "title": "Contact | LOGOS LEGAL",
+      "description": "Neem contact op met LOGOS LEGAL. Wij staan klaar om u te helpen met uw juridische vraagstukken — bel ons of stuur een bericht via het contactformulier."
+    },
+    "hero": {
+      "title": "Neem contact met ons op",
+      "subtitle": "Een team van toegewijde juridische professionals dat zich inzet voor excellentie en het succes van cliënten."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "contact": "Contact"
+    },
+    "heading": "Wij horen <blue>graag</blue> van u",
+    "subheading": "Van 09:00 tot 17:00 uur, maandag tot en met vrijdag",
+    "greeting": "Hallo, ik ben Linda. Waarmee kan ik u vandaag helpen?",
+    "testimonial": {
+      "quote": "Samenwerken met Logos Legal was een keerpunt in ons octrooigeschil. Hun expertise in het intellectueel eigendomsrecht was gedurende het hele proces duidelijk zichtbaar, en zij behaalden een overwinning die niet alleen onze innovatie beschermde, maar ook onze marktpositie versterkte.",
+      "author": "Laura Chen",
+      "role": "Managing Director"
+    },
+    "cta": {
+      "heading": "Klaar om samen te werken met ons deskundige juridische team?",
+      "subtitle": "Plan vandaag nog een consult in en ontdek hoe wij u kunnen ondersteunen bij uw juridische behoeften."
+    }
+  },
+  "contactForm": {
+    "name": "Naam",
+    "email": "E-mail",
+    "phone": "Telefoonnummer",
+    "caseType": "Soort zaak",
+    "caseTypes": [
+      "Arbeidsrecht",
+      "Contracten en aansprakelijkheid",
+      "Onderwijsrecht",
+      "Financieel strafrecht",
+      "Mensenrechter",
+      "Overige"
+    ],
+    "message": "Omschrijving",
+    "messagePlaceholder": "Schrijf een bericht"
+  },
+  "contactInfo": {
+    "byPhone": "Via telefoon"
+  },
+  "contactLocation": {
+    "heading": "Barendrecht",
+    "subtitle": "U kunt ons bereiken via de volgende kanalen of ons kantoor bezoeken tijdens kantooruren.",
+    "cards": {
+      "office": {
+        "title": "Vestiging Barendrecht"
+      },
+      "email": {
+        "title": "Email",
+        "general": "Algemeen",
+        "allowances": "Toeslagenaffaire"
+      },
+      "phone": {
+        "title": "Telefoonnummer"
+      },
+      "hours": {
+        "title": "Kantooruren",
+        "weekdays": "Monday - vrijdag: 09:00 - 17:00",
+        "weekend": "Zaterdag - Zondag: Gesloten"
+      }
+    },
+    "mapTitle": "Locatie LOGOS LEGAL — Barendrecht"
+  }
+}

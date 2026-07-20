@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "LOGOS LEGAL | Betrokken, Strategisch en Innovatief",
+    "description": "LOGOS LEGAL biedt deskundige juridische begeleiding op het gebied van arbeidsrecht, contractenrecht, onderwijsrecht en meer."
+  },
+  "nav": {
+    "home": "Home",
+    "cases": "Cases",
+    "aboutUs": "Over ons",
+    "expertise": "Expertise",
+    "contact": "Contact",
+    "showExpertiseMenu": "Toon expertisemenu",
+    "toggleMenu": "Menu openen of sluiten",
+    "switchToDutch": "Nederlands",
+    "switchToEnglish": "English"
+  },
+  "expertiseAreas": {
+    "arbeidsrecht": "Arbeidsrecht",
+    "contracten": "Contracten en aansprakelijkheid",
+    "onderwijsrecht": "Onderwijsrecht",
+    "financieelStrafrecht": "Financieel strafrecht",
+    "mensenrechten": "Mensenrechten"
+  },
+  "footer": {
+    "menuTitle": "Menu",
+    "legalTitle": "Juridisch",
+    "contactTitle": "Contact",
+    "locationTitle": "Locatie",
+    "aboutUs": "Over ons",
+    "expertise": "Expertise",
+    "cases": "Cases",
+    "contactUs": "Neem contact op",
+    "terms": "Algemene voorwaarden",
+    "complaints": "Klachtenregeling",
+    "register": "Rechtsgebiedenregister",
+    "thirdPartyFunds": "Derdengelden",
+    "mapAlt": "Kaart van Nederland met Amsterdam en Barendrecht",
+    "developedBy": "Developed by",
+    "disclaimer": "Disclaimer",
+    "privacyStatement": "Privacy Statement",
+    "copyright": "2026 © Logos Legal",
+    "socialPlaceholder": "Social media (binnenkort)"
+  },
+  "cta": {
+    "readMore": "Lees meer",
+    "contactUs": "Contact opnemen",
+    "getInTouch": "Neem contact op",
+    "callNow": "Bel nu",
+    "callUsDirectly": "Bel ons direct",
+    "send": "Verzenden",
+    "viewAllCases": "Bekijk alle cases",
+    "directContact": "Direct contact opnemen"
+  }
+}

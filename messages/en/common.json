@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "LOGOS LEGAL | Committed, Strategic and Innovative",
+    "description": "LOGOS LEGAL provides expert legal guidance in employment law, contract law, education law and more."
+  },
+  "nav": {
+    "home": "Home",
+    "cases": "Cases",
+    "aboutUs": "About us",
+    "expertise": "Expertise",
+    "contact": "Contact",
+    "showExpertiseMenu": "Show expertise menu",
+    "toggleMenu": "Toggle menu",
+    "switchToDutch": "Nederlands",
+    "switchToEnglish": "English"
+  },
+  "expertiseAreas": {
+    "arbeidsrecht": "Employment law",
+    "contracten": "Contracts and liability",
+    "onderwijsrecht": "Education law",
+    "financieelStrafrecht": "Financial criminal law",
+    "mensenrechten": "Human rights"
+  },
+  "footer": {
+    "menuTitle": "Menu",
+    "legalTitle": "Legal",
+    "contactTitle": "Contact",
+    "locationTitle": "Location",
+    "aboutUs": "About us",
+    "expertise": "Expertise",
+    "cases": "Cases",
+    "contactUs": "Contact us",
+    "terms": "Terms and conditions",
+    "complaints": "Complaints procedure",
+    "register": "Register of legal practice areas",
+    "thirdPartyFunds": "Third-party funds",
+    "mapAlt": "Map of the Netherlands showing Amsterdam and Barendrecht",
+    "developedBy": "Developed by",
+    "disclaimer": "Disclaimer",
+    "privacyStatement": "Privacy Statement",
+    "copyright": "2026 © Logos Legal",
+    "socialPlaceholder": "Social media (coming soon)"
+  },
+  "cta": {
+    "readMore": "Read more",
+    "contactUs": "Contact us",
+    "getInTouch": "Get in touch",
+    "callNow": "Call now",
+    "callUsDirectly": "Call us directly",
+    "send": "Send",
+    "viewAllCases": "View all cases",
+    "directContact": "Contact us directly"
+  }
+}

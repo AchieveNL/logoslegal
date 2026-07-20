@@ -1,0 +1,107 @@
+{
+  "home": {
+    "meta": {
+      "title": "LOGOS LEGAL | Committed, Strategic and Innovative",
+      "description": "Distinctive, out of the box and socially engaged. Our lawyers specialise in criminal law, employment law, education law, contract and liability law, employee participation and human rights."
+    },
+    "heroImageAlt": "LOGOS LEGAL lawyers in conversation with a client",
+    "contactHeadingPre": "We would",
+    "contactHeadingHighlight": "love",
+    "contactHeadingPost": "to hear from you",
+    "contactSubheading": "From 09:00 to 17:00, Monday through Friday",
+    "contactGreeting": "Hello, I'm Linda. How can I help you today?",
+    "testimonial": {
+      "quote": "Working with Logos Legal was a turning point in our patent dispute. Their expertise in intellectual property law was clearly evident throughout the entire process, and they secured a victory that not only protected our innovation but also strengthened our market position.",
+      "author": "Laura Chen",
+      "role": "Managing Director"
+    }
+  },
+  "homeHero": {
+    "titleLine1": "Committed,",
+    "titleLine2Part1": "Strategic",
+    "titleLine2Part2": "and",
+    "titleLine3": "Innovative",
+    "intro": "Distinctive, out of the box, curious and socially engaged, with years of experience and expertise. Our lawyers specialise in criminal law, employment law, education law, contract and liability law, employee participation and human rights.",
+    "statsTitleLine1": "This is why you",
+    "statsTitleLine2Pre": "choose",
+    "stats": [
+      {
+        "value": "15+",
+        "label": "Years of experience",
+        "icon": "/images/home/stats/ervaring.svg"
+      },
+      {
+        "value": "4.8/5",
+        "label": "Google reviews",
+        "icon": "/images/home/stats/reviews.svg"
+      },
+      {
+        "value": "100%",
+        "label": "Attorney-client privilege",
+        "icon": "/images/home/stats/privilege.svg"
+      },
+      {
+        "value": "500+",
+        "label": "Successfully handled cases",
+        "icon": "/images/home/stats/zaken.svg"
+      }
+    ]
+  },
+  "homeCta": {
+    "headingPre": "Discover how we can",
+    "headingHighlight": "represent",
+    "headingPost": "you in your upcoming court case!"
+  },
+  "homeCases": {
+    "headingPre": "Completed",
+    "headingHighlight": "cases",
+    "subtitle": "A selection of results and matters in which we made the difference.",
+    "cardA": {
+      "title": "Immediate release and granting of self-reporter status",
+      "description": "In summary proceedings initiated by Pejman Salim, the preliminary relief judge ruled on the application of the Act revising the enforcement of criminal law decisions (Wet USB) and ordered the immediate release of the convicted person and the granting of self-reporter status.",
+      "cta": "Learn More"
+    },
+    "cardB": {
+      "title": "Claim for transfer of shares"
+    },
+    "cardC": {
+      "title": "Smoking ban fine"
+    },
+    "cardD": {
+      "title": "Incidental claim for intervention | ex Article 217 Rv",
+      "description": "A person who is not a party to ongoing proceedings can successfully file a claim for intervention if he meets two conditions: (i) he must have a sufficient interest in intervening in the proceedings in connection with any adverse consequences he may suffer as a result of the judgment in the main action, and (ii) he must assert that he wishes to bring an independent claim in the main action",
+      "readMore": "Read more..."
+    }
+  },
+  "teamCarousel": {
+    "headingPre": "Our",
+    "headingHighlight1": "‘out-of-the-box’ approach",
+    "headingMid": "is the strength of Logos Legal and increases the chances of a",
+    "headingHighlight2": "favourable outcome.",
+    "regionLabel": "Team members",
+    "prevLabel": "Previous team members",
+    "nextLabel": "Next team members",
+    "members": [
+      {
+        "name": "Pejman Salim",
+        "role": "Attorney",
+        "image": "/images/team/pejman-salim.png"
+      },
+      {
+        "name": "Arzu Yandere",
+        "role": "Attorney",
+        "image": "/images/team/arzu-yandere.png"
+      },
+      {
+        "name": "Babi Azar",
+        "role": "Attorney",
+        "image": "/images/team/babi-azar.png"
+      },
+      {
+        "name": "Anil Ramdas",
+        "role": "Attorney",
+        "image": "/images/team/anil-ramdas.png"
+      }
+    ]
+  }
+}

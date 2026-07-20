@@ -1,0 +1,259 @@
+{
+  "legalPages": {
+    "privacy": {
+      "meta": {
+        "title": "Privacy Statement | LOGOS LEGAL",
+        "description": "Privacy statement of LOGOS LEGAL: how we process personal data in accordance with the GDPR."
+      },
+      "hero": {
+        "title": "Privacy Statement",
+        "subtitle": "Registered legal specialisations"
+      },
+      "breadcrumb": "Privacy Statement",
+      "sections": [
+        {
+          "heading": "1. General",
+          "highlight": "privacy principles",
+          "paragraph": "Logos Legal respects your personal data and ensures that all information you provide to us, or that we obtain in any other way, is treated confidentially. Personal data comprises all information relating to an identifiable person. This statement explains how we comply with the information obligations under the GDPR (General Data Protection Regulation).",
+          "items": [
+            "Personal data is treated confidentially and with due care.",
+            "Includes all information that can identify a person directly or indirectly",
+            "Processing takes place in accordance with the GDPR.",
+            "Users are informed about how and why data is processed.",
+            "Data protection is a core principle of Logos Legal."
+          ]
+        },
+        {
+          "heading": "2. Data protection is a",
+          "highlight": "core principle of Logos Legal.",
+          "paragraph": "Logos Legal processes personal data as a controller (verwerkingsverantwoordelijke) in order to provide legal services, improve its services and communicate with clients. Data is used exclusively for clearly defined and lawful purposes related to our legal practice.",
+          "items": [
+            "Controller responsible for data processing: Logos Legal",
+            "Used for the provision of legal services and the performance of contracts.",
+            "Supports communication and client contact.",
+            "Improves the quality of services and business operations.",
+            "Includes marketing, recruitment and compliance purposes."
+          ]
+        },
+        {
+          "heading": "3. Processed",
+          "highlight": "personal data",
+          "paragraph": "We process personal data that is necessary for the performance of our legal services, including identification, contact and file-related information. In some cases, depending on the nature of the legal matter or statutory obligations, additional sensitive data may be processed.",
+          "items": [
+            "Identity and contact details (name, address, e-mail, telephone number)",
+            "Identification data (ID number, citizen service number (BSN), residence status)",
+            "Legal information relating to the case, where necessary.",
+            "Website and technical data (IP address, browser, device)",
+            "Sensitive data is only provided where necessary for the provision of legal services."
+          ]
+        },
+        {
+          "heading": "4. Legal bases",
+          "highlight": "for processing",
+          "paragraph": "Personal data is only processed where a legal basis exists for doing so, as described in Article 6 of the GDPR. This includes statutory obligations, contractual necessity, consent or a legitimate interest.",
+          "items": [
+            "Statutory obligation",
+            "Performance of a contract",
+            "Explicit consent of the data subject",
+            "Legitimate business interest",
+            "Sensitive data is only provided where necessary for the provision of legal services."
+          ]
+        },
+        {
+          "heading": "5. Sharing, security",
+          "highlight": "and retention",
+          "paragraph": "Personal data is only shared with third parties where this is necessary for the provision of services or to comply with statutory obligations. Appropriate security measures are taken and data is not retained for longer than necessary or legally required.",
+          "items": [
+            "Only shared where necessary for the provision of legal services.",
+            "Third parties include IT suppliers and legal experts.",
+            "Data is protected by means of technical and organisational measures.",
+            "The retention period depends on statutory and operational necessity.",
+            "The standard retention period for enquiries is a maximum of 5 years."
+          ]
+        },
+        {
+          "heading": "6. Rights, cookies",
+          "highlight": "and contact",
+          "paragraph": "Individuals have the right to access, rectify, restrict or erase their data. The website uses functional and analytical cookies, including Google Analytics, to improve performance. Social media and third-party tools may also place cookies.",
+          "items": [
+            "Rights: access, rectification, erasure, restriction, objection",
+            "Identity verification may be required for requests.",
+            "Cookies are used for functionality and analytics.",
+            "Google Analytics helps improve website performance."
+          ],
+          "extra": [
+            "Contact: contact@logoslegal.nl",
+            "Postbus 22036, 1100 CA Amsterdam"
+          ]
+        }
+      ]
+    },
+    "disclaimer": {
+      "meta": {
+        "title": "Disclaimer | LOGOS LEGAL",
+        "description": "Disclaimer of LOGOS LEGAL regarding the use of and liability for this website."
+      },
+      "hero": {
+        "title": "Disclaimer",
+        "subtitle": "Registered legal specialisations"
+      },
+      "breadcrumb": "Disclaimer",
+      "sections": [
+        {
+          "heading": "Website",
+          "highlight": "Disclaimer",
+          "paragraph": "This website has been compiled with great care and attention by Logos Legal. Despite continuous efforts to keep the information up to date, complete and accurate, the published information may nevertheless be incomplete or incorrect. No rights may be derived from the contents of this website.",
+          "items": [
+            "The website has been carefully compiled by Logos Legal",
+            "We strive to provide accurate and complete information",
+            "Inaccuracies or omissions may occur",
+            "No rights may be derived from the information provided",
+            "Any errors will be corrected as soon as possible once they become known"
+          ]
+        },
+        {
+          "heading": "Website Use",
+          "highlight": "and Liability",
+          "paragraph": "We cannot guarantee that this website will always function properly or be entirely free of errors. Although we may update the website from time to time, we are under no obligation to do so and we reserve the right to modify or restrict access to the website, or to close the website entirely.",
+          "items": [
+            "The website may contain errors or may not always function as expected",
+            "There is no obligation to keep the website continuously up to date",
+            "We reserve the right to modify or restrict access to the website",
+            "The website may be closed (partially or entirely) at any time",
+            "We are not liable for direct or indirect damage arising from the use of the website",
+            "We are not liable for information provided through the website"
+          ]
+        }
+      ]
+    },
+    "derdengelden": {
+      "meta": {
+        "title": "Third-Party Funds | LOGOS LEGAL",
+        "description": "Careful and compliant handling of third-party funds through the Stichting Derdengelden (third-party funds foundation) at LOGOS LEGAL."
+      },
+      "hero": {
+        "title": "Third-Party Funds",
+        "subtitle": "Registered legal specialisations"
+      },
+      "breadcrumb": "Third-Party Funds",
+      "sections": [
+        {
+          "heading": "Careful and compliant handling of third-party funds.",
+          "paragraph": "At Pejman Law, we keep third-party funds under our control for as short a period as possible through Stichting Derdengelden Pejman Law. All funds received and the associated transactions are handled with the utmost care and transparency, and in accordance with the applicable regulations.",
+          "items": [
+            "The status of funds received and any payment arrangements are clearly documented in the administrative records and case files.",
+            "Funds paid out by third parties are only transferred to the rightful beneficiary once circumstances permit.",
+            "Funds may never be used for purposes that conflict with their intended purpose or destination."
+          ]
+        },
+        {
+          "heading": "Transparent handling of third-party funds",
+          "paragraph": "Pejman Law ensures that third-party funds are transferred directly to the rightful beneficiary whenever possible. When necessary, funds are processed through Stichting Derdengelden Pejman Law and handled in full compliance with applicable regulations.",
+          "items": [
+            "Clear instructions are provided for transfers of funds to third parties.",
+            "Funds received in the office account are transferred immediately.",
+            "Each transaction is recorded and documented separately.",
+            "The records include the payment details, the beneficiary and the lawyer handling the case.",
+            "All actions are carried out transparently and with due care."
+          ]
+        },
+        {
+          "heading": "Authorised use and payment",
+          "highlight": "of third-party funds",
+          "paragraph": "A lawyer may only use third-party funds to settle an invoice if this has been agreed in writing with the rightful beneficiary. All payments of third-party funds are subject to strict authorisation procedures and statutory regulations.",
+          "items": [
+            "Written consent is required before funds may be used for the payment of invoices.",
+            "The right to use the funds lapses if the invoice is disputed within a reasonable period.",
+            "Any use of funds for the payment of invoices is confirmed to the beneficiary in writing.",
+            "Third-party payments require dual electronic authorisation.",
+            "Each payment transaction must be approved by at least two authorised persons."
+          ]
+        },
+        {
+          "heading": "The directors of the foundation for",
+          "highlight": "third-party funds are:",
+          "items": ["Pejman Salim", "Arzu Yandere"]
+        }
+      ],
+      "closing": "On the basis of this registration, lawyers are required to obtain ten professional development credits each calendar year in every registered principal legal practice area, in accordance with the standards of the Netherlands Bar (Nederlandse orde van advocaten)."
+    },
+    "algemeneVoorwaarden": {
+      "meta": {
+        "title": "General Terms and Conditions | LOGOS LEGAL",
+        "description": "The general terms and conditions of LOGOS LEGAL."
+      },
+      "hero": {
+        "title": "General Terms and Conditions",
+        "subtitle": "The terms and conditions that apply to our services."
+      },
+      "breadcrumb": "General Terms and Conditions",
+      "blocks": [
+        {
+          "paragraphs": ["Insert the text of the general terms and conditions here."]
+        }
+      ]
+    },
+    "klachtenregeling": {
+      "meta": {
+        "title": "Complaints Procedure | LOGOS LEGAL",
+        "description": "The complaints procedure of LOGOS LEGAL."
+      },
+      "hero": {
+        "title": "Complaints Procedure",
+        "subtitle": "How we handle complaints about our services."
+      },
+      "breadcrumb": "Complaints Procedure",
+      "blocks": [
+        {
+          "paragraphs": ["Insert the text of the complaints procedure here."]
+        }
+      ]
+    },
+    "rechtsgebiedenregister": {
+      "meta": {
+        "title": "Register of Legal Practice Areas | LOGOS LEGAL",
+        "description": "Registered legal specialisations of the lawyers of LOGOS LEGAL in the register of legal practice areas (rechtsgebiedenregister) of the Netherlands Bar."
+      },
+      "hero": {
+        "title": "Register of Legal Practice Areas",
+        "subtitle": "Registered legal specialisations"
+      },
+      "breadcrumb": "Register of Legal Practice Areas",
+      "entries": [
+        {
+          "firstName": "Pejman",
+          "lastName": "Salim",
+          "intro": "Pejman Salim has registered the following legal practice areas in the register of legal practice areas of the Netherlands Bar (Nederlandse orde van advocaten):",
+          "items": [
+            "General practice",
+            "Criminal law (international criminal law and extradition and surrender cases)"
+          ]
+        },
+        {
+          "firstName": "Arzu",
+          "lastName": "Yandere",
+          "intro": "Arzu Yandere has registered the following legal practice areas in the register of legal practice areas of the Netherlands Bar (Nederlandse orde van advocaten):",
+          "items": ["Education law", "Employment law"]
+        },
+        {
+          "firstName": "Babi",
+          "lastName": "Azar",
+          "intro": "Babi Azar has registered the following legal practice areas in the register of legal practice areas of the Netherlands Bar (Nederlandse orde van advocaten):",
+          "items": [
+            "Administrative law",
+            "Employment law",
+            "Personal and family law (divorce, maintenance cases, contact arrangements, child protection law, parentage and recognition)",
+            "Criminal law"
+          ]
+        },
+        {
+          "firstName": "Anil",
+          "lastName": "Ramdas",
+          "intro": "Anil Ramdas is registered in the register of legal practice areas of the Netherlands Bar (Nederlandse orde van advocaten) for the following legal practice areas.",
+          "items": ["Personal and family law", "Criminal law"]
+        }
+      ],
+      "closing": "On the basis of this registration, lawyers are required to obtain ten professional development credits each calendar year in every registered principal legal practice area, in accordance with the standards of the Netherlands Bar (Nederlandse orde van advocaten)."
+    }
+  }
+}

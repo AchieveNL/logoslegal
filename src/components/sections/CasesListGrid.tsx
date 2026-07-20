@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 
 interface CaseItem {
@@ -16,56 +17,43 @@ const ArrowUpRight = () => (
   </svg>
 );
 
-const cases: CaseItem[] = [
-  {
-    category: "Mensenrechten",
-    title: "Onmiddellijke vrijlating en toekenning van de meldplichtstatus",
-    description:
-      "In een kort geding aangespannen door Pejman Salim heeft de voorzieningenrechter geoordeeld over de toepassing van de Wet herziening ten nadele (USB-wet) en de onmiddellijke vrijlating van de veroordeelde, alsmede de toekenning van de meldplichtstatus, gelast.",
-    image: "/images/cases/meldplichtstatus.png",
-    href: "/cases",
-  },
-  {
-    category: "Contracten en aansprakelijkheid",
-    title: "Boete voor overtreding van het rookverbod",
-    description:
-      "Als cafés of restaurants hun klanten de mogelijkheid willen bieden om buiten te roken in een overdekte ruimte, moeten zij ervoor zorgen dat deze ruimte aan ten minste één zijde volledig open is, ongeacht de grootte van die zijde. Anders lopen zij het risico op een boete wegens het niet handhaven van het rookverbod.",
-    image: "/images/cases/no-smoking.png",
-    href: "/cases",
-  },
-  {
-    category: "Mensenrechten",
-    title: "Onmiddellijke vrijlating en toekenning van de meldplichtstatus",
-    description:
-      "In een kort geding aangespannen door Pejman Salim heeft de voorzieningenrechter geoordeeld over de toepassing van de Wet herziening ten nadele (USB-wet) en de onmiddellijke vrijlating van de veroordeelde, alsmede de toekenning van de meldplichtstatus, gelast.",
-    image: "/images/cases/meldplichtstatus.png",
-    href: "/cases",
-  },
-  {
-    category: "Mensenrechten",
-    title:
-      "Incidentele vordering tot tussenkomst | op grond van artikel 217 van het Wetboek van Burgerlijke Rechtsvordering.",
-    description:
-      "Een persoon die geen partij is in een aanhangige procedure kan met succes een vordering tot tussenkomst instellen indien hij aan twee voorwaarden voldoet: (i) hij moet een voldoende belang hebben bij tussenkomst in de procedure, gelet op eventuele nadelige gevolgen.",
-    image: "/images/cases/rechtbank.png",
-    href: "/cases",
-  },
+// Images/links per card, in the same order as the "items" array in the messages.
+const caseMedia = [
+  { image: "/images/cases/meldplichtstatus.png", href: "/cases" },
+  { image: "/images/cases/no-smoking.png", href: "/cases" },
+  { image: "/images/cases/meldplichtstatus.png", href: "/cases" },
+  { image: "/images/cases/rechtbank.png", href: "/cases" },
 ];
 
-export default function CasesListGrid() {
+export default async function CasesListGrid() {
+  const t = await getTranslations("casesList");
+  const tAreas = await getTranslations("expertiseAreas");
+  const tCta = await getTranslations("cta");
+
+  const items = t.raw("items") as {
+    categoryKey: string;
+    title: string;
+    description: string;
+  }[];
+
+  const cases: CaseItem[] = items.map((item, i) => ({
+    category: tAreas(item.categoryKey),
+    title: item.title,
+    description: item.description,
+    image: caseMedia[i].image,
+    href: caseMedia[i].href,
+  }));
+
   return (
     <section className="w-full bg-white py-12 md:py-20">
       <div className="max-w-[1600px] mx-auto px-6 md:px-8">
         {/* Heading */}
         <div className="max-w-[640px] mb-12">
           <h2 className="font-raleway font-bold text-[36px] md:text-[56px] leading-none tracking-normal text-brand-blue">
-            Onze cases
+            {t("heading")}
           </h2>
           <p className="mt-4 font-poppins font-medium text-base md:text-[24px] leading-relaxed tracking-normal text-[#292D32]">
-            Onze zaken geven inzicht in hoe wij complexe juridische vraagstukken
-            omzetten in heldere oplossingen. Van strategisch advies tot procederen:
-            elke zaak weerspiegelt onze toewijding aan resultaat, discretie en
-            maatwerk.
+            {t("paragraph")}
           </p>
         </div>
 
@@ -99,7 +87,7 @@ export default function CasesListGrid() {
                   href={c.href}
                   className="btn-fx mt-7 inline-flex items-center justify-center gap-2.5 self-start w-[260px] max-w-full h-[80px] rounded-2xl bg-brand-blue text-white font-poppins font-bold text-[24px] leading-none tracking-normal hover:bg-brand-blue-dark"
                 >
-                  Lees meer
+                  {tCta("readMore")}
                   <ArrowUpRight />
                 </Link>
               </div>

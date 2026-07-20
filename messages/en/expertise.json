@@ -1,0 +1,208 @@
+{
+  "expertisePage": {
+    "meta": {
+      "title": "Expertise | LOGOS LEGAL",
+      "description": "Our expertise spans a broad range of practice areas: employment law, contract and liability law, education law, financial criminal law and human rights."
+    },
+    "heroTitle": "Our expertise",
+    "heroSubtitle": "A team of dedicated legal professionals, focused on excellence and client success.",
+    "breadcrumbHome": "Home",
+    "breadcrumbAbout": "About us",
+    "breadcrumbExpertise": "Expertise",
+    "ctaHeading": "Ready to work with our expert legal team?",
+    "ctaSubtitle": "Schedule a consultation today and discover how we can support you with your legal needs."
+  },
+  "expertiseGrid": {
+    "headingPre": "Our",
+    "headingHighlight": "legal",
+    "headingPost": "expertise",
+    "subtitle": "Years of experience",
+    "items": [
+      {
+        "title": "Contract and liability law",
+        "href": "/contracten",
+        "description": "We assist with drafting, reviewing and negotiating contracts tailored to your needs. From commercial agreements to general terms and conditions, we ensure clarity and compliance. We also advise on liability matters, including disputes, damages and representation in legal proceedings."
+      },
+      {
+        "title": "Employment law",
+        "href": "/arbeidsrecht",
+        "description": "We advise both employers and employees on all aspects of employment law — from drafting contracts to resolving employment disputes. Our services include sickness absence, contract changes, dismissal and more. We also provide in-company training and practical legal support to prevent costly disputes."
+      },
+      {
+        "title": "Education law",
+        "href": "/onderwijsrecht",
+        "description": "Education law encompasses several areas of law, including employment law, governance and liability. We provide strategic advice and legal support on matters such as mergers, restructurings, board changes, employee participation and funding. We also provide training for school boards, supervisory boards and participation councils."
+      },
+      {
+        "title": "Financial criminal law",
+        "href": "/financieel-strafrecht",
+        "description": "Whether you are facing serious criminal cases or economic offences, our attorneys provide proactive and expert defence. We also handle international cases, including extradition, cross-border crime and proceedings before international courts. In addition, we advise NGOs on prosecution and investigation options in international criminal cases."
+      },
+      {
+        "title": "Human rights",
+        "href": "/mensenrechten",
+        "description": "Our attorneys are committed to pro bono work and support individuals and organisations with limited means, particularly in the areas of human rights, freedom of expression, discrimination and international crimes. We also assist people in vulnerable situations in civil, administrative and criminal matters. Due to limited capacity, a selection of cases may be made."
+      }
+    ],
+    "ctaTitleHighlight": "Professional",
+    "ctaTitlePost": "help needed?",
+    "ctaText": "Get in touch with us and let's work together"
+  },
+  "expertiseCarousel": {
+    "headingPre": "Discover more of our",
+    "headingHighlight": "expertise",
+    "subtitle": "Practical, solution-oriented legal services to protect your business, team and rights.",
+    "prevLabel": "Previous",
+    "nextLabel": "Next",
+    "cards": [
+      {
+        "title": "Employment law",
+        "description": "Our firm advises businesses and individuals on employment contracts, dismissal and employment disputes.",
+        "href": "/arbeidsrecht",
+        "image": "/images/expertise/arbeidsrecht.jpg"
+      },
+      {
+        "title": "Contract law and liability law",
+        "description": "Our firm advises businesses and individuals on drafting, interpreting and negotiating contracts, such as commercial agreements.",
+        "href": "/contracten",
+        "image": "/images/expertise/contracten.png"
+      },
+      {
+        "title": "Education law",
+        "description": "Our firm advises businesses and individuals on drafting, interpreting and negotiating contracts, such as commercial agreements.",
+        "href": "/onderwijsrecht",
+        "image": "/images/expertise/onderwijsrecht.jpg"
+      },
+      {
+        "title": "Financial criminal law",
+        "description": "Specialised defence and advice in financial criminal investigations and proceedings.",
+        "href": "/financieel-strafrecht",
+        "image": "/images/expertise/financieel-strafrecht.jpg"
+      },
+      {
+        "title": "Human rights",
+        "description": "Our firm advises individuals on protecting fundamental rights and conducting legal proceedings.",
+        "href": "/mensenrechten",
+        "image": "/images/expertise/mensenrechten.jpg"
+      }
+    ]
+  },
+  "expertiseOverview": {
+    "title": "Our expertise",
+    "intro": "Our corporate law practice provides comprehensive legal services to businesses of every size, from startups to multinational companies.",
+    "checks": [
+      "A team of dedicated legal professionals",
+      "Committed to providing exceptional service and support.",
+      "We strive for excellence in every case we handle.",
+      "Our expertise spans a wide range of practice areas, allowing us to support you broadly and comprehensively.",
+      "Client satisfaction is our highest priority and forms the basis of all our decisions."
+    ],
+    "check5Line1": "Client satisfaction is our highest priority and forms the",
+    "check5Line2": "basis of all our decisions.",
+    "rows": [
+      {
+        "title": "Contracts and liability",
+        "subtitle": "Peace of mind through clear agreements and smart legal strategies.",
+        "href": "/contracten",
+        "image": "/images/expertise/contracten.png"
+      },
+      {
+        "title": "Employment law",
+        "subtitle": "Ensure compliance and clarity in every employment matter.",
+        "href": "/arbeidsrecht",
+        "image": "/images/expertise/arbeidsrecht.jpg"
+      },
+      {
+        "title": "Education law",
+        "subtitle": "Navigate the education sector with confidence.",
+        "href": "/onderwijsrecht",
+        "image": "/images/expertise/onderwijsrecht.jpg"
+      },
+      {
+        "title": "Financial criminal law",
+        "subtitle": "Protecting your rights with proactive, solution-oriented defence strategies.",
+        "href": "/financieel-strafrecht",
+        "image": "/images/expertise/financieel-strafrecht.jpg"
+      },
+      {
+        "title": "Human rights",
+        "subtitle": "Our firm advises businesses and individuals on legal matters and provides support in the area of fundamental rights and vulnerable individuals.",
+        "href": "/mensenrechten",
+        "image": "/images/expertise/mensenrechten.jpg"
+      }
+    ]
+  },
+  "steps": {
+    "headingHighlight1": "3 simple steps",
+    "headingMid": "to solve your client's",
+    "headingHighlight2": "problem",
+    "subtitle": "These principles guide the way we work and define how we serve our clients.",
+    "items": [
+      {
+        "title": "Through analysis",
+        "description": "We start with a comprehensive assessment of your legal situation, gathering all relevant information and mapping out your goals and concerns.",
+        "icon": "/images/steps/analyse.svg"
+      },
+      {
+        "title": "Strategic planning",
+        "description": "We develop a tailor-made legal strategy aligned with your objectives, carefully weighing all possible approaches and their implications.",
+        "icon": "/images/steps/planning.svg"
+      },
+      {
+        "title": "Powerful representation",
+        "description": "We advocate for your interests with conviction, whether in negotiations, court proceedings or administrative procedures.",
+        "icon": "/images/steps/vertegenwoordiging.svg"
+      }
+    ]
+  },
+  "testimonials": {
+    "headingPre": "What our",
+    "headingHighlight": "clients",
+    "headingPost": "say",
+    "subtitle": "Real experiences from clients we have supported",
+    "reviewsTop": [
+      {
+        "quote": "Great lawyer, highly recommended, very professional. I recommend this firm to all my friends. Friends of mine had also recommended this firm to me. These lawyers have helped me enormously. Feel free to call them, you won't regret it!",
+        "author": "Cheryl Hammond"
+      },
+      {
+        "quote": "Best lawyer in town!",
+        "author": "De Koorndijk"
+      },
+      {
+        "quote": "Mr Pejman Salim is assisting me and patience is a virtue. Mr Salim knows how to act and stands for justice. Mr Salim knows the law and works very meticulously. Glad I met him; besides doing his job well, he is compassionate and shows empathy. Mr Salim puts you at ease. Thank you.",
+        "author": "Sabrina Coenraad"
+      },
+      {
+        "quote": "Quality, Professionalism, Value",
+        "author": "Sander Blauw"
+      },
+      {
+        "quote": "I am very grateful for the help of my lawyer Mr Salim. He truly knows his field, especially when it comes to the childcare benefits scandal. He took the time to explain everything clearly and was always there for me. Thanks to his dedication and expertise, I finally feel taken seriously. A lawyer with a heart for his clients – highly recommended!",
+        "author": "A.M SJRo"
+      }
+    ],
+    "reviewsBottom": [
+      {
+        "quote": "Mr Salim is a good lawyer with real expertise, uses smart tactics and achieves good results in criminal law matters and the childcare benefits scandal. Very satisfied so far.",
+        "author": "Maria HT"
+      },
+      {
+        "quote": "Very professional. Very satisfied. I definitely recommend them. They listened to me and defended me well against the government. Just call them.",
+        "author": "Cheryl Koperberg"
+      },
+      {
+        "quote": "He helped me well and I am still happy, for me and my family.",
+        "author": "Justin jennifer Pathuis"
+      },
+      {
+        "quote": "Good lawyers. Very satisfied.",
+        "author": "Bjorn Sjoerdsma"
+      },
+      {
+        "quote": "Highly recommended! Great knowledge of many matters, they truly think along with you and tackle injustice effectively. Mr Salim explains everything very clearly. Friendly and with his heart in the right place. You can rest assured that you will genuinely be helped.",
+        "author": "Huseyin Acar"
+      }
+    ]
+  }
+}

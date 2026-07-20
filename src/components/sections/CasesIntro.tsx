@@ -1,17 +1,21 @@
+import { getTranslations } from "next-intl/server";
+
 interface CasesIntroProps {
   paragraph: string;
   phone: string;
   phoneLabel: string;
 }
 
-export default function CasesIntro({ paragraph, phone, phoneLabel }: CasesIntroProps) {
+export default async function CasesIntro({ paragraph, phone, phoneLabel }: CasesIntroProps) {
+  const t = await getTranslations("casesPage.intro");
+
   return (
     <section className="w-full bg-white">
       <div className="max-w-container mx-auto px-6 md:px-12 py-16 md:py-28 text-center">
         <h1 className="font-raleway font-bold text-[48px] md:text-[104px] leading-none tracking-normal text-center">
-          <span className="text-brand-blue">Toegewijd,</span>{" "}
-          <span className="text-[#002B58]">strategisch en</span>{" "}
-          <span className="text-brand-blue">innovatief</span>
+          <span className="text-brand-blue">{t("title1")}</span>{" "}
+          <span className="text-[#002B58]">{t("title2")}</span>{" "}
+          <span className="text-brand-blue">{t("title3")}</span>
         </h1>
         <p className="mt-6 mx-auto max-w-[960px] font-poppins font-medium text-base md:text-[24px] leading-relaxed tracking-normal text-center text-[#292D32]">
           {paragraph}

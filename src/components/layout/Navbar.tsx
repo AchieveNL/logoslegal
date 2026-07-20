@@ -1,27 +1,39 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
-
-const expertiseLinks = [
-  { label: "Arbeidsrecht", href: "/arbeidsrecht" },
-  { label: "Contracten en aansprakelijkheid", href: "/contracten" },
-  { label: "Onderwijsrecht", href: "/onderwijsrecht" },
-  { label: "Financieel strafrecht", href: "/financieel-strafrecht" },
-  { label: "Mensenrechten", href: "/mensenrechten" },
-];
-
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Cases", href: "/cases" },
-  { label: "Over ons", href: "/over-ons", hasDropdown: true },
-  { label: "Expertise", href: "/expertise", hasDropdown: true, isExpertise: true },
-];
+import { useLocale, useTranslations } from "next-intl";
+import { Link, usePathname, useRouter } from "@/i18n/routing";
 
 export default function Navbar() {
+  const t = useTranslations("nav");
+  const tExpertise = useTranslations("expertiseAreas");
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
   const [expertiseOpen, setExpertiseOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const expertiseLinks = [
+    { label: tExpertise("arbeidsrecht"), href: "/arbeidsrecht" },
+    { label: tExpertise("contracten"), href: "/contracten" },
+    { label: tExpertise("onderwijsrecht"), href: "/onderwijsrecht" },
+    { label: tExpertise("financieelStrafrecht"), href: "/financieel-strafrecht" },
+    { label: tExpertise("mensenrechten"), href: "/mensenrechten" },
+  ];
+
+  const navLinks = [
+    { label: t("home"), href: "/" },
+    { label: t("cases"), href: "/cases" },
+    { label: t("aboutUs"), href: "/over-ons", hasDropdown: true },
+    { label: t("expertise"), href: "/expertise", hasDropdown: true, isExpertise: true },
+  ];
+
+  const switchLocale = (next: "nl" | "en") => {
+    if (next !== locale) {
+      router.replace(pathname, { locale: next });
+    }
+  };
 
   return (
     <header className="bg-white w-full sticky top-0 z-50 shadow-[0_2px_16px_rgba(0,0,0,0.06)]">
@@ -41,22 +53,40 @@ export default function Navbar() {
 
         {/* Language Switcher */}
         <div className="hidden md:flex items-center gap-6 ml-8 border border-brand-gray rounded-lg px-2 py-2">
-          <Image
-            src="/images/shared/flag-nl.svg"
-            alt="Nederlands"
-            width={40}
-            height={30}
-            className="rounded-sm cursor-pointer"
-            unoptimized
-          />
-          <Image
-            src="/images/shared/flag-gb.svg"
-            alt="English"
-            width={40}
-            height={30}
-            className="rounded-sm cursor-pointer opacity-60 hover:opacity-100 transition-opacity"
-            unoptimized
-          />
+          <button
+            type="button"
+            onClick={() => switchLocale("nl")}
+            aria-label={t("switchToDutch")}
+            aria-pressed={locale === "nl"}
+          >
+            <Image
+              src="/images/shared/flag-nl.svg"
+              alt={t("switchToDutch")}
+              width={40}
+              height={30}
+              className={`rounded-sm cursor-pointer transition-opacity ${
+                locale === "nl" ? "" : "opacity-60 hover:opacity-100"
+              }`}
+              unoptimized
+            />
+          </button>
+          <button
+            type="button"
+            onClick={() => switchLocale("en")}
+            aria-label={t("switchToEnglish")}
+            aria-pressed={locale === "en"}
+          >
+            <Image
+              src="/images/shared/flag-gb.svg"
+              alt={t("switchToEnglish")}
+              width={40}
+              height={30}
+              className={`rounded-sm cursor-pointer transition-opacity ${
+                locale === "en" ? "" : "opacity-60 hover:opacity-100"
+              }`}
+              unoptimized
+            />
+          </button>
         </div>
 
         {/* Desktop Nav */}
@@ -77,7 +107,7 @@ export default function Navbar() {
                   </Link>
                   <button
                     onClick={() => setExpertiseOpen(!expertiseOpen)}
-                    aria-label="Toon expertisemenu"
+                    aria-label={t("showExpertiseMenu")}
                     aria-expanded={expertiseOpen}
                     className="hover:text-brand-blue transition-colors"
                   >
@@ -133,7 +163,7 @@ export default function Navbar() {
           href="/contact"
           className="btn-fx hidden lg:inline-flex items-center gap-2.5 bg-brand-blue-light text-brand-blue font-poppins font-bold text-[24px] px-12 h-[80px] rounded-button hover:bg-blue-100"
         >
-          Contact
+          {t("contact")}
           <svg
             width="32"
             height="32"
@@ -162,7 +192,7 @@ export default function Navbar() {
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="lg:hidden flex flex-col gap-1.5 p-2"
-          aria-label="Toggle menu"
+          aria-label={t("toggleMenu")}
         >
           <span
             className={`block w-7 h-0.5 bg-brand-dark transition-transform ${
@@ -220,12 +250,35 @@ export default function Navbar() {
                 </Link>
               )
             )}
+            {/* Mobile language switcher */}
+            <div className="flex items-center gap-4">
+              <button type="button" onClick={() => switchLocale("nl")} aria-label={t("switchToDutch")}>
+                <Image
+                  src="/images/shared/flag-nl.svg"
+                  alt={t("switchToDutch")}
+                  width={36}
+                  height={27}
+                  className={`rounded-sm ${locale === "nl" ? "" : "opacity-60"}`}
+                  unoptimized
+                />
+              </button>
+              <button type="button" onClick={() => switchLocale("en")} aria-label={t("switchToEnglish")}>
+                <Image
+                  src="/images/shared/flag-gb.svg"
+                  alt={t("switchToEnglish")}
+                  width={36}
+                  height={27}
+                  className={`rounded-sm ${locale === "en" ? "" : "opacity-60"}`}
+                  unoptimized
+                />
+              </button>
+            </div>
             <Link
               href="/contact"
               className="btn-fx inline-flex items-center justify-center gap-2 bg-brand-blue text-white font-poppins font-bold text-lg px-8 h-14 rounded-button"
               onClick={() => setMobileOpen(false)}
             >
-              Contact
+              {t("contact")}
             </Link>
           </nav>
         </div>

@@ -1,0 +1,107 @@
+{
+  "home": {
+    "meta": {
+      "title": "LOGOS LEGAL | Betrokken, Strategisch en Innovatief",
+      "description": "Onderscheidend, out of the box en maatschappelijk betrokken. Onze juristen zijn gespecialiseerd in strafrecht, arbeidsrecht, onderwijsrecht, contracten- en aansprakelijkheidsrecht, medezeggenschap en mensenrechten."
+    },
+    "heroImageAlt": "Juristen van LOGOS LEGAL in gesprek met een cliënt",
+    "contactHeadingPre": "Wij horen",
+    "contactHeadingHighlight": "graag",
+    "contactHeadingPost": "van u",
+    "contactSubheading": "Van 09:00 tot 17:00 uur, maandag tot en met vrijdag",
+    "contactGreeting": "Hallo, ik ben Linda. Waarmee kan ik u vandaag helpen?",
+    "testimonial": {
+      "quote": "Samenwerken met Logos Legal was een keerpunt in ons octrooigeschil. Hun expertise in het intellectueel eigendomsrecht was gedurende het hele proces duidelijk zichtbaar, en zij behaalden een overwinning die niet alleen onze innovatie beschermde, maar ook onze marktpositie versterkte.",
+      "author": "Laura Chen",
+      "role": "Managing Director"
+    }
+  },
+  "homeHero": {
+    "titleLine1": "Betrokken,",
+    "titleLine2Part1": "Strategisch",
+    "titleLine2Part2": "en",
+    "titleLine3": "Innovatief",
+    "intro": "Onderscheidend, out of the box, nieuwsgierig en maatschappelijk betrokken, met jarenlange ervaring en expertise. Onze juristen zijn gespecialiseerd in strafrecht, arbeidsrecht, onderwijsrecht, contracten en aansprakelijkheidsrecht, medezeggenschap en mensenrechten.",
+    "statsTitleLine1": "Daarom kies je",
+    "statsTitleLine2Pre": "voor",
+    "stats": [
+      {
+        "value": "15+",
+        "label": "Jaren ervaring",
+        "icon": "/images/home/stats/ervaring.svg"
+      },
+      {
+        "value": "4.8/5",
+        "label": "Google reviews",
+        "icon": "/images/home/stats/reviews.svg"
+      },
+      {
+        "value": "100%",
+        "label": "Advocaat-cliëntprivilege",
+        "icon": "/images/home/stats/privilege.svg"
+      },
+      {
+        "value": "500+",
+        "label": "Succesvol behandelde zaken",
+        "icon": "/images/home/stats/zaken.svg"
+      }
+    ]
+  },
+  "homeCta": {
+    "headingPre": "Ontdek hoe wij u kunnen",
+    "headingHighlight": "vertegenwoordigen",
+    "headingPost": "in uw aankomende rechtzaak!"
+  },
+  "homeCases": {
+    "headingPre": "Afgeronde",
+    "headingHighlight": "zaken",
+    "subtitle": "Een selectie van resultaten en trajecten waarin wij het verschil maakten.",
+    "cardA": {
+      "title": "Onmiddellijk vrijlaten en toekenning status zelfmelder",
+      "description": "In een kort geding aangespannen door Pejman Salim, heeft de voorzieningenrechter een oordeel geveld over de toepassing van de Wet herziening tenuitvoerlegging van strafrechtelijke beslissingen (Wet USB) en heeft de onmiddellijke vrijlating van de veroordeelde en toekenning status zelfmelder bevolen.",
+      "cta": "Learn More"
+    },
+    "cardB": {
+      "title": "Vordering overdracht aandelen"
+    },
+    "cardC": {
+      "title": "Boete rookverbod"
+    },
+    "cardD": {
+      "title": "Incidentele vordering tot tussenkomst | ex artikel 217 Rv",
+      "description": "Een persoon die geen onderdeel is van een lopende procedure kan met succes een vordering tot tussenkomst indienen indien hij voldoet aan twee voorwaarden: (i) hij moet voldoende belang hebben om zich te mengen in de procedure in verband met eventuele nadelige gevolgen die hij zal ondervinden als gevolg van de uitspraak in de hoofdzaak, en (ii) hij moet stellen dat hij een zelfstandige vordering wenst in te stellen in de hoofdzaak",
+      "readMore": "Lees meer..."
+    }
+  },
+  "teamCarousel": {
+    "headingPre": "Onze",
+    "headingHighlight1": "‘out-of-the-box’ aanpak",
+    "headingMid": "is de kracht van Logos Legal en vergroot de kans op een",
+    "headingHighlight2": "gunstige uitkomst.",
+    "regionLabel": "Teamleden",
+    "prevLabel": "Vorige teamleden",
+    "nextLabel": "Volgende teamleden",
+    "members": [
+      {
+        "name": "Pejman Salim",
+        "role": "Advocaat",
+        "image": "/images/team/pejman-salim.png"
+      },
+      {
+        "name": "Arzu Yandere",
+        "role": "Advocaat",
+        "image": "/images/team/arzu-yandere.png"
+      },
+      {
+        "name": "Babi Azar",
+        "role": "Advocaat",
+        "image": "/images/team/babi-azar.png"
+      },
+      {
+        "name": "Anil Ramdas",
+        "role": "Advocaat",
+        "image": "/images/team/anil-ramdas.png"
+      }
+    ]
+  }
+}

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 interface Member {
   name: string;
@@ -9,14 +10,9 @@ interface Member {
   image: string;
 }
 
-const members: Member[] = [
-  { name: "Pejman Salim", role: "Advocaat", image: "/images/team/pejman-salim.png" },
-  { name: "Arzu Yandere", role: "Advocaat", image: "/images/team/arzu-yandere.png" },
-  { name: "Babi Azar", role: "Advocaat", image: "/images/team/babi-azar.png" },
-  { name: "Anil Ramdas", role: "Advocaat", image: "/images/team/anil-ramdas.png" },
-];
-
 export default function TeamCarousel() {
+  const t = useTranslations("teamCarousel");
+  const members = t.raw("members") as Member[];
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
@@ -60,10 +56,10 @@ export default function TeamCarousel() {
           {/* Left: quote + signature (fixed-width, never collapses) */}
           <div className="lg:w-[440px] lg:shrink-0">
             <h2 className="font-raleway font-bold text-[30px] md:text-[40px] leading-[1.25] text-[#002B58]">
-              Onze{" "}
-              <span className="text-brand-blue">&lsquo;out-of-the-box&rsquo; aanpak</span>{" "}
-              is de kracht van Logos Legal en vergroot de kans op een{" "}
-              <span className="text-brand-blue">gunstige uitkomst.</span>
+              {t("headingPre")}{" "}
+              <span className="text-brand-blue">{t("headingHighlight1")}</span>{" "}
+              {t("headingMid")}{" "}
+              <span className="text-brand-blue">{t("headingHighlight2")}</span>
             </h2>
             <p className="mt-8 font-caveat font-medium text-[40px] md:text-[48px] leading-none text-[#292D32]">
               Arzu Yandere
@@ -76,7 +72,7 @@ export default function TeamCarousel() {
             <div
               ref={scrollRef}
               role="region"
-              aria-label="Teamleden"
+              aria-label={t("regionLabel")}
               tabIndex={0}
               className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
             >
@@ -109,7 +105,7 @@ export default function TeamCarousel() {
             <div className="flex items-center gap-4 mt-8">
               <button
                 onClick={() => scroll("left")}
-                aria-label="Vorige teamleden"
+                aria-label={t("prevLabel")}
                 aria-disabled={!canScrollLeft}
                 className={`w-11 h-11 rounded-full border border-brand-dark/30 text-brand-dark flex items-center justify-center transition-all hover:border-brand-blue hover:text-brand-blue ${
                   canScrollLeft ? "opacity-100" : "opacity-30"
@@ -122,7 +118,7 @@ export default function TeamCarousel() {
               </button>
               <button
                 onClick={() => scroll("right")}
-                aria-label="Volgende teamleden"
+                aria-label={t("nextLabel")}
                 aria-disabled={!canScrollRight}
                 className={`w-11 h-11 rounded-full border border-brand-dark/30 text-brand-dark flex items-center justify-center transition-all hover:border-brand-blue hover:text-brand-blue ${
                   canScrollRight ? "opacity-100" : "opacity-30"

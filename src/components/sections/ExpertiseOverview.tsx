@@ -1,5 +1,6 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
 interface ExpertiseRow {
   title: string;
@@ -8,49 +9,6 @@ interface ExpertiseRow {
   image: string;
 }
 
-const rows: ExpertiseRow[] = [
-  {
-    title: "Contracten en aansprakelijkheid",
-    subtitle: "Gemoedsrust door duidelijke afspraken en slimme juridische strategieën.",
-    href: "/contracten",
-    image: "/images/expertise/contracten.png",
-  },
-  {
-    title: "Arbeidsrecht",
-    subtitle: "Zorg voor naleving en duidelijkheid in iedere arbeidskwestie.",
-    href: "/arbeidsrecht",
-    image: "/images/expertise/arbeidsrecht.jpg",
-  },
-  {
-    title: "Onderwijsrecht",
-    subtitle: "Met vertrouwen navigeren binnen het onderwijs.",
-    href: "/onderwijsrecht",
-    image: "/images/expertise/onderwijsrecht.jpg",
-  },
-  {
-    title: "Financieel strafrecht",
-    subtitle:
-      "Uw rechten beschermen met proactieve en oplossingsgerichte verdedigingsstrategieën.",
-    href: "/financieel-strafrecht",
-    image: "/images/expertise/financieel-strafrecht.jpg",
-  },
-  {
-    title: "Mensenrechten",
-    subtitle:
-      "Ons kantoor adviseert ondernemers en particulieren bij juridische vraagstukken en biedt ondersteuning op het gebied van fundamentele rechten en kwetsbare personen.",
-    href: "/mensenrechten",
-    image: "/images/expertise/mensenrechten.jpg",
-  },
-];
-
-const checks = [
-  "Een team van toegewijde juridische professionals",
-  "Voor het bieden van uitzonderlijke service en ondersteuning.",
-  "Wij streven naar excellentie in elke zaak die wij behandelen.",
-  "Onze expertise strekt zich uit over diverse rechtsgebieden, waardoor wij u breed en volledig kunnen ondersteunen.",
-  "Klanttevredenheid is onze hoogste prioriteit en vormt de basis voor al onze beslissingen.",
-];
-
 const ArrowUpRight = () => (
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" className="rotate-45">
     <path d="M12 19V5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -58,7 +16,11 @@ const ArrowUpRight = () => (
   </svg>
 );
 
-export default function ExpertiseOverview() {
+export default async function ExpertiseOverview() {
+  const t = await getTranslations("expertiseOverview");
+  const rows = t.raw("rows") as ExpertiseRow[];
+  const checks = t.raw("checks") as string[];
+
   return (
     <section className="w-full bg-white py-16 md:py-24">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10">
@@ -66,27 +28,25 @@ export default function ExpertiseOverview() {
           {/* Left: intro + checklist */}
           <div className="max-w-[760px]">
             <h2 className="font-raleway font-bold text-[36px] md:text-[56px] leading-none tracking-normal text-brand-blue">
-              Onze expertise
+              {t("title")}
             </h2>
             <p className="mt-5 max-w-[620px] font-poppins font-medium text-base md:text-[24px] leading-relaxed tracking-normal text-[#292D32]">
-              Onze ondernemingsrechtpraktijk biedt uitgebreide juridische
-              dienstverlening aan bedrijven van elke omvang, van startups tot
-              multinationale ondernemingen.
+              {t("intro")}
             </p>
             <hr className="my-8 border-brand-gray" />
             <ul className="flex flex-col gap-5">
-              {checks.map((text) => (
+              {checks.map((text, i) => (
                 <li key={text} className="flex items-start gap-3">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0 mt-1">
                     <circle cx="12" cy="12" r="11" stroke="#087AEC" strokeWidth="2" />
                     <path d="M7 12.5L10.5 16L17 9" stroke="#087AEC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   <span className="font-poppins font-medium text-[20px] leading-relaxed tracking-normal text-black">
-                    {text.startsWith("Klanttevredenheid") ? (
+                    {i === checks.length - 1 ? (
                       <>
-                        Klanttevredenheid is onze hoogste prioriteit en vormt de
+                        {t("check5Line1")}
                         <br />
-                        basis voor al onze beslissingen.
+                        {t("check5Line2")}
                       </>
                     ) : (
                       text

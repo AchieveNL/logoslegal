@@ -1,15 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-
-const caseTypes = [
-  "Arbeidsrecht",
-  "Contracten en aansprakelijkheid",
-  "Onderwijsrecht",
-  "Financieel strafrecht",
-  "Mensenrechter",
-  "Overige",
-];
+import { useTranslations } from "next-intl";
 
 function RequiredMark() {
   return (
@@ -20,6 +12,9 @@ function RequiredMark() {
 }
 
 export default function ContactForm() {
+  const t = useTranslations("contactForm");
+  const tCta = useTranslations("cta");
+  const caseTypes = t.raw("caseTypes") as string[];
   const uid = useId();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [selectedCase, setSelectedCase] = useState("");
@@ -71,7 +66,7 @@ export default function ContactForm() {
       {/* Name */}
       <div className="relative">
         <label htmlFor={`${uid}-name`} className={labelClass}>
-          Naam <RequiredMark />
+          {t("name")} <RequiredMark />
         </label>
         <input
           id={`${uid}-name`}
@@ -88,7 +83,7 @@ export default function ContactForm() {
       {/* Email */}
       <div className="relative">
         <label htmlFor={`${uid}-email`} className={labelClass}>
-          E-mail <RequiredMark />
+          {t("email")} <RequiredMark />
         </label>
         <input
           id={`${uid}-email`}
@@ -105,7 +100,7 @@ export default function ContactForm() {
       {/* Phone */}
       <div className="relative">
         <label htmlFor={`${uid}-phone`} className={labelClass}>
-          Telefoonnummer
+          {t("phone")}
         </label>
         <input
           id={`${uid}-phone`}
@@ -127,7 +122,7 @@ export default function ContactForm() {
           className="w-full h-[72px] border border-[#292D32] rounded-lg px-5 font-poppins text-base text-left flex items-center justify-between focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 focus:outline-none transition-[border-color,box-shadow]"
         >
           <span className={selectedCase ? "text-brand-dark" : "text-brand-dark/60"}>
-            {selectedCase || "Soort zaak"}
+            {selectedCase || t("caseType")}
           </span>
           <svg
             width="22"
@@ -152,7 +147,7 @@ export default function ContactForm() {
         {dropdownOpen && (
           <ul
             role="listbox"
-            aria-label="Soort zaak"
+            aria-label={t("caseType")}
             className="absolute top-full left-0 w-full mt-1 bg-white border border-[#292D32] rounded-lg shadow-lg z-20 py-2 overflow-hidden"
           >
             {caseTypes.map((type) => {
@@ -181,14 +176,14 @@ export default function ContactForm() {
       {/* Message — flex-1 so it absorbs any leftover card height */}
       <div className="relative flex-1 flex min-h-[186px]">
         <label htmlFor={`${uid}-message`} className={labelClass}>
-          Omschrijving
+          {t("message")}
         </label>
         <textarea
           id={`${uid}-message`}
           name="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Schrijf een bericht"
+          placeholder={t("messagePlaceholder")}
           className="w-full min-h-[186px] border border-[#292D32] rounded-lg px-5 py-4 font-poppins text-base text-brand-dark placeholder:text-brand-dark/40 focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 focus:outline-none transition-[border-color,box-shadow] resize-none"
         />
       </div>
@@ -198,7 +193,7 @@ export default function ContactForm() {
         type="submit"
         className="btn-gradient group w-full h-[72px] text-lg rounded-lg gap-2.5"
       >
-        Verzenden
+        {tCta("send")}
         <svg
           width="22"
           height="22"

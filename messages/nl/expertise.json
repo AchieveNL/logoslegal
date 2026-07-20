@@ -1,0 +1,208 @@
+{
+  "expertisePage": {
+    "meta": {
+      "title": "Expertise | LOGOS LEGAL",
+      "description": "Onze expertise strekt zich uit over diverse rechtsgebieden: arbeidsrecht, contracten- en aansprakelijkheidsrecht, onderwijsrecht, financieel strafrecht en mensenrechten."
+    },
+    "heroTitle": "Onze expertise",
+    "heroSubtitle": "Een team van toegewijde juridische professionals, gericht op excellentie en het succes van cliënten.",
+    "breadcrumbHome": "Home",
+    "breadcrumbAbout": "Over ons",
+    "breadcrumbExpertise": "Expertise",
+    "ctaHeading": "Klaar om samen te werken met ons deskundige juridische team?",
+    "ctaSubtitle": "Plan vandaag nog een consult in en ontdek hoe wij u kunnen ondersteunen bij uw juridische behoeften."
+  },
+  "expertiseGrid": {
+    "headingPre": "Onze",
+    "headingHighlight": "juridisch",
+    "headingPost": "expertise",
+    "subtitle": "Jarenlange ervaring",
+    "items": [
+      {
+        "title": "Contracten- en aansprakelijkheidsrecht",
+        "href": "/contracten",
+        "description": "Wij helpen bij het opstellen, beoordelen en onderhandelen van contracten die zijn afgestemd op uw behoeften. Van handelsafspraken tot algemene voorwaarden zorgen wij voor duidelijkheid en naleving. Daarnaast adviseren wij over aansprakelijkheidskwesties, waaronder geschillen, schade en vertegenwoordiging in juridische procedures."
+      },
+      {
+        "title": "Arbeidsrecht",
+        "href": "/arbeidsrecht",
+        "description": "Wij adviseren zowel werkgevers als werknemers over alle aspecten van het arbeidsrecht — van het opstellen van contracten tot het oplossen van arbeidsconflicten. Onze diensten omvatten onder andere ziekteverzuim, contractwijzigingen, ontslag en meer. Daarnaast bieden wij in-company trainingen en praktische juridische ondersteuning om kostbare geschillen te voorkomen."
+      },
+      {
+        "title": "Onderwijsrecht",
+        "href": "/onderwijsrecht",
+        "description": "Het onderwijsrecht omvat meerdere rechtsgebieden, waaronder arbeidsrecht, governance en aansprakelijkheid. Wij bieden strategisch advies en juridische ondersteuning bij onder andere fusies, herstructureringen, bestuurswijzigingen, medezeggenschap en bekostiging. Daarnaast verzorgen wij trainingen voor schoolbesturen, raden van toezicht en medezeggenschapsraden."
+      },
+      {
+        "title": "Financieel strafrecht",
+        "href": "/financieel-strafrecht",
+        "description": "Of u nu te maken heeft met ernstige strafzaken of economische delicten, onze advocaten bieden proactieve en deskundige verdediging. Wij behandelen ook internationale zaken, waaronder uitlevering, grensoverschrijdende criminaliteit en procedures bij internationale rechtbanken. Daarnaast adviseren wij NGO's over vervolgings- en onderzoeksopties in internationale strafzaken."
+      },
+      {
+        "title": "Mensenrechten",
+        "href": "/mensenrechten",
+        "description": "Onze advocaten zetten zich in voor pro bono zaken en ondersteunen particulieren en organisaties met beperkte middelen, met name op het gebied van mensenrechten, vrijheid van meningsuiting, discriminatie en internationale misdrijven. Daarnaast staan wij mensen in kwetsbare situaties bij binnen civiele, bestuursrechtelijke en strafrechtelijke kwesties. Vanwege beperkte capaciteit kan een selectie van zaken worden gemaakt."
+      }
+    ],
+    "ctaTitleHighlight": "Professionele",
+    "ctaTitlePost": "hulp nodig?",
+    "ctaText": "Neem contact met ons op en laten we samenwerken"
+  },
+  "expertiseCarousel": {
+    "headingPre": "Bekijk meer van onze",
+    "headingHighlight": "expertise",
+    "subtitle": "Praktische, oplossingsgerichte juridische dienstverlening om uw onderneming, team en rechten te beschermen.",
+    "prevLabel": "Vorige",
+    "nextLabel": "Volgende",
+    "cards": [
+      {
+        "title": "Arbeidsrecht",
+        "description": "Ons kantoor adviseert ondernemers en particulieren bij arbeidsovereenkomsten, ontslag en arbeidsconflicten.",
+        "href": "/arbeidsrecht",
+        "image": "/images/expertise/arbeidsrecht.jpg"
+      },
+      {
+        "title": "Contractenrecht en aansprakelijkheidsrecht",
+        "description": "Ons kantoor adviseert ondernemers en particulieren bij het opstellen, interpreteren en onderhandelen van contracten, zoals handelsovereenkomsten.",
+        "href": "/contracten",
+        "image": "/images/expertise/contracten.png"
+      },
+      {
+        "title": "Onderwijsrecht",
+        "description": "Ons kantoor adviseert ondernemers en particulieren bij het opstellen, interpreteren en onderhandelen van contracten, zoals handelsovereenkomsten.",
+        "href": "/onderwijsrecht",
+        "image": "/images/expertise/onderwijsrecht.jpg"
+      },
+      {
+        "title": "Financieel strafrecht",
+        "description": "Gespecialiseerde verdediging en advies bij financieel-strafrechtelijke onderzoeken en procedures.",
+        "href": "/financieel-strafrecht",
+        "image": "/images/expertise/financieel-strafrecht.jpg"
+      },
+      {
+        "title": "Mensenrechten",
+        "description": "Ons kantoor adviseert particulieren bij het beschermen van fundamentele rechten en het voeren van procedures.",
+        "href": "/mensenrechten",
+        "image": "/images/expertise/mensenrechten.jpg"
+      }
+    ]
+  },
+  "expertiseOverview": {
+    "title": "Onze expertise",
+    "intro": "Onze ondernemingsrechtpraktijk biedt uitgebreide juridische dienstverlening aan bedrijven van elke omvang, van startups tot multinationale ondernemingen.",
+    "checks": [
+      "Een team van toegewijde juridische professionals",
+      "Voor het bieden van uitzonderlijke service en ondersteuning.",
+      "Wij streven naar excellentie in elke zaak die wij behandelen.",
+      "Onze expertise strekt zich uit over diverse rechtsgebieden, waardoor wij u breed en volledig kunnen ondersteunen.",
+      "Klanttevredenheid is onze hoogste prioriteit en vormt de basis voor al onze beslissingen."
+    ],
+    "check5Line1": "Klanttevredenheid is onze hoogste prioriteit en vormt de",
+    "check5Line2": "basis voor al onze beslissingen.",
+    "rows": [
+      {
+        "title": "Contracten en aansprakelijkheid",
+        "subtitle": "Gemoedsrust door duidelijke afspraken en slimme juridische strategieën.",
+        "href": "/contracten",
+        "image": "/images/expertise/contracten.png"
+      },
+      {
+        "title": "Arbeidsrecht",
+        "subtitle": "Zorg voor naleving en duidelijkheid in iedere arbeidskwestie.",
+        "href": "/arbeidsrecht",
+        "image": "/images/expertise/arbeidsrecht.jpg"
+      },
+      {
+        "title": "Onderwijsrecht",
+        "subtitle": "Met vertrouwen navigeren binnen het onderwijs.",
+        "href": "/onderwijsrecht",
+        "image": "/images/expertise/onderwijsrecht.jpg"
+      },
+      {
+        "title": "Financieel strafrecht",
+        "subtitle": "Uw rechten beschermen met proactieve en oplossingsgerichte verdedigingsstrategieën.",
+        "href": "/financieel-strafrecht",
+        "image": "/images/expertise/financieel-strafrecht.jpg"
+      },
+      {
+        "title": "Mensenrechten",
+        "subtitle": "Ons kantoor adviseert ondernemers en particulieren bij juridische vraagstukken en biedt ondersteuning op het gebied van fundamentele rechten en kwetsbare personen.",
+        "href": "/mensenrechten",
+        "image": "/images/expertise/mensenrechten.jpg"
+      }
+    ]
+  },
+  "steps": {
+    "headingHighlight1": "3 eenvoudige stappen",
+    "headingMid": "om het probleem van uw klant",
+    "headingHighlight2": "op te lossen",
+    "subtitle": "Deze principes sturen onze werkwijze en bepalen hoe wij onze cliënten bedienen.",
+    "items": [
+      {
+        "title": "Door middel van analyse",
+        "description": "We beginnen met een uitgebreide beoordeling van uw juridische situatie, waarbij we alle relevante informatie verzamelen en uw doelen en zorgen in kaart brengen.",
+        "icon": "/images/steps/analyse.svg"
+      },
+      {
+        "title": "Strategische planning",
+        "description": "Wij ontwikkelen een op maat gemaakte juridische strategie die aansluit bij uw doelstellingen, waarbij wij alle mogelijke aanpakken en hun gevolgen zorgvuldig afwegen.",
+        "icon": "/images/steps/planning.svg"
+      },
+      {
+        "title": "Krachtige vertegenwoordiging",
+        "description": "Wij behartigen uw belangen met overtuiging, zowel in onderhandelingen, gerechtelijke procedures als administratieve procedures.",
+        "icon": "/images/steps/vertegenwoordiging.svg"
+      }
+    ]
+  },
+  "testimonials": {
+    "headingPre": "Wat onze",
+    "headingHighlight": "cliënten",
+    "headingPost": "zeggen",
+    "subtitle": "Echte ervaringen van cliënten die wij hebben ondersteund",
+    "reviewsTop": [
+      {
+        "quote": "Geweldige advocaat, een echte aanrader, zeer professioneel. Ik raad dit kantoor aan al mijn vrienden aan. Vrienden van mij hadden dit kantoor ook aan mij aanbevolen. Ik ben enorm geholpen door deze advocaten. Bel ze gerust, u zult er geen spijt van krijgen!",
+        "author": "Cheryl Hammond"
+      },
+      {
+        "quote": "Best lawyer in town!",
+        "author": "De Koorndijk"
+      },
+      {
+        "quote": "Dhr Pejman Salim staat mij bij en geduld is een schone zaak, Dhr Salim weet te handelen en gaat voor rechtvaardigheid. Dhr Salim kent de wetten en werkt zeer nauwkeurig. Blij dat ik heb ontmoet, ondanks dat Dhr zijn werk goed doet, leeft hij mee en toont empathie. Dhr Salim stelt je op je gemak, Bedankt.",
+        "author": "Sabrina Coenraad"
+      },
+      {
+        "quote": "Quality, Professionalism, Value",
+        "author": "Sander Blauw"
+      },
+      {
+        "quote": "Ik ben heel dankbaar voor de hulp van mijn advocaat mr. Salim. Hij heeft echt kennis van zaken, vooral als het gaat om de toeslagenaffaire. Hij nam de tijd om alles goed uit te leggen en stond altijd voor me klaar. Dankzij zijn inzet en deskundigheid voel ik me eindelijk serieus genomen. Een advocaat met een hart voor zijn cliënten – echt een aanrader!",
+        "author": "A.M SJRo"
+      }
+    ],
+    "reviewsBottom": [
+      {
+        "quote": "Mr. Salim is een goede advocaat met verstand van zaken, hanteert een slimme tactiek en heeft goede resultaten voor bijstand in strafrecht en de toeslagenaffaire. Zeer tevreden tot nu toe.",
+        "author": "Maria HT"
+      },
+      {
+        "quote": "Zeer professioneel. Zeer tevreden. Ik raad ze zeker aan. Ze hebben mij te woord gestaan en goed verdedigd tegenover de overheid. Bel ze maar.",
+        "author": "Cheryl Koperberg"
+      },
+      {
+        "quote": "Hij heeft mij goed geholpen en nog steeds gelukkig voor mij en mijn gezin.",
+        "author": "Justin jennifer Pathuis"
+      },
+      {
+        "quote": "Goed advocaten. Zeer tevreden.",
+        "author": "Bjorn Sjoerdsma"
+      },
+      {
+        "quote": "Zeer aan te raden! Goede kennis over vele zaken, denken echt met je mee en pakken onrecht goed aan. Mr Salim legt alles heel goed en duidelijk uit. Vriendelijk en met t hart op de goede plek. Hier kun je gerust van zijn dat je echt wordt geholpen.",
+        "author": "Huseyin Acar"
+      }
+    ]
+  }
+}

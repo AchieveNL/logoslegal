@@ -1,0 +1,350 @@
+{
+  "practice": {
+    "arbeidsrecht": {
+      "meta": {
+        "title": "Employment Law | LOGOS LEGAL",
+        "description": "Strong employment law positions through practical guidance and decisive action. Protect your employees and your organisation."
+      },
+      "hero": {
+        "subtitle": "Strong employment law positions through practical guidance and decisive action."
+      },
+      "breadcrumb": {
+        "home": "Home",
+        "aboutUs": "About us"
+      },
+      "intro": {
+        "heading": "<blue>Protect</blue> your employees and organisation with <blue>expert</blue> legal guidance",
+        "subheading": "Ensure compliance and clarity in every employment law matter.",
+        "checkItems": [
+          "Drafting, reviewing and negotiating employment contracts",
+          "Advising on matters such as contract changes, dismissal and disputes",
+          "In-company training and practical legal support to prevent disputes"
+        ],
+        "summary": "We translate complex employment law into clear, immediately applicable solutions.",
+        "ctaLabel": "Talk to Linda",
+        "imageAlt": "LOGOS LEGAL employment law advice"
+      },
+      "benefits": {
+        "heading": "<blue>Protect</blue> your workplace and your people",
+        "items": [
+          {
+            "title": "Prevent costly disputes",
+            "description": "Well-structured employment contracts and expert guidance help you avoid misunderstandings, reduce workplace conflicts and limit the risk of costly legal claims."
+          },
+          {
+            "title": "Ensure legal and regulatory compliance",
+            "description": "Make sure your policies and procedures align with employment laws and regulations, from sick leave to dismissal, so your organisation remains protected against fines and reputational damage."
+          },
+          {
+            "title": "Support your employees",
+            "description": "By offering practical advice, clear procedures and transparent communication, you build trust, improve the working atmosphere and create a more productive and stable work environment."
+          }
+        ],
+        "imageAlt": "Legal guidance in the workplace",
+        "quote": {
+          "text": "Working with LOGOS LEGAL was a game-changer for our patent dispute.",
+          "author": "Laura Chen",
+          "role": "Managing Director"
+        }
+      },
+      "ctaBanner": {
+        "heading": "Ready to work with our expert legal team?",
+        "subtitle": "Schedule a consultation today and discover how we can support you with your legal needs."
+      },
+      "challenge": {
+        "heading": "Turning employment law <blue>challenges</blue> into <blue>certainty</blue>",
+        "paragraphs": [
+          "At Logos Legal, we go beyond standard legal advice. We analyse your organisation, identify potential bottlenecks and offer practical solutions tailored to your situation. Whether it concerns drafting contracts, guiding sick leave procedures, handling dismissals or training your team, our proactive and solution-oriented approach ensures compliance, minimises disputes and strengthens working relationships."
+        ],
+        "imageAlt": "Employment law guidance"
+      },
+      "contact": {
+        "heading": "We would <blue>love</blue> to hear from you",
+        "subheading": "From 9:00 AM to 5:00 PM, Monday through Friday",
+        "greeting": "Hello, I'm Linda. How can I help you today?",
+        "testimonial": {
+          "quote": "Working with Logos Legal was a turning point in our patent dispute. Their expertise in intellectual property law was evident throughout the entire process, and they secured a victory that not only protected our innovation but also strengthened our market position.",
+          "author": "Laura Chen",
+          "role": "Managing Director"
+        }
+      }
+    },
+    "contracten": {
+      "meta": {
+        "title": "Contracts and Liability | LOGOS LEGAL",
+        "description": "Legal certainty through clear advice and strategic guidance. Protect your interests with enforceable agreements."
+      },
+      "hero": {
+        "subtitle": "Legal certainty through clear advice and strategic guidance."
+      },
+      "breadcrumb": {
+        "home": "Home",
+        "aboutUs": "About us"
+      },
+      "intro": {
+        "heading": "<blue>Peace of mind</blue> through clear agreements and smart <blue>legal strategies</blue>",
+        "subheading": "Record your agreements with clarity and confidence.",
+        "checkItems": [
+          "Drafting, reviewing and negotiating tailor-made contracts",
+          "Advising on liability, damages and risk management",
+          "Representing you in disputes and legal proceedings"
+        ],
+        "summary": "We make complex legal issues simple and immediately applicable.",
+        "ctaLabel": "Talk to Linda",
+        "imageAlt": "LOGOS LEGAL contracts and liability advice"
+      },
+      "benefits": {
+        "heading": "Protect your <blue>interests</blue>",
+        "items": [
+          {
+            "title": "Prevent costly disputes",
+            "description": "Well-drafted contracts and clear agreements help you avoid misunderstandings, financial losses and legal proceedings."
+          },
+          {
+            "title": "Manage risks effectively",
+            "description": "We identify potential liabilities at an early stage, so you can act proactively and protect your business or personal interests."
+          },
+          {
+            "title": "Ensure enforceable agreements",
+            "description": "Our legal expertise ensures that your contracts comply with laws and regulations, are practically workable and remain enforceable in the event of a dispute."
+          }
+        ],
+        "imageAlt": "Signing a contract",
+        "quote": {
+          "text": "Working with LOGOS LEGAL was a game-changer for our patent dispute.",
+          "author": "Laura Chen",
+          "role": "Managing Director"
+        }
+      },
+      "ctaBanner": {
+        "heading": "Ready to work with our expert legal team?",
+        "subtitle": "Schedule a consultation today and discover how we can support you with your legal needs."
+      },
+      "challenge": {
+        "heading": "Turning risk into <blue>certainty</blue>",
+        "paragraphs": [
+          "At Logos Legal, we do more than draft or review contracts: we make sure they genuinely meet your needs and protect your rights. From commercial agreements to general terms and conditions, we anticipate potential disputes, advise on liability issues and provide practical guidance for every situation.",
+          "Our unique approach combines thorough legal analysis with pragmatic, solution-oriented strategies. This means you gain insight into risks, receive concrete steps to prevent conflicts and can count on strong support when disputes arise, so your business or personal interests always remain well protected."
+        ],
+        "imageAlt": "Contracts and liability guidance"
+      },
+      "contact": {
+        "heading": "We would <blue>love</blue> to hear from you",
+        "subheading": "From 9:00 AM to 5:00 PM, Monday through Friday",
+        "greeting": "Hello, I'm Linda. How can I help you today?",
+        "testimonial": {
+          "quote": "Working with Logos Legal was a turning point in our patent dispute. Their expertise in intellectual property law was evident throughout the entire process, and they secured a victory that not only protected our innovation but also strengthened our market position.",
+          "author": "Laura Chen",
+          "role": "Managing Director"
+        }
+      }
+    },
+    "onderwijsrecht": {
+      "meta": {
+        "title": "Education Law | LOGOS LEGAL",
+        "description": "Confident decision-making through multidisciplinary legal guidance. Strategic support for schools, boards and education professionals."
+      },
+      "hero": {
+        "subtitle": "Confident decision-making through multidisciplinary legal guidance."
+      },
+      "breadcrumb": {
+        "home": "Home",
+        "aboutUs": "About us"
+      },
+      "intro": {
+        "heading": "<blue>Strategic legal guidance</blue> for schools, boards and education professionals",
+        "subheading": "Navigate the education sector with confidence.",
+        "checkItems": [
+          "Advising on mergers, reorganisations and governance changes",
+          "Guiding employment law and policy matters within schools",
+          "Training for boards, supervisory boards and staff"
+        ],
+        "summary": "We translate complex education law into practical, immediately applicable advice.",
+        "ctaLabel": "Talk to Linda",
+        "imageAlt": "LOGOS LEGAL education law advice"
+      },
+      "benefits": {
+        "heading": "Ensure <blue>compliance</blue> and <blue>strong governance</blue>",
+        "items": [
+          {
+            "title": "Prevent legal and governance risks",
+            "description": "Proactive advice helps schools avoid conflicts, regulatory fines and organisational inefficiencies."
+          },
+          {
+            "title": "Streamline complex processes",
+            "description": "Guidance on mergers, reorganisations and funding ensures smooth transitions and decision-making that complies with laws and regulations."
+          },
+          {
+            "title": "Support education professionals and stakeholders",
+            "description": "Clear policies and structured procedures foster trust, transparency and strong working relationships."
+          }
+        ],
+        "imageAlt": "Education law guidance",
+        "quote": {
+          "text": "Working with LOGOS LEGAL was a game-changer for our patent dispute.",
+          "author": "Laura Chen",
+          "role": "Managing Director"
+        }
+      },
+      "ctaBanner": {
+        "heading": "Ready to work with our expert legal team?",
+        "subtitle": "Schedule a consultation today and discover how we can support you with your legal needs."
+      },
+      "challenge": {
+        "heading": "Turning complex education challenges into <blue>clarity</blue>",
+        "paragraphs": [
+          "At Logos Legal, we offer more than standard legal advice. We analyse the structure of your organisation, identify challenges and provide concrete guidance on governance, policy, employment matters and funding. By combining multidisciplinary expertise with practical strategies, we help schools, boards and education professionals make well-considered, compliant decisions while keeping risks and disruptions to a minimum."
+        ],
+        "imageAlt": "Education law guidance"
+      },
+      "contact": {
+        "heading": "We would <blue>love</blue> to hear from you",
+        "subheading": "From 9:00 AM to 5:00 PM, Monday through Friday",
+        "greeting": "Hello, I'm Linda. How can I help you today?",
+        "testimonial": {
+          "quote": "Working with Logos Legal was a turning point in our patent dispute. Their expertise in intellectual property law was evident throughout the entire process, and they secured a victory that not only protected our innovation but also strengthened our market position.",
+          "author": "Laura Chen",
+          "role": "Managing Director"
+        }
+      }
+    },
+    "financieelStrafrecht": {
+      "meta": {
+        "title": "Financial Criminal Law | LOGOS LEGAL",
+        "description": "Effective defence through strategic insight and timely assistance. Strong representation in criminal and financial matters."
+      },
+      "hero": {
+        "subtitle": "Effective defence through strategic insight and timely assistance."
+      },
+      "breadcrumb": {
+        "home": "Home",
+        "aboutUs": "About us"
+      },
+      "intro": {
+        "heading": "<blue>Strategic defence</blue> when it truly matters",
+        "subheading": "Protecting your rights with proactive, solution-oriented defence strategies.",
+        "checkItems": [
+          "Assistance in criminal and financial investigations",
+          "International cases, extradition and cross-border matters",
+          "Advice and representation for NGOs and organisations"
+        ],
+        "summary": "We combine strategic insight with decisive action to protect your interests.",
+        "ctaLabel": "Talk to Linda",
+        "imageAlt": "LOGOS LEGAL financial criminal law advice"
+      },
+      "benefits": {
+        "heading": "<blue>Protect</blue> your rights and reputation",
+        "items": [
+          {
+            "title": "Avoid legal pitfalls",
+            "description": "Strategic advice limits your exposure to criminal or financial liability."
+          },
+          {
+            "title": "Navigate complex cases",
+            "description": "Experienced guidance helps you manage investigations, international proceedings and compliance issues."
+          },
+          {
+            "title": "Protect your reputation",
+            "description": "Strong representation and clear strategies safeguard your personal or organisational reputation."
+          }
+        ],
+        "imageAlt": "Criminal defence",
+        "quote": {
+          "text": "Working with LOGOS LEGAL was a game-changer for our patent dispute.",
+          "author": "Laura Chen",
+          "role": "Managing Director"
+        }
+      },
+      "ctaBanner": {
+        "heading": "Ready to work with our expert legal team?",
+        "subtitle": "Schedule a consultation today and discover how we can support you with your legal needs."
+      },
+      "challenge": {
+        "heading": "Turning legal challenges into <blue>strategic advantage</blue>",
+        "paragraphs": [
+          "At Logos Legal, we act quickly and decisively to protect your rights. Our team analyses every detail, anticipates potential risks and develops a clear strategy for criminal or financial matters. Whether it concerns national investigations, cross-border issues or advising NGOs on complex international crimes, we combine in-depth expertise with practical, solution-oriented approaches to defend your interests at every stage."
+        ],
+        "imageAlt": "Financial criminal law guidance"
+      },
+      "contact": {
+        "heading": "We would <blue>love</blue> to hear from you",
+        "subheading": "From 9:00 AM to 5:00 PM, Monday through Friday",
+        "greeting": "Hello, I'm Linda. How can I help you today?",
+        "testimonial": {
+          "quote": "Working with Logos Legal was a turning point in our patent dispute. Their expertise in intellectual property law was evident throughout the entire process, and they secured a victory that not only protected our innovation but also strengthened our market position.",
+          "author": "Laura Chen",
+          "role": "Managing Director"
+        }
+      }
+    },
+    "mensenrechten": {
+      "meta": {
+        "title": "Human Rights | LOGOS LEGAL",
+        "description": "Protecting fundamental rights through dedicated advocacy and legal expertise. Support for vulnerable individuals and NGOs."
+      },
+      "hero": {
+        "subtitle": "Protecting fundamental rights through dedicated advocacy and legal expertise."
+      },
+      "breadcrumb": {
+        "home": "Home",
+        "aboutUs": "About us"
+      },
+      "intro": {
+        "heading": "<blue>Justice</blue> for everyone, <blue>protection</blue> when it matters",
+        "subheading": "Dedicated legal support for fundamental rights and vulnerable individuals.",
+        "checkItems": [
+          "Legal assistance in cases of human rights violations and discrimination",
+          "Advocacy in civil, administrative and criminal proceedings",
+          "Pro bono and legal aid support for vulnerable individuals and NGOs"
+        ],
+        "summary": "We provide practical and dedicated legal solutions for those who need them most.",
+        "ctaLabel": "Talk to Linda",
+        "imageAlt": "LOGOS LEGAL human rights advice"
+      },
+      "benefits": {
+        "heading": "<blue>Protect</blue> fundamental <br></br>rights and <blue>support</blue> vulnerable groups",
+        "items": [
+          {
+            "title": "Protect your rights",
+            "description": "Legal support helps individuals defend themselves against discrimination, violations of their rights or abuse of power."
+          },
+          {
+            "title": "Navigate complex systems",
+            "description": "Expertise in civil, administrative and criminal law ensures sensitive cases are handled effectively."
+          },
+          {
+            "title": "Access to justice for all",
+            "description": "Pro bono and targeted support give vulnerable individuals and NGOs the guidance they need to assert their rights."
+          }
+        ],
+        "imageAlt": "Human rights guidance",
+        "quote": {
+          "text": "Working with LOGOS LEGAL was a game-changer for our patent dispute.",
+          "author": "Laura Chen",
+          "role": "Managing Director"
+        }
+      },
+      "ctaBanner": {
+        "heading": "Ready to work with our expert legal team?",
+        "subtitle": "Schedule a consultation today and discover how we can support you with your legal needs."
+      },
+      "challenge": {
+        "heading": "Turning legal challenges into <blue>justice</blue>",
+        "paragraphs": [
+          "At Logos Legal, we provide proactive and dedicated legal guidance to individuals and organisations facing human rights issues. We analyse every situation, anticipate obstacles and offer clear strategies to protect rights and achieve justice. From discrimination and civil disputes to complex international matters, we combine expertise, practical solutions and commitment to support vulnerable clients at every stage."
+        ],
+        "imageAlt": "Human rights guidance"
+      },
+      "contact": {
+        "heading": "We would <blue>love</blue> to hear from you",
+        "subheading": "From 9:00 AM to 5:00 PM, Monday through Friday",
+        "greeting": "Hello, I'm Linda. How can I help you today?",
+        "testimonial": {
+          "quote": "Working with Logos Legal was a turning point in our patent dispute. Their expertise in intellectual property law was evident throughout the entire process, and they secured a victory that not only protected our innovation but also strengthened our market position.",
+          "author": "Laura Chen",
+          "role": "Managing Director"
+        }
+      }
+    }
+  }
+}
