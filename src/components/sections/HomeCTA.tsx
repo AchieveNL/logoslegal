@@ -13,7 +13,7 @@ export default async function HomeCTA({ contactHref = "/contact" }: { contactHre
   const tCta = await getTranslations("cta");
 
   return (
-    <section className="w-full bg-white py-12 md:py-20">
+    <section className="w-full bg-white pt-12 md:pt-20 pb-0">
       <div className="max-w-container mx-auto px-6 md:px-12">
         <div className="relative overflow-hidden rounded-[32px] bg-brand-blue-light px-8 md:px-16 py-14 md:py-20">
           {/* Wave texture */}

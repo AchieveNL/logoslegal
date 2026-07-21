@@ -1,14 +1,7 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
-
-interface CaseItem {
-  category: string;
-  title: string;
-  description: string;
-  image: string;
-  href: string;
-}
+import { getPayload } from "@/lib/payload";
 
 const ArrowUpRight = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="rotate-45">
@@ -17,35 +10,45 @@ const ArrowUpRight = () => (
   </svg>
 );
 
-// Images/links per card, in the same order as the "items" array in the messages.
-const caseMedia = [
-  { image: "/images/cases/meldplichtstatus.png", href: "/cases" },
-  { image: "/images/cases/no-smoking.png", href: "/cases" },
-  { image: "/images/cases/meldplichtstatus.png", href: "/cases" },
-  { image: "/images/cases/rechtbank.png", href: "/cases" },
-];
+/* Map CMS category values to the shared expertiseAreas translation keys. */
+const CATEGORY_KEY: Record<string, string> = {
+  arbeidsrecht: "arbeidsrecht",
+  contracten: "contracten",
+  onderwijsrecht: "onderwijsrecht",
+  financieelStrafrecht: "financieelStrafrecht",
+  mensenrechten: "mensenrechten",
+};
 
 export default async function CasesListGrid() {
+  const locale = await getLocale();
   const t = await getTranslations("casesList");
   const tAreas = await getTranslations("expertiseAreas");
   const tCta = await getTranslations("cta");
 
-  const items = t.raw("items") as {
-    categoryKey: string;
-    title: string;
-    description: string;
-  }[];
+  const payload = await getPayload();
+  const { docs } = await payload.find({
+    collection: "cases",
+    locale: locale as "nl" | "en",
+    limit: 50,
+    sort: "-createdAt",
+    depth: 1,
+  });
 
-  const cases: CaseItem[] = items.map((item, i) => ({
-    category: tAreas(item.categoryKey),
-    title: item.title,
-    description: item.description,
-    image: caseMedia[i].image,
-    href: caseMedia[i].href,
-  }));
+  const cases = docs.map((doc) => {
+    const media = typeof doc.image === "object" && doc.image !== null ? doc.image : null;
+    return {
+      id: doc.id,
+      category: tAreas(CATEGORY_KEY[doc.category] || "contracten"),
+      title: doc.title,
+      description: doc.summary,
+      image: media?.url || "",
+      imageAlt: media?.alt || doc.title,
+      href: `/cases/${doc.slug}`,
+    };
+  });
 
   return (
-    <section className="w-full bg-white py-12 md:py-20">
+    <section className="w-full bg-white pt-8 md:pt-12 pb-8 md:pb-12">
       <div className="max-w-[1600px] mx-auto px-6 md:px-8">
         {/* Heading */}
         <div className="max-w-[640px] mb-12">
@@ -57,21 +60,23 @@ export default async function CasesListGrid() {
           </p>
         </div>
 
-        {/* Cards */}
+        {/* Cards (from the CMS) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {cases.map((c, i) => (
+          {cases.map((c) => (
             <article
-              key={`${c.title}-${i}`}
+              key={c.id}
               className="hover-lift flex flex-col bg-brand-blue-light rounded-[24px] overflow-hidden lg:h-[1020px]"
             >
               <div className="relative w-full h-[260px] md:h-[360px] lg:h-[500px] shrink-0 bg-brand-blue/10">
-                <Image
-                  src={c.image}
-                  alt={c.title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
+                {c.image && (
+                  <Image
+                    src={c.image}
+                    alt={c.imageAlt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                )}
               </div>
               <div className="flex flex-col flex-1 px-6 md:px-8 pt-6 pb-8">
                 <span className="self-start bg-white rounded-full px-4 py-2 font-poppins font-semibold text-sm text-brand-blue">

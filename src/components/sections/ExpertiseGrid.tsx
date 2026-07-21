@@ -62,7 +62,7 @@ export default async function ExpertiseGrid({ contactHref = "/contact" }: { cont
   const items = t.raw("items") as ExpertiseItem[];
 
   return (
-    <section className="w-full bg-white py-16 md:py-24">
+    <section className="w-full bg-white pt-16 md:pt-24 pb-8 md:pb-12">
       <div className="max-w-[1608px] mx-auto px-6 md:px-12 lg:px-6">
         {/* Heading */}
         <div className="text-center mb-12 md:mb-16">

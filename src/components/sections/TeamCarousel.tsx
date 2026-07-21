@@ -50,7 +50,7 @@ export default function TeamCarousel() {
   };
 
   return (
-    <section className="w-full bg-white py-16 md:py-24">
+    <section className="w-full bg-white pt-8 md:pt-12 pb-16 md:pb-24">
       <div className="max-w-container mx-auto px-6 md:px-12">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 lg:items-center">
           {/* Left: quote + signature (fixed-width, never collapses) */}

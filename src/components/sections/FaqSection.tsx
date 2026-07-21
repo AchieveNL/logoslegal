@@ -1,175 +1,52 @@
-"use client";
-
-import { useLayoutEffect, useRef, useState } from "react";
-import { useTranslations } from "next-intl";
-
-interface QA {
-  question: string;
-  answer: string;
-}
-
-interface Category {
-  id: string;
-  label: string;
-  items: QA[];
-}
-
-interface FaqItemProps {
-  item: QA;
-  isOpen: boolean;
-  onToggle: () => void;
-}
-
-function FaqItem({ item, isOpen, onToggle }: FaqItemProps) {
-  return (
-    <div className="border-b border-brand-gray/60 py-6">
-      <button
-        onClick={onToggle}
-        className="w-full flex items-start justify-between gap-6 text-left"
-      >
-        <h3
-          className={`font-raleway font-bold text-xl md:text-[24px] transition-colors duration-300 ${
-            isOpen ? "text-brand-blue" : "text-[#002B58]"
-          }`}
-        >
-          {item.question}
-        </h3>
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          className={`shrink-0 mt-1 text-brand-blue transition-transform ${
-            isOpen ? "" : "rotate-180"
-          }`}
-        >
-          <path
-            d="M6 9l6 6 6-6"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </button>
-      <div
-        className={`grid transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-        }`}
-      >
-        <div className="overflow-hidden">
-          <p
-            className={`mt-4 font-poppins font-medium text-base md:text-[24px] text-[#292D32] leading-snug pr-10 transition-opacity duration-300 ${
-              isOpen ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            {item.answer}
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}
+import { getLocale, getTranslations } from "next-intl/server";
+import { getPayload } from "@/lib/payload";
+import FaqSectionClient, { type FaqCategory } from "./FaqSectionClient";
 
 interface FaqSectionProps {
   defaultCategory?: string;
 }
 
-export default function FaqSection({ defaultCategory = "algemeen" }: FaqSectionProps) {
-  const t = useTranslations("faq");
-  const categories = t.raw("categories") as Category[];
-  const [activeId, setActiveId] = useState(defaultCategory);
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const tabRefs = useRef<Record<string, HTMLButtonElement | null>>({});
-  const [pill, setPill] = useState<{
-    left: number;
-    top: number;
-    width: number;
-    height: number;
-  } | null>(null);
+/* Server wrapper: pulls FAQ items from the CMS (per locale), keeps the
+   category labels + headings in the translation files, and hands everything
+   to the interactive client component. */
+export default async function FaqSection({
+  defaultCategory = "algemeen",
+}: FaqSectionProps) {
+  const locale = await getLocale();
+  const t = await getTranslations("faq");
 
-  // Slide the active pill to the current tab (remeasure on resize/wrap).
-  useLayoutEffect(() => {
-    const measure = () => {
-      const el = tabRefs.current[activeId];
-      if (el) {
-        setPill({
-          left: el.offsetLeft,
-          top: el.offsetTop,
-          width: el.offsetWidth,
-          height: el.offsetHeight,
-        });
-      }
-    };
-    measure();
-    window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
-  }, [activeId]);
+  const labels = (
+    t.raw("categories") as { id: string; label: string }[]
+  ).map(({ id, label }) => ({ id, label }));
 
-  const active =
-    categories.find((c) => c.id === activeId) ?? categories[0];
+  const payload = await getPayload();
+  const { docs } = await payload.find({
+    collection: "faqs",
+    locale: locale as "nl" | "en",
+    limit: 300,
+    sort: "order",
+  });
+
+  const categories: FaqCategory[] = labels
+    .map(({ id, label }) => ({
+      id,
+      label,
+      items: docs
+        .filter((d) => d.category === id)
+        .map((d) => ({ question: d.question, answer: d.answer })),
+    }))
+    .filter((c) => c.items.length > 0);
+
+  if (categories.length === 0) return null;
 
   return (
-    <section className="w-full bg-white py-16 md:py-24">
-      <div className="max-w-container mx-auto px-6 md:px-24">
-        <div className="text-center mb-10">
-          <h2 className="font-raleway font-bold text-[32px] md:text-[56px] leading-none text-[#002B58]">
-            {t.rich("heading", {
-              blue: (chunks) => <span className="text-brand-blue">{chunks}</span>,
-            })}
-          </h2>
-          <p className="mt-4 font-poppins font-medium text-lg md:text-[24px] text-[#292D32]">
-            {t("subtitle")}
-          </p>
-        </div>
-
-        {/* Category tabs — gradient pill slides between tabs */}
-        <div className="relative flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mb-12">
-          {pill && (
-            <span
-              aria-hidden="true"
-              className="absolute z-0 rounded-2xl bg-gradient-to-r from-[#087AEC] to-[#56A5F4] shadow-lg shadow-brand-blue/20 transition-all duration-500 ease-[cubic-bezier(0.34,1.2,0.4,1)]"
-              style={{
-                left: pill.left,
-                top: pill.top,
-                width: pill.width,
-                height: pill.height,
-              }}
-            />
-          )}
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              ref={(el) => {
-                tabRefs.current[cat.id] = el;
-              }}
-              onClick={() => {
-                setActiveId(cat.id);
-                setOpenIndex(null);
-              }}
-              className={`relative z-10 font-poppins font-medium text-base h-16 px-5 rounded-2xl inline-flex items-center transition-colors duration-300 ${
-                cat.id === activeId
-                  ? "text-white"
-                  : "text-[#002B58] hover:text-brand-blue hover:bg-brand-blue-light"
-              }`}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Accordion — re-keyed per category so switching fades the list in */}
-        <div key={active.id} className="max-w-[1446px] mx-auto page-enter">
-          {active.items.map((item, i) => (
-            <FaqItem
-              key={item.question}
-              item={item}
-              isOpen={openIndex === i}
-              onToggle={() => setOpenIndex(openIndex === i ? null : i)}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+    <FaqSectionClient
+      categories={categories}
+      defaultCategory={defaultCategory}
+      subtitle={t("subtitle")}
+      heading={t.rich("heading", {
+        blue: (chunks) => <span className="text-brand-blue">{chunks}</span>,
+      })}
+    />
   );
 }

@@ -20,7 +20,7 @@ export default function WhyLogos({
   imageAlt,
 }: WhyLogosProps) {
   return (
-    <section className="w-full bg-brand-blue-light py-16 md:py-24">
+    <section className="w-full bg-brand-blue-light pt-8 md:pt-8 pb-16 md:pb-24">
       <div className="max-w-container mx-auto px-6 md:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left: image — Figma ratio 720 x 702, top-aligned with the heading */}

@@ -50,10 +50,10 @@ export default async function TeamGrid() {
           style={{
             WebkitMaskImage: "url('/images/waves/team-wave.svg')",
             maskImage: "url('/images/waves/team-wave.svg')",
-            WebkitMaskSize: "cover",
-            maskSize: "cover",
-            WebkitMaskRepeat: "no-repeat",
-            maskRepeat: "no-repeat",
+            WebkitMaskSize: "auto 100%",
+            maskSize: "auto 100%",
+            WebkitMaskRepeat: "repeat-x",
+            maskRepeat: "repeat-x",
             WebkitMaskPosition: "right top",
             maskPosition: "right top",
           }}

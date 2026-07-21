@@ -10,11 +10,17 @@ import FaqSection from "@/components/sections/FaqSection";
 import CasesGrid from "@/components/sections/CasesGrid";
 import HomeCTA from "@/components/sections/HomeCTA";
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const t = await getTranslations({ locale, namespace: "home" });
   return {
     title: t("meta.title"),
@@ -22,11 +28,17 @@ export async function generateMetadata({
   };
 }
 
-export default async function Home({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export default async function Home(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   unstable_setRequestLocale(locale);
   const t = await getTranslations("home");
 

@@ -15,11 +15,17 @@ const entryImages = [
   "/images/rechtsgebiedenregister/anil-ramdas.png",
 ];
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const t = await getTranslations({
     locale,
     namespace: "legalPages.rechtsgebiedenregister.meta",
@@ -30,11 +36,17 @@ export async function generateMetadata({
   };
 }
 
-export default async function RechtsgebiedenregisterPage({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export default async function RechtsgebiedenregisterPage(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   unstable_setRequestLocale(locale);
   const t = await getTranslations("legalPages.rechtsgebiedenregister");
   const tNav = await getTranslations("nav");

@@ -50,7 +50,7 @@ export default async function Footer() {
   ];
 
   return (
-    <footer className="bg-white px-4 sm:px-6 lg:px-12 pb-10 pt-28">
+    <footer className="bg-white px-4 sm:px-6 lg:px-12 pb-10 pt-20">
       <div className="max-w-container mx-auto">
         <div className="relative overflow-hidden rounded-[32px] bg-brand-blue text-white px-8 md:px-14 py-12 md:py-14">
           {/* Wave texture (extracted from the Figma footer export), faded like the design */}
@@ -219,7 +219,7 @@ export default async function Footer() {
 
             {/* Bottom bar */}
             <div className="mt-6 flex flex-col lg:flex-row items-center justify-between gap-6">
-              <p className="font-poppins font-bold text-xs text-white/90 order-1">
+              <p className="font-poppins text-[20px] text-white/85 order-1">
                 {t("developedBy")}{" "}
                 <a
                   href="https://achieve.nl"
@@ -244,12 +244,6 @@ export default async function Footer() {
 
               <div className="flex items-center gap-3 order-2 lg:order-3">
                 <SocialIcon href="https://www.linkedin.com/company/logos-legal/" label="LinkedIn">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95s-2.08 1.4-2.08 2.85V21H9z" />
-                  </svg>
-                </SocialIcon>
-                {/* Placeholder — tweede social volgt nog */}
-                <SocialIcon href="#" label={t("socialPlaceholder")}>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95s-2.08 1.4-2.08 2.85V21H9z" />
                   </svg>

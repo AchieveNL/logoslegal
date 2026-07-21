@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
+import { getPayload } from "@/lib/payload";
 
 interface Review {
   quote: string;
@@ -60,12 +61,28 @@ function MarqueeRow({
 
 export default async function TestimonialsGrid() {
   const t = await getTranslations("testimonials");
+  const locale = await getLocale();
+
+  // Visible reviews from the CMS, split over the two marquee rows.
+  const payload = await getPayload();
+  const { docs } = await payload.find({
+    collection: "reviews",
+    locale: locale as "nl" | "en",
+    where: { visible: { equals: true } },
+    limit: 100,
+    sort: "createdAt",
+  });
+
+  const reviews: Review[] = docs.map((d) => ({ quote: d.quote, author: d.author }));
+  if (reviews.length === 0) return null;
+
   // Top row — scrolls to the right; bottom row — scrolls to the left
-  const reviewsTop = t.raw("reviewsTop") as Review[];
-  const reviewsBottom = t.raw("reviewsBottom") as Review[];
+  const half = Math.ceil(reviews.length / 2);
+  const reviewsTop = reviews.slice(0, half);
+  const reviewsBottom = reviews.length > 1 ? reviews.slice(half) : reviews;
 
   return (
-    <section className="w-full bg-white py-16 md:py-24 overflow-hidden">
+    <section className="w-full bg-white pt-8 md:pt-12 pb-8 md:pb-12 overflow-hidden">
       <div className="max-w-container mx-auto px-6 md:px-24">
         <div className="text-center mb-12">
           <h2 className="font-raleway font-bold text-[32px] md:text-[56px] leading-none text-[#002B58] max-w-[1020px] mx-auto">

@@ -7,13 +7,15 @@ export interface BreadcrumbItem {
 
 interface BreadcrumbProps {
   items: BreadcrumbItem[];
+  /* Match the background of the section that follows (defaults to white). */
+  className?: string;
 }
 
-export default function Breadcrumb({ items }: BreadcrumbProps) {
+export default function Breadcrumb({ items, className = "bg-brand-blue-light" }: BreadcrumbProps) {
   return (
     <nav
       aria-label="Breadcrumb"
-      className="bg-white py-4 px-6 md:px-24"
+      className={`${className} py-4 px-6 md:px-24`}
     >
       <ol className="flex items-center gap-1 text-base font-poppins font-medium text-brand-dark">
         {items.map((item, index) => (

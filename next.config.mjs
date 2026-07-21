@@ -1,4 +1,5 @@
 import createNextIntlPlugin from "next-intl/plugin";
+import { withPayload } from "@payloadcms/next/withPayload";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
@@ -16,8 +17,19 @@ const nextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      // Local MinIO (dev) — swap/add the production media domain when deploying
+      {
+        protocol: "http",
+        hostname: "localhost",
+        port: "9010",
+      },
+      {
+        protocol: "http",
+        hostname: "localhost",
+        port: "3000",
+      },
     ],
   },
 };
 
-export default withNextIntl(nextConfig);
+export default withPayload(withNextIntl(nextConfig));

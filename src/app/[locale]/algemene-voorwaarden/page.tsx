@@ -6,11 +6,17 @@ import HeroBanner from "@/components/sections/HeroBanner";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import LegalContent, { type LegalBlock } from "@/components/sections/LegalContent";
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const t = await getTranslations({
     locale,
     namespace: "legalPages.algemeneVoorwaarden.meta",
@@ -21,11 +27,17 @@ export async function generateMetadata({
   };
 }
 
-export default async function AlgemeneVoorwaardenPage({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export default async function AlgemeneVoorwaardenPage(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   unstable_setRequestLocale(locale);
   const t = await getTranslations("legalPages.algemeneVoorwaarden");
   const tNav = await getTranslations("nav");

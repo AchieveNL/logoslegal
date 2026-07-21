@@ -11,7 +11,7 @@ export default async function CasesIntro({ paragraph, phone, phoneLabel }: Cases
 
   return (
     <section className="w-full bg-white">
-      <div className="max-w-container mx-auto px-6 md:px-12 py-16 md:py-28 text-center">
+      <div className="max-w-container mx-auto px-6 md:px-12 pt-16 md:pt-24 pb-8 md:pb-12 text-center">
         <h1 className="font-raleway font-bold text-[48px] md:text-[104px] leading-none tracking-normal text-center">
           <span className="text-brand-blue">{t("title1")}</span>{" "}
           <span className="text-[#002B58]">{t("title2")}</span>{" "}

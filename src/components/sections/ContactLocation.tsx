@@ -48,6 +48,48 @@ function CardIcon({ icon }: { icon: InfoCard["icon"] }) {
   }
 }
 
+/* Auto-link phone numbers, email addresses and the office address in card lines. */
+function renderLine(line: string) {
+  const linkClass = "hover:text-brand-blue underline-offset-2 hover:underline transition-colors";
+
+  const emailMatch = line.match(/([\w.+-]+@[\w.-]+\.\w+)/);
+  if (emailMatch) {
+    const [email] = emailMatch;
+    const prefix = line.slice(0, line.indexOf(email));
+    return (
+      <>
+        {prefix}
+        <a href={`mailto:${email}`} className={linkClass}>
+          {email}
+        </a>
+      </>
+    );
+  }
+
+  if (/^\+?[\d\s]+$/.test(line.trim())) {
+    return (
+      <a href={`tel:${line.replace(/\s/g, "")}`} className={linkClass}>
+        {line}
+      </a>
+    );
+  }
+
+  if (/Oslo 3/i.test(line)) {
+    return (
+      <a
+        href="https://maps.google.com/?q=Oslo+3,+2993+LD+Barendrecht"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={linkClass}
+      >
+        {line}
+      </a>
+    );
+  }
+
+  return line;
+}
+
 export default async function ContactLocation() {
   const t = await getTranslations("contactLocation");
 
@@ -78,7 +120,7 @@ export default async function ContactLocation() {
   ];
 
   return (
-    <section className="w-full bg-brand-blue-light py-16 md:py-24">
+    <section className="w-full bg-brand-blue-light pt-0 pb-16 md:pb-24">
       <div className="max-w-[1632px] mx-auto px-6 md:px-12">
         {/* Heading */}
         <div className="text-center mb-12 md:mb-16">
@@ -109,7 +151,7 @@ export default async function ContactLocation() {
                     key={line}
                     className="mt-1 font-poppins font-medium text-[14px] leading-snug tracking-normal text-[#292D32]"
                   >
-                    {line}
+                    {renderLine(line)}
                   </p>
                 ))}
               </div>

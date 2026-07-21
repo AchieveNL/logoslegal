@@ -26,7 +26,7 @@ export default function ExpertiseCarousel() {
   };
 
   return (
-    <section className="w-full bg-white py-16 md:py-24">
+    <section className="w-full bg-white pt-8 md:pt-12 pb-12 md:pb-16">
       <div className="max-w-container mx-auto px-6 md:px-24">
         <div className="flex items-end justify-between gap-6 mb-10">
           <div>

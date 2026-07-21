@@ -14,11 +14,17 @@ import ContactSection from "@/components/sections/ContactSection";
 import FaqSection from "@/components/sections/FaqSection";
 import ExpertiseCarousel from "@/components/sections/ExpertiseCarousel";
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const t = await getTranslations({
     locale,
     namespace: "practice.financieelStrafrecht.meta",
@@ -29,11 +35,17 @@ export async function generateMetadata({
   };
 }
 
-export default async function FinancieelStrafrechtPage({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export default async function FinancieelStrafrechtPage(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   unstable_setRequestLocale(locale);
   const t = await getTranslations("practice.financieelStrafrecht");
   const tCta = await getTranslations("cta");

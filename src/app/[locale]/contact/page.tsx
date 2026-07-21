@@ -8,11 +8,17 @@ import ContactSection from "@/components/sections/ContactSection";
 import ContactLocation from "@/components/sections/ContactLocation";
 import CTABanner from "@/components/sections/CTABanner";
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const t = await getTranslations({ locale, namespace: "contactPage.meta" });
   return {
     title: t("title"),
@@ -20,11 +26,17 @@ export async function generateMetadata({
   };
 }
 
-export default async function ContactPage({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export default async function ContactPage(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   unstable_setRequestLocale(locale);
   const t = await getTranslations("contactPage");
   const tCta = await getTranslations("cta");

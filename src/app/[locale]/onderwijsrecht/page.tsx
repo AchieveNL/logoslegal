@@ -14,11 +14,17 @@ import ContactSection from "@/components/sections/ContactSection";
 import FaqSection from "@/components/sections/FaqSection";
 import ExpertiseCarousel from "@/components/sections/ExpertiseCarousel";
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const t = await getTranslations({
     locale,
     namespace: "practice.onderwijsrecht.meta",
@@ -29,11 +35,17 @@ export async function generateMetadata({
   };
 }
 
-export default async function OnderwijsrechtPage({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export default async function OnderwijsrechtPage(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   unstable_setRequestLocale(locale);
   const t = await getTranslations("practice.onderwijsrecht");
   const tCta = await getTranslations("cta");
