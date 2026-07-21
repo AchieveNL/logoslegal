@@ -58,11 +58,17 @@ const run = async () => {
     const nl = nlItems[seed.index];
     const en = enItems[seed.index];
 
-    const media = await payload.create({
-      collection: "media",
-      filePath: seed.image,
-      data: { alt: nl.title },
-    });
+    // Upload the image only when object storage is configured; otherwise
+    // seed the case without an image (the site renders a placeholder).
+    let imageId: number | undefined;
+    if (process.env.S3_ENDPOINT && process.env.S3_ACCESS_KEY) {
+      const media = await payload.create({
+        collection: "media",
+        filePath: seed.image,
+        data: { alt: nl.title },
+      });
+      imageId = media.id as number;
+    }
 
     const doc = await payload.create({
       collection: "cases",
@@ -70,7 +76,7 @@ const run = async () => {
       data: {
         slug: seed.slug,
         category: seed.category,
-        image: media.id,
+        image: imageId,
         title: nl.title,
         summary: nl.description,
         body: `<p>${nl.description}</p>`,
