@@ -1,7 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
-import { getPayload } from "@/lib/payload";
+import { getPayload, isCmsConfigured } from "@/lib/payload";
 
 const ArrowUpRight = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="rotate-45">
@@ -25,27 +25,61 @@ export default async function CasesListGrid() {
   const tAreas = await getTranslations("expertiseAreas");
   const tCta = await getTranslations("cta");
 
-  const payload = await getPayload();
-  const { docs } = await payload.find({
-    collection: "cases",
-    locale: locale as "nl" | "en",
-    limit: 50,
-    sort: "-createdAt",
-    depth: 1,
-  });
+  /* Static fallback content (used until the CMS database is configured). */
+  const fallbackMedia = [
+    "/images/cases/meldplichtstatus.png",
+    "/images/cases/no-smoking.png",
+    "/images/cases/aandelen.png",
+    "/images/cases/rechtbank.png",
+  ];
+  let cases: {
+    id: string | number;
+    category: string;
+    title: string;
+    description: string;
+    image: string;
+    imageAlt: string;
+    href: string;
+  }[] = [];
 
-  const cases = docs.map((doc) => {
-    const media = typeof doc.image === "object" && doc.image !== null ? doc.image : null;
-    return {
-      id: doc.id,
-      category: tAreas(CATEGORY_KEY[doc.category] || "contracten"),
-      title: doc.title,
-      description: doc.summary,
-      image: media?.url || "",
-      imageAlt: media?.alt || doc.title,
-      href: `/cases/${doc.slug}`,
-    };
-  });
+  try {
+    if (!isCmsConfigured()) throw new Error("cms-offline");
+    const payload = await getPayload();
+    const { docs } = await payload.find({
+      collection: "cases",
+      locale: locale as "nl" | "en",
+      limit: 50,
+      sort: "-createdAt",
+      depth: 1,
+    });
+    cases = docs.map((doc) => {
+      const media = typeof doc.image === "object" && doc.image !== null ? doc.image : null;
+      return {
+        id: doc.id,
+        category: tAreas(CATEGORY_KEY[doc.category] || "contracten"),
+        title: doc.title,
+        description: doc.summary,
+        image: media?.url || "",
+        imageAlt: media?.alt || doc.title,
+        href: `/cases/${doc.slug}`,
+      };
+    });
+  } catch {
+    const items = t.raw("items") as {
+      categoryKey: string;
+      title: string;
+      description: string;
+    }[];
+    cases = items.map((item, i) => ({
+      id: i,
+      category: tAreas(item.categoryKey),
+      title: item.title,
+      description: item.description,
+      image: fallbackMedia[i] || fallbackMedia[0],
+      imageAlt: item.title,
+      href: "/cases",
+    }));
+  }
 
   return (
     <section className="w-full bg-white pt-8 md:pt-12 pb-8 md:pb-12">

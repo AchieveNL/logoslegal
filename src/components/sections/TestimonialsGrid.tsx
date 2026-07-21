@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
-import { getPayload } from "@/lib/payload";
+import { getPayload, isCmsConfigured } from "@/lib/payload";
 
 interface Review {
   quote: string;
@@ -64,22 +64,29 @@ export default async function TestimonialsGrid() {
   const locale = await getLocale();
 
   // Visible reviews from the CMS, split over the two marquee rows.
-  const payload = await getPayload();
-  const { docs } = await payload.find({
-    collection: "reviews",
-    locale: locale as "nl" | "en",
-    where: { visible: { equals: true } },
-    limit: 100,
-    sort: "createdAt",
-  });
-
-  const reviews: Review[] = docs.map((d) => ({ quote: d.quote, author: d.author }));
-  if (reviews.length === 0) return null;
-
-  // Top row — scrolls to the right; bottom row — scrolls to the left
-  const half = Math.ceil(reviews.length / 2);
-  const reviewsTop = reviews.slice(0, half);
-  const reviewsBottom = reviews.length > 1 ? reviews.slice(half) : reviews;
+  // Falls back to the static content when the database is not configured.
+  let reviewsTop: Review[];
+  let reviewsBottom: Review[];
+  try {
+    if (!isCmsConfigured()) throw new Error("cms-offline");
+    const payload = await getPayload();
+    const { docs } = await payload.find({
+      collection: "reviews",
+      locale: locale as "nl" | "en",
+      where: { visible: { equals: true } },
+      limit: 100,
+      sort: "createdAt",
+    });
+    const reviews: Review[] = docs.map((d) => ({ quote: d.quote, author: d.author }));
+    if (reviews.length === 0) return null;
+    // Top row — scrolls to the right; bottom row — scrolls to the left
+    const half = Math.ceil(reviews.length / 2);
+    reviewsTop = reviews.slice(0, half);
+    reviewsBottom = reviews.length > 1 ? reviews.slice(half) : reviews;
+  } catch {
+    reviewsTop = t.raw("reviewsTop") as Review[];
+    reviewsBottom = t.raw("reviewsBottom") as Review[];
+  }
 
   return (
     <section className="w-full bg-white pt-8 md:pt-12 pb-8 md:pb-12 overflow-hidden">

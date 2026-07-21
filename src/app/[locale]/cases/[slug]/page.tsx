@@ -20,15 +20,20 @@ const CATEGORY_KEY: Record<string, string> = {
 };
 
 async function findCase(slug: string, locale: string) {
-  const payload = await getPayload();
-  const { docs } = await payload.find({
-    collection: "cases",
-    locale: locale as "nl" | "en",
-    where: { slug: { equals: slug } },
-    limit: 1,
-    depth: 1,
-  });
-  return docs[0] ?? null;
+  try {
+    const payload = await getPayload();
+    const { docs } = await payload.find({
+      collection: "cases",
+      locale: locale as "nl" | "en",
+      where: { slug: { equals: slug } },
+      limit: 1,
+      depth: 1,
+    });
+    return docs[0] ?? null;
+  } catch {
+    // Database not configured/reachable — treat as not found.
+    return null;
+  }
 }
 
 export async function generateMetadata(props: {

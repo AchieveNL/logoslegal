@@ -1,13 +1,22 @@
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
-import { getPayload } from "@/lib/payload";
+import { getPayload, isCmsConfigured } from "@/lib/payload";
 import Sidebar from "@/components/dashboard/Sidebar";
 
 export default async function ProtectedDashboardLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const payload = await getPayload();
-  const { user } = await payload.auth({ headers: await headers() });
+  if (!isCmsConfigured()) {
+    redirect("/dashboard/login");
+  }
+
+  let user = null;
+  try {
+    const payload = await getPayload();
+    ({ user } = await payload.auth({ headers: await headers() }));
+  } catch {
+    redirect("/dashboard/login");
+  }
 
   if (!user) {
     redirect("/dashboard/login");
