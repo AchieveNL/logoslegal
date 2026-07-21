@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getPayload } from "@/lib/payload";
+import { getPayload, isMediaConfigured } from "@/lib/payload";
 import { getDashMessages } from "@/lib/dashboard-i18n";
 import { PageHeading } from "@/components/dashboard/ui";
 import BlogForm from "@/components/dashboard/BlogForm";
@@ -36,6 +36,7 @@ export default async function EditBlogPostPage(props: {
       <BlogForm
         submitLabel={t.form.publishChanges}
         onSubmit={boundUpdate}
+        mediaReady={isMediaConfigured()}
         initial={{
           slug: nlDoc.slug,
           author: nlDoc.author,

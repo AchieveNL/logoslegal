@@ -147,7 +147,7 @@ export interface Case {
    * Volledige tekst voor de detailpagina.
    */
   body?: string | null;
-  image: number | Media;
+  image?: (number | null) | Media;
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -211,7 +211,7 @@ export interface BlogPost {
   slug: string;
   excerpt: string;
   body: string;
-  cover: number | Media;
+  cover?: (number | null) | Media;
   author: string;
   publishedDate: string;
   updatedAt: string;

@@ -27,9 +27,10 @@ interface Props {
   initial?: Partial<CaseInput> & { imageUrl?: string | null };
   onSubmit: (input: CaseInput) => Promise<void>;
   submitLabel: string;
+  mediaReady?: boolean;
 }
 
-export default function CaseForm({ initial, onSubmit, submitLabel }: Props) {
+export default function CaseForm({ initial, onSubmit, submitLabel, mediaReady = true }: Props) {
   const { t } = useDashIntl();
   const [locale, setLocale] = useState<"nl" | "en">("nl");
   const [slug, setSlug] = useState(initial?.slug || "");
@@ -58,7 +59,7 @@ export default function CaseForm({ initial, onSubmit, submitLabel }: Props) {
       setError(t.form.errSlug);
       return;
     }
-    if (!image) {
+    if (mediaReady && !image) {
       setError(t.form.errImage);
       return;
     }
@@ -67,7 +68,7 @@ export default function CaseForm({ initial, onSubmit, submitLabel }: Props) {
       await onSubmit({
         slug: slug.trim().toLowerCase().replace(/\s+/g, "-"),
         category,
-        imageId: image.id,
+        imageId: image?.id ?? null,
         status,
         nl,
         en,
@@ -155,7 +156,7 @@ export default function CaseForm({ initial, onSubmit, submitLabel }: Props) {
             <p className="mb-2 font-poppins text-sm font-bold text-[#002B58]">
               {t.form.image} <span className="text-brand-blue">*</span>
             </p>
-            <ImageUpload value={image} onChange={setImage} />
+            <ImageUpload value={image} onChange={setImage} enabled={mediaReady} />
           </div>
         </Card>
 

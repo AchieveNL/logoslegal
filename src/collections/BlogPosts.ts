@@ -40,10 +40,10 @@ export const BlogPosts: CollectionConfig = {
       localized: true,
     },
     {
+      // Optional so posts can be managed while image storage is not yet set up.
       name: "cover",
       type: "upload",
       relationTo: "media",
-      required: true,
     },
     {
       name: "author",

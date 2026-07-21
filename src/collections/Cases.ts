@@ -60,10 +60,10 @@ export const Cases: CollectionConfig = {
       },
     },
     {
+      // Optional so cases can be managed while image storage is not yet set up.
       name: "image",
       type: "upload",
       relationTo: "media",
-      required: true,
     },
   ],
 };

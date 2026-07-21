@@ -45,21 +45,28 @@ export default buildConfig({
     },
   }),
   plugins: [
-    s3Storage({
-      collections: {
-        media: true,
-      },
-      bucket: process.env.S3_BUCKET || "logoslegal",
-      config: {
-        endpoint: process.env.S3_ENDPOINT || "http://localhost:9000",
-        region: process.env.S3_REGION || "us-east-1",
-        credentials: {
-          accessKeyId: process.env.S3_ACCESS_KEY || "minioadmin",
-          secretAccessKey: process.env.S3_SECRET_KEY || "minioadmin",
-        },
-        // MinIO requires path-style URLs (bucket in the path, not the domain)
-        forcePathStyle: true,
-      },
-    }),
+    // Object storage is optional: without S3/MinIO env vars the media
+    // collection falls back to local disk and the dashboard shows an
+    // "upload under construction" notice instead of the upload UI.
+    ...(process.env.S3_ENDPOINT && process.env.S3_ACCESS_KEY
+      ? [
+          s3Storage({
+            collections: {
+              media: true,
+            },
+            bucket: process.env.S3_BUCKET || "logoslegal",
+            config: {
+              endpoint: process.env.S3_ENDPOINT,
+              region: process.env.S3_REGION || "us-east-1",
+              credentials: {
+                accessKeyId: process.env.S3_ACCESS_KEY,
+                secretAccessKey: process.env.S3_SECRET_KEY || "",
+              },
+              // MinIO requires path-style URLs (bucket in the path)
+              forcePathStyle: true,
+            },
+          }),
+        ]
+      : []),
   ],
 });

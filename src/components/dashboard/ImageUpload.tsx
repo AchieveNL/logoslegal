@@ -7,9 +7,11 @@ interface Props {
   /* Currently selected media doc (id + url), or null. */
   value: { id: string | number; url: string } | null;
   onChange: (media: { id: string | number; url: string } | null) => void;
+  /* False while object storage is not configured — shows a notice instead. */
+  enabled?: boolean;
 }
 
-export default function ImageUpload({ value, onChange }: Props) {
+export default function ImageUpload({ value, onChange, enabled = true }: Props) {
   const { t } = useDashIntl();
   const inputRef = useRef<HTMLInputElement>(null);
   const [busy, setBusy] = useState(false);
@@ -36,6 +38,14 @@ export default function ImageUpload({ value, onChange }: Props) {
       setBusy(false);
     }
   };
+
+  if (!enabled) {
+    return (
+      <div className="rounded-xl bg-amber-50 border border-amber-200 px-5 py-4 font-poppins text-sm text-amber-800">
+        🚧 {t.upload.underConstruction}
+      </div>
+    );
+  }
 
   return (
     <div>

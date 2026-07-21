@@ -12,3 +12,9 @@ export function getPayload() {
 export function isCmsConfigured() {
   return Boolean(process.env.DATABASE_URL);
 }
+
+/* True when object storage (MinIO/S3/R2) is configured. Without it, image
+   uploading in the dashboard is disabled with an "under construction" notice. */
+export function isMediaConfigured() {
+  return Boolean(process.env.S3_ENDPOINT && process.env.S3_ACCESS_KEY);
+}

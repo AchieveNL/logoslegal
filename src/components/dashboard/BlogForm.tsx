@@ -19,9 +19,10 @@ interface Props {
   initial?: Partial<BlogInput> & { coverUrl?: string | null };
   onSubmit: (input: BlogInput) => Promise<void>;
   submitLabel: string;
+  mediaReady?: boolean;
 }
 
-export default function BlogForm({ initial, onSubmit, submitLabel }: Props) {
+export default function BlogForm({ initial, onSubmit, submitLabel, mediaReady = true }: Props) {
   const { t } = useDashIntl();
   const [locale, setLocale] = useState<"nl" | "en">("nl");
   const [slug, setSlug] = useState(initial?.slug || "");
@@ -53,7 +54,7 @@ export default function BlogForm({ initial, onSubmit, submitLabel }: Props) {
       setError(t.form.errSlugAuthor);
       return;
     }
-    if (!cover) {
+    if (mediaReady && !cover) {
       setError(t.form.errCover);
       return;
     }
@@ -63,7 +64,7 @@ export default function BlogForm({ initial, onSubmit, submitLabel }: Props) {
         slug: slug.trim().toLowerCase().replace(/\s+/g, "-"),
         author: author.trim(),
         publishedDate,
-        coverId: cover.id,
+        coverId: cover?.id ?? null,
         status,
         nl,
         en,
@@ -157,7 +158,7 @@ export default function BlogForm({ initial, onSubmit, submitLabel }: Props) {
             <p className="mb-2 font-poppins text-sm font-bold text-[#002B58]">
               {t.form.cover} <span className="text-brand-blue">*</span>
             </p>
-            <ImageUpload value={cover} onChange={setCover} />
+            <ImageUpload value={cover} onChange={setCover} enabled={mediaReady} />
           </div>
         </Card>
 

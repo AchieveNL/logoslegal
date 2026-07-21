@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getPayload } from "@/lib/payload";
 import { getDashMessages } from "@/lib/dashboard-i18n";
+import { isMediaConfigured } from "@/lib/payload";
 import { PageHeading } from "@/components/dashboard/ui";
 import CaseForm from "@/components/dashboard/CaseForm";
 import { updateCase, type CaseInput } from "../actions";
@@ -36,6 +37,7 @@ export default async function EditCasePage(props: {
       <CaseForm
         submitLabel={t.form.publishChanges}
         onSubmit={boundUpdate}
+        mediaReady={isMediaConfigured()}
         initial={{
           slug: nlDoc.slug,
           category: nlDoc.category,

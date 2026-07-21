@@ -137,6 +137,8 @@ export const dashMessages = {
       uploading: "Bezig met uploaden...",
       replace: "Vervangen",
       failed: "Upload mislukt. Probeer een andere afbeelding.",
+      underConstruction:
+        "Afbeeldingen uploaden is tijdelijk niet beschikbaar — de mediaopslag wordt nog ingericht.",
     },
   },
   en: {
@@ -267,6 +269,8 @@ export const dashMessages = {
       uploading: "Uploading...",
       replace: "Replace",
       failed: "Upload failed. Try another image.",
+      underConstruction:
+        "Image uploading is temporarily unavailable — media storage is still being set up.",
     },
   },
 };
